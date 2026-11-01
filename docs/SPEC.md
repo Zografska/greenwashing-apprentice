@@ -17,7 +17,7 @@ v2 incorporates an independent review of v1. All of its must-fix, should-fix and
 | People | **1 (solo)** | Reuse everything possible. Every experiment is a loop in one notebook. The cut order is set in advance (§9). |
 | Time | **Nov 2 → Dec 15 (≈ 6.5 weeks)**, alongside other work | 5 checkpoints. The report is written alongside the experiments. The last week is buffer. |
 | Labour outside coding | ≈ 2–3 h to review the dev set (CP1); ≈ 1–2 h for the reasoning rubric (CP4); optional ≈ 1 h human ceiling | Nothing else needs manual labelling. |
-| Money | **€0 preferred, ≤ €10 total** | Teacher via Groq paid API (≈ $2–3). Students on Kaggle's free GPU. Inference on the Mac. No other paid services. |
+| Money | **€0 preferred, ≤ €10 total** | Teacher on the **Groq free tier** first (Groq's paid tier is closed to new upgrades as of 2026-11-01). A paid fallback for the full run only if needed (≈ €1–6, D9). Students on Kaggle's free GPU. Inference on the Mac. No other paid services. |
 | Hardware | MacBook Air M3, 16 GB; Kaggle free tier, **T4 only**: Unsloth does not support the P100. ≤ 12 h sessions; weekly quota shown in account settings, reportedly about 30 h. | Student ≤ 4B, 4-bit QLoRA. Fallback: everything on the Mac with `mlx-lm`. |
 | Language | Report in English; data and model reasoning in Italian | – |
 
@@ -70,7 +70,7 @@ All four are thesis items (§11).
 | D6 | "RAG" = the repo's **anchor retriever**: top-3 labelled example claims as few-shot (retrieval-augmented in-context learning). The relevant directive provisions (≈ 1–2k tokens) go into the prompt as **static context**. Row S0-noLegal measures what that context adds. |
 | D7 | Framing: knowledge in the prompt vs. knowledge in the weights. Fine-tuned students get no legal context and no anchors. |
 | D8 | Anchor leak guard: skip any anchor whose normalised text matches the claim or whose e5 cosine is ≥ 0.95. Report how many were skipped. (48 of the 121 anchors appear word for word in the Coop gold 100.) |
-| D9 | Teacher: **gpt-oss-120b on Groq** (Apache-2.0; ≈ $0.15/$0.60 per 1M tokens in/out according to a third-party guide, Oct 2026; confirm in the console). **Synchronous API** for the ≤ 3 dev iterations; **Batch API** for the full run. Temperature 0, low reasoning effort. Every raw response is saved (temperature 0 is not guaranteed to be deterministic). Students learn from the final `reasoning` field, never from the raw thinking trace. Free fallback: Qwen ≈ 32B (4-bit) on Kaggle. The teacher stays outside the Claude family to avoid circularity with the Claude-drafted gold. |
+| D9 | Teacher: **gpt-oss, chosen on dev between 20b and 120b** (both Apache-2.0, sizes public). On the dev set (≈ 150 texts), run both with the same `P_teacher`. **Use 20b if its macro-F1 is within 3 points of 120b and its consistency (D30) is ≥ 95%; otherwise use 120b.** Report the comparison. **Provider:** Groq **free tier** for dev (synchronous; Batch isn't available on the free tier). **CP2 day 1:** check the account limits and whether prompt caching works (`usage.prompt_tokens_details.cached_tokens` on a repeated system prompt; cached tokens don't count toward limits). With caching, the full run stays on Groq free in daily batches (≈ 1 week, started by Nov 11). Without it, the full run goes to one alternative: the Kaggle Benchmarks model proxy (free daily credit, **only if its terms allow generating training data**), OpenRouter with a pinned provider and no fallbacks (≈ €6 incl. fees), or, for 20b, self-hosted on a Kaggle T4 with llama.cpp. The whole final run uses **one provider**, logged on every response; switching provider between dev and the final run is allowed because the model is the same. Temperature 0, low reasoning effort. Every raw response is saved (temperature 0 is not guaranteed to be deterministic). Students learn from the final `reasoning` field, never from the raw thinking trace. (DeepSeek-flash was considered: cheapest paid option, but its size is undisclosed and it silently remaps model versions.) The teacher stays outside the Claude family to avoid circularity with the Claude-drafted gold. |
 | D10 | Students: **Qwen3 ≈ 4B** (main) and **≈ 1.7B** (size ablation), same family, thinking off. Switch to a newer small Qwen at CP1 **only if** Unsloth, MLX and llama.cpp all support it out of the box. |
 | D11 | Compute: Kaggle **T4**, pinned versions (allow about 10 min of reinstalling per session), Unsloth QLoRA. **No vLLM.** Inference uses HF Transformers (D23). The Mac does the GGUF export, re-scoring and latency. Fallback: `mlx-lm` on the Mac. |
 | D12 | Gold = LLM-drafted (Claude) and **expert-reviewed** (author + professors, several rounds; no inter-annotator agreement is reported, so "expert-reviewed" is used throughout, not "adjudicated"). The reserves had a lighter review and are never used as human training labels. Consequence: H means "expert-reviewed LLM-drafted labels". |
@@ -84,7 +84,7 @@ All four are thesis items (§11).
 | D20 | Report in English; data and reasoning in Italian. |
 | D21 | **Separate prompts:** `P_teacher` (repo classifier prompt with triggers + legal block + conventions + reasoning; static few-shots, **no anchors**); `P_student` (S0/S1: 3-class instructions, ± legal block, ± top-3 anchors; no categories); `P_ft` (fine-tuned students: one short instruction line + the claim). All prompts are versioned files whose hash is logged. |
 | D22 | **Named test suites**, reported separately: `test_ce` (30% of the Coop + Eurospin gold texts), `test_carrefour` (frozen Carrefour gold), `test_naturasi` (qualitative: a badge-only shop whose claims look different from the training data). The report states that the headline is mostly cross-retailer transfer, since Carrefour is ≈ 75% of it and absent from training. |
-| D23 | **Scoring:** label-only models (S0, S1, H, T, T-large, T-1.7B) are scored by the **log-probability of each of the three label strings** after the prompt; the highest wins. This always gives a valid output, needs no constrained decoding and gives probabilities for free. **T+R** generates freely, `{"reasoning": …, "label": …}` (**reasoning first**); the label is parsed, invalid output counts as wrong, and the share of valid JSON is reported unconstrained. The teacher uses Groq JSON mode. |
+| D23 | **Scoring:** label-only models (S0, S1, H, T, T-large, T-1.7B) are scored by the **log-probability of each of the three label strings** after the prompt; the highest wins. This always gives a valid output, needs no constrained decoding and gives probabilities for free. **T+R** generates freely, `{"reasoning": …, "label": …}` (**reasoning first**); the label is parsed, invalid output counts as wrong, and the share of valid JSON is reported unconstrained. The teacher uses the provider's JSON mode. |
 | D24 | **Dev set** = about 50 texts per class (≈ 150) sampled from the reserve texts and **fully reviewed by the author** at CP1 (≈ 2–3 h). The dev IDs stay reserved permanently, even if the reserves are reviewed later. The teacher gate on dev is a **sanity check**, not a blocker. |
 | D25 | **Near-duplicate grouping:** e5 cosine between all candidate texts; any cluster above **0.90** is kept together on one side. Report the number of clusters merged. A no-near-duplicate subset of each test suite (max cosine to train < 0.90) is reported as a robustness check. |
 | D26 | **Manifest and freeze:** see §4.3. The test suites are frozen **at CP1, before the teacher sees any text**. |
@@ -165,7 +165,7 @@ All rows are evaluated on every test suite.
 | T+R | Qwen3-4B, LoRA | teacher reasoning → label, 571 | `P_ft` | generation | 3 |
 | T-large | Qwen3-4B, LoRA | teacher labels, ≈ 1,200 | `P_ft` | log-prob | 3 |
 | T-1.7B | Qwen3-1.7B, LoRA | teacher labels, 571 | `P_ft` | log-prob | 3 |
-| Teacher | gpt-oss-120b | – | `P_teacher` (no anchors) | JSON mode → POST label | 1 |
+| Teacher | gpt-oss-20b or -120b (D9) | – | `P_teacher` (no anchors) | JSON mode → POST label | 1 |
 
 That makes **27 LoRA runs** (≈ 10–15 GPU-min each, about 5–6 h of Kaggle T4 in total), plus 6 prompted, baseline and teacher runs.
 
@@ -191,7 +191,7 @@ def label(triggers):
     return "IN_SCOPE" if t & IN_SCOPE_T else "NEEDS_VERIFICATION"
 ```
 
-The teacher runs on train + reserve + test, ≈ 2,400 texts, plus ≤ 3 synchronous dev iterations on ≈ 150 texts. That's ≈ 2,850 calls, **≈ €2–3**. Its agreement with gold on the 571 train texts is reported as **teacher label noise**, the key context for RQ1.
+The teacher runs on train + reserve + test, ≈ 2,400 texts, plus ≤ 3 dev iterations on ≈ 150 texts for each of the two candidate teachers. That's ≈ 3,300 calls at ≈ 3.8k tokens each (mostly the shared system prompt, so keep `P_teacher` lean). **€0 on Groq free with caching**; ≈ €1–6 on a paid fallback. Its agreement with gold on the 571 train texts is reported as **teacher label noise**, the key context for RQ1.
 
 The **disclosed confound:** the classifier prompt and the anchors were developed on Carrefour data in the main project. The teacher's and S1's scores on `test_carrefour` may therefore be optimistic, which is why per-suite numbers are always shown.
 
@@ -221,7 +221,7 @@ The **disclosed confound:** the classifier prompt and the anchors were developed
 | Wk | Dates | Checkpoint | Deliverable | Gate / if it fails |
 |---|---|---|---|---|
 | 1 | Nov 2–8 | **CP1 Data, freeze, harness** | Instructor email (D27); manifest with near-duplicate grouping; **suites frozen**; `check_split`; dev set reviewed (≈ 2–3 h); `eval.py`; legal block; prompt files; student model confirmed | `eval.py` scores the gold labels, fed in as predictions, at 1.0; `check_split` passes. |
-| 2 | Nov 9–15 | **CP2 Teacher + baselines** | ≤ 3 synchronous dev iterations → Batch full run (raw JSONL saved); S0-noLegal, S0, S1, B0 results; teacher consistency rate; **methods section drafted** | Sanity check: teacher macro-F1 on dev ≥ 0.80 and consistency ≥ 95%. If not met after 3 iterations, proceed anyway and report it as a finding. |
+| 2 | Nov 9–15 | **CP2 Teacher + baselines** | Day 1: Groq limits + caching check. ≤ 3 dev iterations with 20b and 120b → choose the teacher (D9) → full run on one provider (raw JSONL saved); S0-noLegal, S0, S1, B0 results; teacher consistency rate; **methods section drafted** | Sanity check: teacher macro-F1 on dev ≥ 0.80 and consistency ≥ 95%. If not met after 3 iterations, proceed anyway and report it as a finding. |
 | 3–4 | Nov 16–29 | **CP3 Students** | Kaggle T4 notebook (pinned stack) looping conditions × sizes × seeds; test predictions; `results.csv` | T@571 beats S0 on dev. If not: check the template and scoring first, then the learning rate (once), then accept it and report. |
 | 5 | Nov 30–Dec 6 | **CP4 Analysis** | 2 figures, Holm-McNemar, slices, reasoning rubric (≈ 1–2 h), GGUF export + M3 re-scoring and latency; optional D13 | Every RQ has a table or figure. |
 | 6 | Dec 7–15 | **CP5 Report** | Report submitted; code, prompts and the manifest tagged in git | – |
@@ -239,7 +239,7 @@ Test predictions are produced **once per final model** and logged with a timesta
 | Labelling conventions | `golden/labeled/golden_set_ecgt_100_README.md` | Report appendix |
 | Retrieval (S1) and near-duplicate grouping | `retriever/score.py` (e5-base, pinned revision, `query:` prefix), `retriever/knowledge/anchors_v4.jsonl`, the embedding cache | `top3(claim)` + guard; cosine clustering (½ day) |
 | Data | The 8 gold/reserve JSONs | Manifest, freeze, `check_split` (1 day) + dev review (2–3 h) |
-| Teacher runner | `tools/groq_relabel.py` (never run; reference only) | Groq sync + Batch, resumable, raw JSONL (1 day) |
+| Teacher runner | `tools/groq_relabel.py` (never run; reference only) | OpenAI-compatible client (Groq / proxy / OpenRouter / llama.cpp server via base URL), rate-limit aware, resumable, raw JSONL (1 day) |
 | Training and scoring | Unsloth's Qwen3 Kaggle notebook template | Loop, loader, log-prob scorer, T+R generation (2–3 days incl. debugging) |
 | Evaluation | – | `eval.py`: metrics, κ, Holm-McNemar, bootstrap (1 day) |
 | Inspection | `tools/jsonl_viewer.html` | – |
@@ -272,7 +272,7 @@ All new code lives in `apprentice/`. It must not change `eval/gold_spans_v1.json
 | Teacher self-inconsistency | D30 check and flag |
 | Near-duplicate or template leakage | D25 grouping + a no-near-duplicate robustness subset |
 | Carrefour-developed prompt and anchors flatter `test_carrefour` | Disclosed; per-suite reporting; `test_ce` as the cleanest suite |
-| Groq price or limits change | ≈ €3 expected vs. a €10 cap; Kaggle Qwen-32B fallback |
+| Groq free limits too low, or no caching | Caching check on CP2 day 1; one-provider fallback per D9 (Kaggle proxy / OpenRouter ≈ €6 / self-hosted 20b); start the full run by Nov 11 |
 | Accidental tuning on test | Frozen suites, a loader that refuses teacher-on-test files, predictions once per model |
 
 ---
