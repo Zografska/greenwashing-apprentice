@@ -1,0 +1,10 @@
+{
+  "_comment": "Author decisions on gold label conflicts (D32). Applied by apprentice/split.py; recorded per row as gold_label_resolution.",
+  "resolved_by": "Aleksandra Zografska",
+  "date": "2026-11-01",
+  "labels": {
+    "308848a5f9944ff2": {"text": "Senza OGM", "label": "OUT"},
+    "9130aeb7db871e17": {"text": "100% Di origine naturale", "label": "NEEDS_VERIFICATION"},
+    "ff84c48f0ffb3177": {"text": "La Carta del Mulino prevede il rispetto dei criteri di sostenibilità ISCC Plus ...", "label": "NEEDS_VERIFICATION"}
+  }
+}

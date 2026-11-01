@@ -92,16 +92,22 @@ def build(seed: int = 0, test_frac_ce: float = 0.30, threshold: float = neardup.
                 taken += len(members)
 
     suite_origin = {"test_carrefour": "carrefour", "test_naturasi": "naturasi"}
+    res_file = ROOT / "splits" / f"label_resolutions_{SPLIT_VERSION}.json"
+    resolutions = json.loads(res_file.read_text(encoding="utf-8"))["labels"] if res_file.exists() else {}
     git = _git_head()
     rows = []
     for t, c in zip(items, cl):
         s = suite[t.text_id]
         lab = t.label_for(suite_origin[s]) if s in suite_origin else t.label
+        resolution = None
+        if t.text_id in resolutions:
+            lab, resolution = resolutions[t.text_id]["label"], f"{res_file.name} (author decision, D32)"
         rows.append({
             "text_id": t.text_id, "text": t.text, "footnote": t.footnote, "norm": t.norm,
             "suite": suite[t.text_id], "side": SIDE[suite[t.text_id]],
             "gold_label": lab, "gold_label_source": t.label_source,
-            "gold_label_conflict": t.label_conflict, "gold_triggers": t.triggers,
+            "gold_label_conflict": t.label_conflict, "gold_label_resolution": resolution,
+            "gold_triggers": t.triggers,
             "dev_reviewed_label": None,
             "near_dup_cluster": c, "near_dup_cluster_size": len(by_cluster[c]),
             "occurrences": [{"source_file": o.source_file, "product_id": o.product_id,
@@ -119,7 +125,7 @@ def build(seed: int = 0, test_frac_ce: float = 0.30, threshold: float = neardup.
         "suite_label_counts": _counts(rows),
         "label_conflicts": [{"text": r["text"], "suite": r["suite"],
                              "labels": sorted({o["label"] for o in r["occurrences"]}),
-                             "label_used": r["gold_label"]}
+                             "label_used": r["gold_label"], "resolution": r["gold_label_resolution"]}
                             for r in rows if r["gold_label_conflict"]],
         "merged_examples": [[m.text for m in members][:4] for members in
                             sorted(multi, key=len, reverse=True)[:25]],
