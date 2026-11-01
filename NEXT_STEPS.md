@@ -5,14 +5,14 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 ## Timeline at a glance
 
-| Week | Dates | Checkpoint | Gate |
-|---|---|---|---|
-| 1 | Mon 2 – Sun 8 Nov | **CP1** Data, freeze, harness | `eval.py` scores the gold labels, fed in as predictions, at 1.0; `check_split` passes; suites frozen |
-| 2 | Mon 9 – Sun 15 Nov | **CP2** Teacher + baselines | Teacher dev macro-F1 ≥ 0.80 and consistency ≥ 95% (sanity check, not a blocker) |
-| 3 | Mon 16 – Sun 22 Nov | **CP3a** Kaggle notebook working end to end | One H@571 + one T@571 run, scored, with a row in `results.csv` |
-| 4 | Mon 23 – Sun 29 Nov | **CP3b** All runs | All 27 LoRA runs logged; T@571 beats S0 on dev |
-| 5 | Mon 30 Nov – Sun 6 Dec | **CP4** Analysis | Every RQ has a table or figure |
-| 6 | Mon 7 – Mon 15 Dec | **CP5** Report | Submitted |
+| Week | Dates                  | Checkpoint                                  | Gate                                                                                                 |
+| ---- | ---------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 1    | Mon 2 – Sun 8 Nov      | **CP1** Data, freeze, harness               | `eval.py` scores the gold labels, fed in as predictions, at 1.0; `check_split` passes; suites frozen |
+| 2    | Mon 9 – Sun 15 Nov     | **CP2** Teacher + baselines                 | Teacher dev macro-F1 ≥ 0.80 and consistency ≥ 95% (sanity check, not a blocker)                      |
+| 3    | Mon 16 – Sun 22 Nov    | **CP3a** Kaggle notebook working end to end | One H@571 + one T@571 run, scored, with a row in `results.csv`                                       |
+| 4    | Mon 23 – Sun 29 Nov    | **CP3b** All runs                           | All 27 LoRA runs logged; T@571 beats S0 on dev                                                       |
+| 5    | Mon 30 Nov – Sun 6 Dec | **CP4** Analysis                            | Every RQ has a table or figure                                                                       |
+| 6    | Mon 7 – Mon 15 Dec     | **CP5** Report                              | Submitted                                                                                            |
 
 ### Trip-wires (when to apply the cut order, SPEC §9)
 
@@ -25,31 +25,32 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 ## Week 0 (before Mon 2 Nov)
 
-- [ ] Delete the old `APPRENTICE_ECGT_SPEC.md` from `greenwashing-claim-detector` (untracked; `docs/SPEC.md` here replaces it)
-- [ ] Create the GitHub repo and push `main`
+- [x] Delete the old `APPRENTICE_ECGT_SPEC.md` from `greenwashing-claim-detector` (untracked; `docs/SPEC.md` here replaces it)
+- [x] Create the GitHub repo and push `main`
 - [x] Groq account on the **free tier** (paid upgrades closed for now); API key in `.env` as `GROQ_API_KEY` (never commit)
 - [x] Kaggle: T4 x2 available, 30 h/week. Keep the accelerator **off** until CP3
-- [ ] *Optional:* read the Kaggle Benchmarks model proxy terms. Does the Daily credit allow generating training labels? (a possible free fallback for the full teacher run, D9)
-- [ ] Kaggle: verify your phone number (needed for GPU), check the weekly GPU quota in settings, confirm a **T4** is selectable
+- [ ] _Optional:_ read the Kaggle Benchmarks model proxy terms. Does the Daily credit allow generating training labels? (a possible free fallback for the full teacher run, D9)
+- [x] Kaggle: verify your phone number (needed for GPU), check the weekly GPU quota in settings, confirm a **T4** is selectable
 
 ## CP1: data, freeze, harness (Mon 2 – Sun 8 Nov)
 
-- [ ] **Email the instructor** (D27): "RAG" now means retrieving labelled example claims + the directive text as static context; the S0-noLegal row measures what the directive text adds. ≈ 30 min
-- [ ] Confirm the student model (D10): Qwen3 4B / 1.7B, or a newer small Qwen **only if** Unsloth, MLX and llama.cpp all support it out of the box. ≈ 30 min
-- [ ] `apprentice/data.py`: load the 8 vendored JSONs, map `DISCARDED → OUT`, skip `needs_review`, normalise (claim + footnote), compute `text_id`. ≈ ½ day
-- [ ] `apprentice/split.py`:
-  - [ ] e5 embeddings for all texts; group near-duplicates at cosine ≥ 0.90 (D25), report the clusters merged
-  - [ ] assign suites: `test_carrefour` (all), `test_naturasi` (all), Coop/Eurospin 70% train / 30% `test_ce`, grouped by cluster, seed 0
-  - [ ] drop reserve texts that collide with test or train; sample **dev ≈ 50 per class**; the rest → `t_large_extra`
-  - [ ] write `splits/split_v1.jsonl` with every field in SPEC §4.3 (incl. `gold_label`, `gold_triggers`, `source_git_sha`)
+- [x] **Email the instructor** (D27): "RAG" now means retrieving labelled example claims + the directive text as static context; the S0-noLegal row measures what the directive text adds. ≈ 30 min
+- [x] Confirm the student model (D10): **Qwen3-4B / Qwen3-1.7B** (Qwen3.5 checked and rejected)
+- [x] `apprentice/data.py`: load the 8 vendored JSONs, map `DISCARDED → OUT`, skip `needs_review`, normalise (claim + footnote), compute `text_id`. ≈ ½ day
+- [x] `apprentice/split.py` (draft split v1 built; see SPEC §4.2):
+  - [x] lexical near-dup clusters at cosine ≥ 0.90 (D25, changed from e5): 70 clusters, 160 texts
+  - [x] assign suites: `test_carrefour` (all), `test_naturasi` (all), Coop/Eurospin 70% train / 30% `test_ce`, grouped by cluster, seed 0
+  - [x] drop reserve texts that collide with test or train; sample **dev ≈ 50 per class**; the rest → `t_large_extra`
+  - [x] write `splits/split_v1.jsonl` with every field in SPEC §4.3 (incl. `gold_label`, `gold_triggers`, `source_git_sha`)
   - ≈ 1 day
-- [ ] `apprentice/check_split.py`: a reusable `check_split(files…)` with all the assertions in SPEC §4.3 rule 2, plus a unit test. ≈ ½ day
-- [ ] **Review the dev set** (≈ 150 texts) by hand: fix the labels in the manifest's dev rows and note how many changed. ≈ 2–3 h
+- [x] `apprentice/check_split.py`: a reusable `check_split(files…)` with all the assertions in SPEC §4.3 rule 2, plus a unit test. ≈ ½ day
+- [ ] **Review the dev set** (150 texts): edit `splits/dev_review_v1.csv` (change `reviewed_label` only where you disagree, add a `note`), then `python3 -m apprentice.dev_review apply`. ≈ 1–2 h
+- [ ] Resolve the 3 gold label conflicts listed in `splits/split_v1_report.json` (D32)
 - [ ] Settle the open items at the bottom of this file (they change the split)
 - [ ] **Freeze:** commit `splits/split_v1.jsonl` and tag `split-v1-frozen`. **No teacher call before this tag.**
-- [ ] `apprentice/eval.py`: macro-F1, per-class F1, IN_SCOPE recall, flagged recall, κ, bootstrap CIs, McNemar + Holm, per-suite output, appends to `results/results.csv` (columns per D28). Test: feeding in the gold labels as predictions gives 1.0. ≈ 1 day
-- [ ] `prompts/legal_block.md`: hand-pick from `vendor/legal/` → Art. 2 definitions (environmental claim, generic environmental claim, sustainability label, certification scheme), Annex I 2a/4a/4b/4c, Art. 7(7); ≤ 2k tokens. ≈ ½ day
-- [ ] Draft the prompt files (they can still change in CP2):
+- [x] `apprentice/eval.py`: macro-F1, per-class F1, IN_SCOPE recall, flagged recall, κ, bootstrap CIs, McNemar + Holm, per-suite output, appends to `results/results.csv` (columns per D28). Test: feeding in the gold labels as predictions gives 1.0. ≈ 1 day
+- [x] `prompts/legal_block.md`: verbatim Art. 2 definitions o–s and Annex I 2 bis, 4 bis–4 quater, 10 bis (≈ 1.3k tokens)
+- [x] Draft the prompt files (they can still change in CP2):
   - `prompts/P_teacher.md`: the classifier prompt + legal block + the conventions from `vendor/golden/golden_set_ecgt_100_README.md` + `reasoning` (before the label) + the teacher's stated label. No anchors.
   - `prompts/P_student.md`: 3-class instructions; slots for the legal block and anchors; 5 static few-shots. No categories.
   - `prompts/P_ft.md`: one instruction line + the claim.
@@ -107,7 +108,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [ ] Reasoning rubric: 50 samples (T+R and Teacher), stratified correct/wrong, 3 yes/no items. ≈ 1–2 h
 - [ ] GGUF export (T-4B, T-1.7B) → re-score `test_ce` on the M3 with llama-cpp-python; measure ms/claim and peak RAM (D29)
 - [ ] Cost table in € (D31)
-- [ ] *Optional:* D13 blind self-re-labelling of 50 test texts (≈ 1 h)
+- [ ] _Optional:_ D13 blind self-re-labelling of 50 test texts (≈ 1 h)
 - [ ] ✅ **CP4 gate** (Sun 6 Dec)
 
 ## CP5: report (Mon 7 – Mon 15 Dec)
@@ -126,5 +127,5 @@ These change the split, so they can't be revisited after the `split-v1-frozen` t
 
 - [ ] 70/30 train/test ratio on Coop/Eurospin
 - [ ] NaturaSì as test-only
-- [ ] 0.90 near-duplicate threshold
+- [ ] 0.90 near-duplicate threshold (lexical char n-gram TF-IDF; see the merged examples in the split report)
 - [ ] Scrape data out of scope (thesis)

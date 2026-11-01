@@ -71,7 +71,7 @@ All four are thesis items (§11).
 | D7 | Framing: knowledge in the prompt vs. knowledge in the weights. Fine-tuned students get no legal context and no anchors. |
 | D8 | Anchor leak guard: skip any anchor whose normalised text matches the claim or whose e5 cosine is ≥ 0.95. Report how many were skipped. (48 of the 121 anchors appear word for word in the Coop gold 100.) |
 | D9 | Teacher: **gpt-oss, chosen on dev between 20b and 120b** (both Apache-2.0, sizes public). On the dev set (≈ 150 texts), run both with the same `P_teacher`. **Use 20b if its macro-F1 is within 3 points of 120b and its consistency (D30) is ≥ 95%; otherwise use 120b.** Report the comparison. **Provider:** Groq **free tier** for dev (synchronous; Batch isn't available on the free tier). **CP2 day 1:** check the account limits and whether prompt caching works (`usage.prompt_tokens_details.cached_tokens` on a repeated system prompt; cached tokens don't count toward limits). With caching, the full run stays on Groq free in daily batches (≈ 1 week, started by Nov 11). Without it, the full run goes to one alternative: the Kaggle Benchmarks model proxy (free daily credit, **only if its terms allow generating training data**), OpenRouter with a pinned provider and no fallbacks (≈ €6 incl. fees), or, for 20b, self-hosted on a Kaggle T4 with llama.cpp. The whole final run uses **one provider**, logged on every response; switching provider between dev and the final run is allowed because the model is the same. Temperature 0, low reasoning effort. Every raw response is saved (temperature 0 is not guaranteed to be deterministic). Students learn from the final `reasoning` field, never from the raw thinking trace. (DeepSeek-flash was considered: cheapest paid option, but its size is undisclosed and it silently remaps model versions.) The teacher stays outside the Claude family to avoid circularity with the Claude-drafted gold. |
-| D10 | Students: **Qwen3 ≈ 4B** (main) and **≈ 1.7B** (size ablation), same family, thinking off. Switch to a newer small Qwen at CP1 **only if** Unsloth, MLX and llama.cpp all support it out of the box. |
+| D10 | Students: **Qwen3-4B** (main) and **Qwen3-1.7B** (size ablation), same family, thinking off. **Confirmed at CP1 (2026-11-01):** Qwen3.5 (0.8B/2B/4B/9B) was checked and rejected: Unsloth advises against 4-bit QLoRA for it, its hybrid kernels compile slowly on a T4, and it is a vision-language model. |
 | D11 | Compute: Kaggle **T4**, pinned versions (allow about 10 min of reinstalling per session), Unsloth QLoRA. **No vLLM.** Inference uses HF Transformers (D23). The Mac does the GGUF export, re-scoring and latency. Fallback: `mlx-lm` on the Mac. |
 | D12 | Gold = LLM-drafted (Claude) and **expert-reviewed** (author + professors, several rounds; no inter-annotator agreement is reported, so "expert-reviewed" is used throughout, not "adjudicated"). The reserves had a lighter review and are never used as human training labels. Consequence: H means "expert-reviewed LLM-drafted labels". |
 | D13 | Optional (if week 5 has slack): blind self-re-labelling of 50 test texts as a human ceiling. |
@@ -86,12 +86,14 @@ All four are thesis items (§11).
 | D22 | **Named test suites**, reported separately: `test_ce` (30% of the Coop + Eurospin gold texts), `test_carrefour` (frozen Carrefour gold), `test_naturasi` (qualitative: a badge-only shop whose claims look different from the training data). The report states that the headline is mostly cross-retailer transfer, since Carrefour is ≈ 75% of it and absent from training. |
 | D23 | **Scoring:** label-only models (S0, S1, H, T, T-large, T-1.7B) are scored by the **log-probability of each of the three label strings** after the prompt; the highest wins. This always gives a valid output, needs no constrained decoding and gives probabilities for free. **T+R** generates freely, `{"reasoning": …, "label": …}` (**reasoning first**); the label is parsed, invalid output counts as wrong, and the share of valid JSON is reported unconstrained. The teacher uses the provider's JSON mode. |
 | D24 | **Dev set** = about 50 texts per class (≈ 150) sampled from the reserve texts and **fully reviewed by the author** at CP1 (≈ 2–3 h). The dev IDs stay reserved permanently, even if the reserves are reviewed later. The teacher gate on dev is a **sanity check**, not a blocker. |
-| D25 | **Near-duplicate grouping:** e5 cosine between all candidate texts; any cluster above **0.90** is kept together on one side. Report the number of clusters merged. A no-near-duplicate subset of each test suite (max cosine to train < 0.90) is reported as a robustness check. |
+| D25 | **Near-duplicate grouping (lexical):** character 3–5-gram TF-IDF cosine between all unique texts (`apprentice/neardup.py`); pairs ≥ **0.90** are merged (union-find) and each cluster stays on one side. Changed from e5 at CP1: the leak to catch is the same claim with small surface changes (gender/number agreement, a product name, a percentage), which a lexical measure targets directly, and it needs no model download (Hugging Face is blocked in the build environments). Split v1: 70 multi-text clusters covering 160 texts. A semantic (e5) no-near-duplicate subset of each test suite is still reported in CP4 as a robustness check. |
 | D26 | **Manifest and freeze:** see §4.3. The test suites are frozen **at CP1, before the teacher sees any text**. |
 | D27 | **Instructor:** email in week 1 explaining the reinterpretation of "RAG" (D6) and the S0-noLegal row that measures the directive context. |
 | D28 | **Logging:** every `results.csv` row records run id, condition, seed, train size, model + revision, library versions, LoRA hyperparameters, prompt hash, manifest version, date and per-suite metrics. Every teacher response records model string, date, raw output, reasoning tokens and cost. |
 | D29 | The **GGUF (Q4)** export of T-4B and T-1.7B is re-scored on `test_ce` on the Mac (llama-cpp-python, log-prob scoring), because Q4 GGUF quality differs from bitsandbytes 4-bit. The chat template (Qwen3 with thinking off, including the empty `<think>` block) is **identical** in training, Kaggle inference and the GGUF/Ollama template. |
 | D30 | **Teacher consistency:** the teacher also states its own label; the training label is always the POST label computed from its triggers. The share of disagreements between the two is reported. If it is above 5% on dev, fix the prompt before the full run. Disagreeing examples are kept so that T and T+R stay matched, and are flagged in the data. |
+| D32 | **Gold label conflicts:** a text with different labels in two gold sets takes, in a test suite, the label of that suite's own gold (Carrefour gold stays frozen). Conflicts are listed in the split report and resolved by the author before the freeze. |
+| D33 | **Dev review:** `python3 -m apprentice.dev_review export` writes `splits/dev_review_v1.csv` with `reviewed_label` pre-filled with the light label (change only disagreements, to fit the time budget); `apply` writes it back as `dev_reviewed_label`, which `eval.py` uses as dev gold. The number of changes is reported. |
 | D31 | **Cost units:** everything is reported in € (USD converted at the run date's rate). Local inference is reported as 0 € marginal cost (electricity and hardware ignored, stated explicitly) plus ms/claim and peak RAM. |
 
 ---
@@ -111,20 +113,23 @@ Gold `DISCARDED` is mapped to `OUT`. Claims with `needs_review: true` are skippe
 
 ### 4.2 Split v1 numbers
 
-These were measured on 2026-10-31 (seed 0, exact-text grouping). They will change slightly after the near-duplicate grouping (D25) and are final at CP1.
+Draft split v1, built 2026-11-01 (`python3 -m apprentice.split`; seed 0, lexical near-dup grouping at 0.90, dev 50 per class). Final once frozen.
 
 | Set | Unique texts | OUT | NV | IN_SCOPE |
 |---|---|---|---|---|
-| `test_carrefour` | ≈ 742 | | | |
-| `test_ce` | ≈ 245 | | | |
-| `test_naturasi` | ≈ 55 | | | |
-| **all test** | **1,042** | 670 | 156 | 216 |
-| **Train** (70% of Coop/Eurospin) | **571** | 403 | 87 | 81 |
-| Reserve texts not in train or test (194 dropped as test overlap) | 778 | 567 | 73 | 138 |
-| → **Dev** (≈ 50 per class, fully reviewed) | ≈ 150 | | | |
-| → **T-large extra** | ≈ 628 | | | |
+| `test_carrefour` | 750 | 465 | 107 | 178 |
+| `test_ce` (30% of Coop/Eurospin gold clusters) | 263 | 189 | 35 | 39 |
+| `test_naturasi` | 47 | 21 | 23 | 3 |
+| **all test** | **1,060** | 675 | 165 | 220 |
+| **Train** (70% of Coop/Eurospin gold clusters) | **553** | 398 | 77 | 78 |
+| **Dev** (reserve-only clusters, 50 per class; full review pending) | 150 | 50 | 50 | 50 |
+| **T-large extra** (remaining reserve-only texts) | 590 | 500 | 16 | 74 |
+| Excluded (reserve texts in a cluster that already holds gold texts) | 38 | 17 | 7 | 14 |
+| **total unique texts** | **2,391** | | | |
 
-T-large total ≈ 571 + 628 ≈ **1,200** texts. The NV and IN_SCOPE dev samples (≈ 50 each) fit within the reserve's 73 NV and 138 IN_SCOPE, though the NV pool is tight. If near-duplicate grouping shrinks it below 50, take all eligible NV texts.
+T-large total = 553 + 590 = **1,143** texts. The dev sample uses most of the reserve's NV texts, so T-large adds few NV examples (16).
+
+**Gold label conflicts:** 3 identical texts carry different labels in two gold sets (all three land in `test_carrefour`). Each test suite takes its label from its own origin's gold (D32), and the conflicts are listed in `splits/split_v1_report.json` for review before the freeze.
 
 ### 4.3 ⚠️ FLAGGED FOR FINAL REVIEW: data separation and future expansion
 
@@ -235,7 +240,7 @@ Test predictions are produced **once per final model** and logged with a timesta
 | Need | Reuse | New work (estimate) |
 |---|---|---|
 | Teacher prompt and label rule | `classifier/ECGT_CLAIM_CLASSIFIER_PROMPT.md`, the POST function | Reasoning field, legal block, conventions, stated label (½ day) |
-| Legal context | Project doc `legal-framework-ecgt-ucpd.md`; `git show f0f1b57~1:src/knowledge/chunks/ecgt.json` (and `ucpd.json`) | Hand-pick Art. 2 definitions, Annex I 2a/4a–4c, Art. 7(7) (½ day) |
+| Legal context | Project doc `legal-framework-ecgt-ucpd.md`; `git show f0f1b57~1:src/knowledge/chunks/ecgt.json` (and `ucpd.json`) | Verbatim Art. 2 definitions o–s and Annex I 2 bis, 4 bis–4 quater, 10 bis (done: `prompts/legal_block.md`). Art. 6(2)(d)–(e) and Art. 7(7) are not in the vendored corpus. Note: ECGT's Art. 7(7) concerns comparison *services*, not vague comparisons, so it is not cited for `vague_comparison`. |
 | Labelling conventions | `golden/labeled/golden_set_ecgt_100_README.md` | Report appendix |
 | Retrieval (S1) and near-duplicate grouping | `retriever/score.py` (e5-base, pinned revision, `query:` prefix), `retriever/knowledge/anchors_v4.jsonl`, the embedding cache | `top3(claim)` + guard; cosine clustering (½ day) |
 | Data | The 8 gold/reserve JSONs | Manifest, freeze, `check_split` (1 day) + dev review (2–3 h) |
