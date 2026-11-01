@@ -42,7 +42,7 @@ From 27 September 2026, Directive (EU) 2024/825 (ECGT) applies. It amends the UC
 - Finding claims in a page. The repo's retriever already does this, at 97.6% recall on gold.
 - Fine-grained categories.
 - Citable Italian statute references.
-- Teacher-labelled data from the raw scrapes.
+- Teacher-labelled data from the raw scrapes, unless the gated stretch in D17 is triggered.
 
 All four are thesis items (§11).
 
@@ -78,7 +78,7 @@ All four are thesis items (§11).
 | D14 | Row T-large: teacher labels on train + the reserve texts that are not in dev. |
 | D15 | Statistics: McNemar on 4 pre-registered pairs, **Holm-corrected**: H@571 vs T@571, T vs T+R, S1 vs T@571, T@571 vs Teacher. The primary test uses majority-vote predictions across the 3 seeds; the per-seed range is reported too. Per-class F1 gets bootstrap 95% intervals. Minimum detectable difference ≈ 0.04 macro-F1 on the pooled headline suites. |
 | D16 | Students: 3 seeds. **Each seed also redraws the nested 150/300 subsets, shared between H and T**, so the curve reflects data variance as well as initialisation noise. Class imbalance is handled by **minority oversampling** computed from each label source's own distribution (gold for H, teacher for T), because generative SFT trainers have no class weights. LoRA hyperparameters are fixed in advance and identical for all runs; they are never tuned per run. |
-| D17 | Teacher-labelled claims from the raw scrapes are out of scope (thesis). |
+| D17 | **Raw scrape data: gated stretch.** Out of scope by default. Added **only if CP3b (all 27 runs) is complete by Thu 26 Nov**: about 3k claims cut from the main repo's `server/` records with its segmenter + retriever candidate filter (on the Mac, where e5 works), labelled by the chosen teacher, passed through `check_split`, trained as one extra row **T-xl** (4B, 3 seeds) at the end of the learning curve. Otherwise it is the first thesis experiment. |
 | D18 | Headline = macro-F1 (3 classes) on the pooled `test_ce` + `test_carrefour` suites, always shown together with the per-suite numbers. |
 | D19 | Scope as fixed by §0; cut order in §9. |
 | D20 | Report in English; data and reasoning in Italian. |
@@ -151,7 +151,7 @@ T-large total = 551 + 574 = **1,125** texts. The dev sample uses most of the res
 4. **The dev IDs are reserved permanently.**
 5. **Expansion:** new labelled data never changes v1 suites. New texts go to train (after `check_split`); new test material becomes a **new named suite** (e.g. `test_coop_v2`), reported next to v1.
 
-**Reviewed 2026-11-01:** 70/30 kept; NaturaSì kept test-only (plus a CP4 slice on certification badges across all suites); near-dup threshold lowered to 0.85. Still open: leaving the scrape data out of scope.
+**Reviewed 2026-11-01:** 70/30 kept; NaturaSì kept test-only (plus a CP4 slice on certification badges across all suites); near-dup threshold lowered to 0.85; scrape data as a gated stretch (D17).
 
 ---
 
@@ -296,7 +296,7 @@ This project delivers the **Pass 2 classifier** that the main pipeline lacks, pl
 
 ## 12. Open items for the final review
 
-- §4.3: the scrape data out of scope (70/30, NaturaSì test-only and the 0.85 threshold were settled on 2026-11-01).
+- None for §4.3: 70/30, NaturaSì test-only, the 0.85 threshold and the scrape stretch (D17) were settled on 2026-11-01.
 - Confirm the student model version at CP1 (D10).
 
 ## 13. Changes from v1 (independent review, 2026-11-01)

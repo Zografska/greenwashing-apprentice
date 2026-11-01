@@ -17,7 +17,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 ### Trip-wires (when to apply the cut order, SPEC §9)
 
 - **Fri 20 Nov:** the Kaggle notebook still can't train and score one run → switch to the Mac `mlx-lm` fallback and drop T-1.7B.
-- **Thu 26 Nov:** fewer than half of the 27 runs done → drop the 150 point and go to 2 seeds.
+- **Thu 26 Nov:** fewer than half of the 27 runs done → drop the 150 point and go to 2 seeds. **All 27 done → start the scrape stretch (D17, T-xl).**
 - **Sun 29 Nov:** the minimum viable project (S0-noLegal, S0, S1, H@571, T@571, T+R, Teacher) is not complete → drop T-large and the curve; finish the minimum first.
 - **Sun 6 Dec:** analysis not done → skip D13 and cut the slice analysis to the top 5 categories.
 
@@ -95,6 +95,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [ ] T-large × 3 seeds
 - [ ] T-1.7B × 3 seeds
 - [ ] All 27 rows in `results.csv`; test scored once per final model
+- [ ] *Stretch, only if all 27 runs are done by Thu 26 Nov (D17):* segment ≈ 3k scrape claims on the Mac (main repo segmenter + retriever filter) → `check_split` → teacher labels → T-xl × 3 seeds
 - [ ] ✅ **CP3b gate** (Sun 29 Nov): T@571 beats S0 on dev. If not: check the template and scoring → the learning rate (once) → accept it and report.
 
 ## CP4: analysis (Mon 30 Nov – Sun 6 Dec)
@@ -128,4 +129,4 @@ These change the split, so they can't be revisited after the `split-v1-frozen` t
 - [x] 70/30 train/test ratio on Coop/Eurospin (kept)
 - [x] NaturaSì as test-only (kept; add a certification-badge slice across all suites in CP4)
 - [x] Near-duplicate threshold: lowered to **0.85** (lexical char n-gram TF-IDF)
-- [ ] Scrape data out of scope (thesis)
+- [x] Scrape data: gated stretch (D17), only if CP3b is complete by Thu 26 Nov
