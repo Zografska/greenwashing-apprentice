@@ -86,7 +86,7 @@ All four are thesis items (§11).
 | D22 | **Named test suites**, reported separately: `test_ce` (30% of the Coop + Eurospin gold texts), `test_carrefour` (frozen Carrefour gold), `test_naturasi` (qualitative: a badge-only shop whose claims look different from the training data). The report states that the headline is mostly cross-retailer transfer, since Carrefour is ≈ 75% of it and absent from training. |
 | D23 | **Scoring:** label-only models (S0, S1, H, T, T-large, T-1.7B) are scored by the **log-probability of each of the three label strings** after the prompt; the highest wins. This always gives a valid output, needs no constrained decoding and gives probabilities for free. **T+R** generates freely, `{"reasoning": …, "label": …}` (**reasoning first**); the label is parsed, invalid output counts as wrong, and the share of valid JSON is reported unconstrained. The teacher uses the provider's JSON mode. |
 | D24 | **Dev set** = about 50 texts per class (≈ 150) sampled from the reserve texts and **fully reviewed by the author** at CP1 (≈ 2–3 h). The dev IDs stay reserved permanently, even if the reserves are reviewed later. The teacher gate on dev is a **sanity check**, not a blocker. |
-| D25 | **Near-duplicate grouping (lexical):** character 3–5-gram TF-IDF cosine between all unique texts (`apprentice/neardup.py`); pairs ≥ **0.90** are merged (union-find) and each cluster stays on one side. Changed from e5 at CP1: the leak to catch is the same claim with small surface changes (gender/number agreement, a product name, a percentage), which a lexical measure targets directly, and it needs no model download (Hugging Face is blocked in the build environments). Split v1: 70 multi-text clusters covering 160 texts. A semantic (e5) no-near-duplicate subset of each test suite is still reported in CP4 as a robustness check. |
+| D25 | **Near-duplicate grouping (lexical):** character 3–5-gram TF-IDF cosine between all unique texts (`apprentice/neardup.py`); pairs ≥ **0.85** are merged (union-find) and each cluster stays on one side. Changed from e5 at CP1: the leak to catch is the same claim with small surface changes (gender/number agreement, a product name, a percentage), which a lexical measure targets directly, and it needs no model download (Hugging Face is blocked in the build environments). Threshold lowered from 0.90 to 0.85 at CP1 after inspecting sampled pairs per similarity band: 0.85–0.90 still holds clear variants («Lavorati / Lavorato dal fresco», «Confezione Riciclabile» / «Questa confezione è riciclabile»), while below 0.85 distinct claims start to merge and chain (largest group 14 at 0.80). Split v1: 100 multi-text clusters covering 239 texts, largest 5. A semantic (e5) no-near-duplicate subset of each test suite is still reported in CP4 as a robustness check. |
 | D26 | **Manifest and freeze:** see §4.3. The test suites are frozen **at CP1, before the teacher sees any text**. |
 | D27 | **Instructor:** email in week 1 explaining the reinterpretation of "RAG" (D6) and the S0-noLegal row that measures the directive context. |
 | D28 | **Logging:** every `results.csv` row records run id, condition, seed, train size, model + revision, library versions, LoRA hyperparameters, prompt hash, manifest version, date and per-suite metrics. Every teacher response records model string, date, raw output, reasoning tokens and cost. |
@@ -113,23 +113,23 @@ Gold `DISCARDED` is mapped to `OUT`. Claims with `needs_review: true` are skippe
 
 ### 4.2 Split v1 numbers
 
-Draft split v1, built 2026-11-01 (`python3 -m apprentice.split`; seed 0, lexical near-dup grouping at 0.90, dev 50 per class). Final once frozen.
+Draft split v1, built 2026-11-01 (`python3 -m apprentice.split`; seed 0, lexical near-dup grouping at 0.85, dev 50 per class). Final once frozen.
 
 | Set | Unique texts | OUT | NV | IN_SCOPE |
 |---|---|---|---|---|
-| `test_carrefour` | 750 | 465 | 107 | 178 |
-| `test_ce` (30% of Coop/Eurospin gold clusters) | 263 | 189 | 35 | 39 |
+| `test_carrefour` | 750 | 465 | 108 | 177 |
+| `test_ce` (30% of Coop/Eurospin gold clusters) | 265 | 191 | 37 | 37 |
 | `test_naturasi` | 47 | 21 | 23 | 3 |
-| **all test** | **1,060** | 675 | 165 | 220 |
-| **Train** (70% of Coop/Eurospin gold clusters) | **553** | 398 | 77 | 78 |
+| **all test** | **1,062** | 677 | 168 | 217 |
+| **Train** (70% of Coop/Eurospin gold clusters) | **551** | 396 | 75 | 80 |
 | **Dev** (reserve-only clusters, 50 per class; full review pending) | 150 | 50 | 50 | 50 |
-| **T-large extra** (remaining reserve-only texts) | 590 | 500 | 16 | 74 |
-| Excluded (reserve texts in a cluster that already holds gold texts) | 38 | 17 | 7 | 14 |
+| **T-large extra** (remaining reserve-only texts) | 574 | 491 | 14 | 69 |
+| Excluded (reserve texts in a cluster that already holds gold texts) | 54 | 26 | 9 | 19 |
 | **total unique texts** | **2,391** | | | |
 
-T-large total = 553 + 590 = **1,143** texts. The dev sample uses most of the reserve's NV texts, so T-large adds few NV examples (16).
+T-large total = 551 + 574 = **1,125** texts. The dev sample uses most of the reserve's NV texts, so T-large adds few NV examples (14).
 
-**Gold label conflicts:** 3 identical texts carry different labels in two gold sets (all three land in `test_carrefour`). Each test suite takes its label from its own origin's gold (D32), and the conflicts are listed in `splits/split_v1_report.json` for review before the freeze.
+**Gold label conflicts:** 3 identical texts carry different labels in two gold sets (all three land in `test_carrefour`). Resolved by the author on 2026-11-01 («Senza OGM» → OUT; «100% Di origine naturale» → NV; «La Carta del Mulino … ISCC Plus …» → NV), recorded in `splits/label_resolutions_v1.json` (D32).
 
 ### 4.3 ⚠️ FLAGGED FOR FINAL REVIEW: data separation and future expansion
 
@@ -151,7 +151,7 @@ T-large total = 553 + 590 = **1,143** texts. The dev sample uses most of the res
 4. **The dev IDs are reserved permanently.**
 5. **Expansion:** new labelled data never changes v1 suites. New texts go to train (after `check_split`); new test material becomes a **new named suite** (e.g. `test_coop_v2`), reported next to v1.
 
-**Still open for your final review:** the 70/30 ratio; NaturaSì as test-only; the 0.90 near-duplicate threshold; leaving the scrape data out of scope.
+**Reviewed 2026-11-01:** 70/30 kept; NaturaSì kept test-only (plus a CP4 slice on certification badges across all suites); near-dup threshold lowered to 0.85. Still open: leaving the scrape data out of scope.
 
 ---
 
@@ -296,7 +296,7 @@ This project delivers the **Pass 2 classifier** that the main pipeline lacks, pl
 
 ## 12. Open items for the final review
 
-- §4.3: the 70/30 ratio, NaturaSì as test-only, the 0.90 near-duplicate threshold, the scrape data out of scope.
+- §4.3: the scrape data out of scope (70/30, NaturaSì test-only and the 0.85 threshold were settled on 2026-11-01).
 - Confirm the student model version at CP1 (D10).
 
 ## 13. Changes from v1 (independent review, 2026-11-01)

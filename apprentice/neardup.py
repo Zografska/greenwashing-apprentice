@@ -9,7 +9,7 @@ from __future__ import annotations
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-DEFAULT_THRESHOLD = 0.90
+DEFAULT_THRESHOLD = 0.85
 
 
 def _vectorizer() -> TfidfVectorizer:

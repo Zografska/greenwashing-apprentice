@@ -160,7 +160,7 @@ def main():
     ap.add_argument("--write-exclusions", action="store_true",
                     help=f"write the required anchor exclusions to {EXCLUSIONS_FILE.name}")
     args = ap.parse_args()
-    excl = json.loads(EXCLUSIONS_FILE.read_text()) if EXCLUSIONS_FILE.exists() else None
+    excl = None if args.write_exclusions or not EXCLUSIONS_FILE.exists() else json.loads(EXCLUSIONS_FILE.read_text())
     rep = check_split(args.manifest, args.train_file, args.anchors, excl)
     if args.write_exclusions:
         EXCLUSIONS_FILE.write_text(json.dumps(rep["anchor_exclusions_required"], indent=1))

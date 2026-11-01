@@ -38,14 +38,14 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [x] Confirm the student model (D10): **Qwen3-4B / Qwen3-1.7B** (Qwen3.5 checked and rejected)
 - [x] `apprentice/data.py`: load the 8 vendored JSONs, map `DISCARDED → OUT`, skip `needs_review`, normalise (claim + footnote), compute `text_id`. ≈ ½ day
 - [x] `apprentice/split.py` (draft split v1 built; see SPEC §4.2):
-  - [x] lexical near-dup clusters at cosine ≥ 0.90 (D25, changed from e5): 70 clusters, 160 texts
+  - [x] lexical near-dup clusters at cosine ≥ 0.85 (D25, changed from e5): 100 clusters, 239 texts
   - [x] assign suites: `test_carrefour` (all), `test_naturasi` (all), Coop/Eurospin 70% train / 30% `test_ce`, grouped by cluster, seed 0
   - [x] drop reserve texts that collide with test or train; sample **dev ≈ 50 per class**; the rest → `t_large_extra`
   - [x] write `splits/split_v1.jsonl` with every field in SPEC §4.3 (incl. `gold_label`, `gold_triggers`, `source_git_sha`)
   - ≈ 1 day
 - [x] `apprentice/check_split.py`: a reusable `check_split(files…)` with all the assertions in SPEC §4.3 rule 2, plus a unit test. ≈ ½ day
 - [ ] **Review the dev set** (150 texts): edit `splits/dev_review_v1.csv` (change `reviewed_label` only where you disagree, add a `note`), then `python3 -m apprentice.dev_review apply`. ≈ 1–2 h
-- [ ] Resolve the 3 gold label conflicts listed in `splits/split_v1_report.json` (D32)
+- [x] Resolve the 3 gold label conflicts (D32): `splits/label_resolutions_v1.json`
 - [ ] Settle the open items at the bottom of this file (they change the split)
 - [ ] **Freeze:** commit `splits/split_v1.jsonl` and tag `split-v1-frozen`. **No teacher call before this tag.**
 - [x] `apprentice/eval.py`: macro-F1, per-class F1, IN_SCOPE recall, flagged recall, κ, bootstrap CIs, McNemar + Holm, per-suite output, appends to `results/results.csv` (columns per D28). Test: feeding in the gold labels as predictions gives 1.0. ≈ 1 day
@@ -103,7 +103,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [ ] Figure 2: cost vs quality (macro-F1 vs ms/claim: 1.7B GGUF, 4B GGUF, Teacher)
 - [ ] McNemar + Holm on the 4 pairs (majority vote across seeds, plus the per-seed range)
 - [ ] RQ4: error overlap with the teacher, T vs H as the control; κ(student, teacher) vs κ(student, gold)
-- [ ] Error slices by gold trigger category and by suite (counts and examples)
+- [ ] Error slices by gold trigger category and by suite (counts and examples), incl. certification badges across all suites
 - [ ] No-near-duplicate robustness subset of each suite
 - [ ] Reasoning rubric: 50 samples (T+R and Teacher), stratified correct/wrong, 3 yes/no items. ≈ 1–2 h
 - [ ] GGUF export (T-4B, T-1.7B) → re-score `test_ce` on the M3 with llama-cpp-python; measure ms/claim and peak RAM (D29)
@@ -125,7 +125,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 These change the split, so they can't be revisited after the `split-v1-frozen` tag.
 
-- [ ] 70/30 train/test ratio on Coop/Eurospin
-- [ ] NaturaSì as test-only
-- [ ] 0.90 near-duplicate threshold (lexical char n-gram TF-IDF; see the merged examples in the split report)
+- [x] 70/30 train/test ratio on Coop/Eurospin (kept)
+- [x] NaturaSì as test-only (kept; add a certification-badge slice across all suites in CP4)
+- [x] Near-duplicate threshold: lowered to **0.85** (lexical char n-gram TF-IDF)
 - [ ] Scrape data out of scope (thesis)

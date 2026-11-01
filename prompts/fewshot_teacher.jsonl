@@ -2,5 +2,5 @@
 {"claim": "Formula di origine naturale al 97%* ... *calcolata secondo la norma ISO 16128 sugli ingredienti naturali e di origine naturale", "reasoning": "«Origine naturale» è definita nella nota con il metodo di calcolo (ISO 16128): termine definito, da verificare.", "triggers": ["defined_term"], "label": "NEEDS_VERIFICATION"}
 {"claim": "Approvata da A.I.Nut. - Associazione Italiana Nutrizionisti", "reasoning": "Approvazione da parte di un'organizzazione nominata: specifica e verificabile.", "triggers": ["named_endorsement"], "label": "NEEDS_VERIFICATION"}
 {"claim": "Imballi certificati FSC per salvaguardare le foreste", "reasoning": "La certificazione FSC è specifica, ma «per salvaguardare le foreste» è un beneficio ambientale generico non definito.", "triggers": ["certification", "generic_green"], "label": "IN_SCOPE"}
-{"claim": "Clinicamente testate", "reasoning": "Riguarda test clinici sul prodotto, non l'ambiente.", "triggers": ["out_of_scope"], "label": "OUT"}
+{"claim": "Tono & energia", "reasoning": "Riguarda il benessere e l'energia della persona, non l'impatto ambientale.", "triggers": ["out_of_scope"], "label": "OUT"}
 {"claim": "Aroma naturale", "reasoning": "Per convenzione l'aroma naturale riguarda il gusto, non l'impatto ambientale.", "triggers": ["out_of_scope"], "label": "OUT"}
