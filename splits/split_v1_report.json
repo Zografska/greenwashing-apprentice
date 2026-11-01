@@ -1,0 +1,232 @@
+{
+ "load": {
+  "claims_total": 3675,
+  "skipped_needs_review": 1,
+  "unique_texts": 2391,
+  "label_conflicts": 3
+ },
+ "params": {
+  "seed": 0,
+  "test_frac_ce": 0.3,
+  "near_dup_threshold": 0.85,
+  "dev_per_class": 50
+ },
+ "clusters": {
+  "total": 2252,
+  "multi_text": 100,
+  "texts_in_multi": 239
+ },
+ "suite_label_counts": {
+  "dev": {
+   "IN_SCOPE": 50,
+   "NEEDS_VERIFICATION": 50,
+   "OUT": 50,
+   "total": 150
+  },
+  "excluded_overlap": {
+   "OUT": 26,
+   "IN_SCOPE": 19,
+   "NEEDS_VERIFICATION": 9,
+   "total": 54
+  },
+  "t_large_extra": {
+   "IN_SCOPE": 69,
+   "OUT": 491,
+   "NEEDS_VERIFICATION": 14,
+   "total": 574
+  },
+  "test_carrefour": {
+   "OUT": 465,
+   "NEEDS_VERIFICATION": 108,
+   "IN_SCOPE": 177,
+   "total": 750
+  },
+  "test_ce": {
+   "OUT": 191,
+   "NEEDS_VERIFICATION": 37,
+   "IN_SCOPE": 37,
+   "total": 265
+  },
+  "test_naturasi": {
+   "NEEDS_VERIFICATION": 23,
+   "OUT": 21,
+   "IN_SCOPE": 3,
+   "total": 47
+  },
+  "train": {
+   "OUT": 396,
+   "IN_SCOPE": 80,
+   "NEEDS_VERIFICATION": 75,
+   "total": 551
+  }
+ },
+ "label_conflicts": [
+  {
+   "text": "Senza OGM",
+   "suite": "test_carrefour",
+   "labels": [
+    "NEEDS_VERIFICATION",
+    "OUT"
+   ],
+   "label_used": "OUT",
+   "resolution": "label_resolutions_v1.json (author decision, D32)"
+  },
+  {
+   "text": "100% Di origine naturale",
+   "suite": "test_carrefour",
+   "labels": [
+    "IN_SCOPE",
+    "NEEDS_VERIFICATION"
+   ],
+   "label_used": "NEEDS_VERIFICATION",
+   "resolution": "label_resolutions_v1.json (author decision, D32)"
+  },
+  {
+   "text": "La Carta del Mulino prevede il rispetto dei criteri di sostenibilità ISCC Plus ed è stata scritta insieme al WWF e al Dipartimento di Scienze e Tecnologie Agro-Alimentari dell'Alma Mater Studiorum Università di Bologna.",
+   "suite": "test_carrefour",
+   "labels": [
+    "IN_SCOPE",
+    "NEEDS_VERIFICATION"
+   ],
+   "label_used": "NEEDS_VERIFICATION",
+   "resolution": "label_resolutions_v1.json (author decision, D32)"
+  }
+ ],
+ "merged_examples": [
+  [
+   "95,3% DI INGREDIENTI DI ORIGINE NATURALE",
+   "Ingredienti di origine naturale",
+   "94% Ingredienti di origine naturale",
+   "98,8% di ingredienti di origine naturale"
+  ],
+  [
+   "Dermatologicamente testato su pelli sensibili",
+   "Dermatologicamente testata su pelli sensibili",
+   "Dermatologicamente testate su pelli sensibili",
+   "Testate dermatologicamente su pelli sensibili."
+  ],
+  [
+   "Dermatologicamente testato",
+   "Dermatologicamente testata",
+   "Dermatologicamente testati",
+   "48 h - Dermatologicamente testato"
+  ],
+  [
+   "Latte 100% italiano",
+   "Latte italiano",
+   "100% Latte italiano",
+   "Solo latte italiano"
+  ],
+  [
+   "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+   "Amo Essere Bio è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+   "Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+   "Amo essere biologico è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili."
+  ],
+  [
+   "96% di origine naturale",
+   "97% di origine naturale",
+   "100% Di origine naturale",
+   "Origine naturale"
+  ],
+  [
+   "Ci impegniamo a fare la cosa giusta, approvvigionandoci del lattice responsabilmente in modo che ci sia un beneficio per le comunità locali.",
+   "Ci impegniamo a fare la cosa giusta, approvvigionandoci del lattice in maniera responsabile in modo che ci sia un beneficio anche per le comunità locali.",
+   "Ci impegniamo a fare la cosa giusta, approvvigionandoci del lattice e della carta responsabilmente in modo che ci sia un beneficio anche per le comunità locali.",
+   "Ci impegniamo a fare la cosa giusta, approvvigionandoci del lattice e della carta responsabilmente in modo che ci sia un beneficio per le comunità locali."
+  ],
+  [
+   "Astuccio 100% riciclabile",
+   "Astuccio in carta riciclabile",
+   "Astuccio in cartone 100% riciclabile",
+   "Astuccio in cartone riciclabile"
+  ],
+  [
+   "Sono riciclabile!",
+   "Riciclabile",
+   "È riciclabile",
+   "Sono 100% riciclabile!"
+  ],
+  [
+   "Ingredienti naturali",
+   "97% Ingredienti naturali",
+   "Con ingredienti naturali",
+   "100% Ingredienti naturali"
+  ],
+  [
+   "Le proteine contribuiscono alla crescita della massa muscolare.",
+   "Le proteine contribuiscono al mantenimento della massa muscolare",
+   "Ricco di proteine - Che contribuiscono alla crescita a al mantenimento della massa muscolare"
+  ],
+  [
+   "Fonte di vitamina D",
+   "Fonte di vitamina E",
+   "Fonte di vitamina C"
+  ],
+  [
+   "Il Più Asciutto* fino a 12 ore ... *rispetto ai pannolini tradizionali pampers più venduti",
+   "Il più asciutto* 12h ... *rispetto ai pannolini tradizionali pampers più venduti",
+   "12h Il più asciutto* ... *rispetto ai pannolini tradizionali pampers più venduti"
+  ],
+  [
+   "Senza lattosio <0,01%",
+   "Senza lattosio",
+   "<0,01% di lattosio"
+  ],
+  [
+   "Il nuovo assorbente Fior di Magnolia ti offre un asciutto e una morbidezza mai provata grazie all'esclusivo filtrante.",
+   "Gli assorbenti Fior di Magnolia ti offrono un asciutto ed una morbidezza mai provata grazie al particolare filtrante.",
+   "Il nuovo assorbente Fior di Magnolia ti offre un asciutto e una morbidezza mai provata grazie al particolare filtrante."
+  ],
+  [
+   "Olio extra vergine di oliva 100% italiano",
+   "Con olio extra vergine di oliva",
+   "Con 100% olio extra vergine di oliva"
+  ],
+  [
+   "Bottiglia con 50% plastica riciclata",
+   "Bottiglia con il 100% di plastica riciclata",
+   "Bottiglia 50% plastica riciclata"
+  ],
+  [
+   "11% di fibre",
+   "Ricchi di fibre",
+   "Ricchi di fibre (11% di fibre)"
+  ],
+  [
+   "A basso contenuto di grassi - Solo 2% di grassi",
+   "A basso contenuto di grassi",
+   "Basso contenuto di grassi"
+  ],
+  [
+   "Naturalmente privo di lattosio",
+   "Senza lattosio - Naturalmente privo di lattosio",
+   "Naturalmente senza lattosio"
+  ],
+  [
+   "pH fisiologico 5.00",
+   "pH fisiologico",
+   "PH fisiologico 5.5"
+  ],
+  [
+   "Actimel, per il tuo sistema immunitario*! ... *Grazie alle vitamine D e B6, che aiutano il buon funzionamento del sistema immunitario.",
+   "Supporta il tuo sistema immunitario* con gusto! ... *Grazie alle vitamine D e B6, che aiutano il buon funzionamento del sistema immunitario.",
+   "Supporta il Sistema Immunitario* ... *Grazie alle vitamine D e B6, che aiutano il buon funzionamento del sistema immunitario"
+  ],
+  [
+   "Le Tisane, insieme ad uno stile di vita sano ed equilibrato, sono il rimedio ideale per prendersi cura di sé.",
+   "Le tisane, insieme ad uno stile di vita sano e una dieta varia ed equilibrata, sono il rimedio ideale per prendersi cura di sé.",
+   "Le tisane, insieme ad uno stile di vita sano e una dieta varia ed equilibrata, sono il rimedio ideale per prendersi cura di sè."
+  ],
+  [
+   "Vegetariani vegani - È adatto a diete vegetariane e vegane",
+   "Vegetariani e vegani - È adatto a diete vegetariane e vegane",
+   "Vegetariani vegani - Adatto a diete vegetariane e vegane"
+  ],
+  [
+   "Carne Italiana.",
+   "Carne 100% italiana",
+   "Con solo carne italiana"
+  ]
+ ]
+}

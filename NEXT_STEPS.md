@@ -44,10 +44,10 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
   - [x] write `splits/split_v1.jsonl` with every field in SPEC §4.3 (incl. `gold_label`, `gold_triggers`, `source_git_sha`)
   - ≈ 1 day
 - [x] `apprentice/check_split.py`: a reusable `check_split(files…)` with all the assertions in SPEC §4.3 rule 2, plus a unit test. ≈ ½ day
-- [ ] **Review the dev set** (150 texts): edit `splits/dev_review_v1.csv` (change `reviewed_label` only where you disagree, add a `note`), then `python3 -m apprentice.dev_review apply`. ≈ 1–2 h
+- [x] **Review the dev set** (150 texts), done 2026-11-01: 0 net changes after the slogan rule (D34); 5 initial disagreements kept as notes. Edited `splits/dev_review_v1.xlsx` (change `reviewed_label` only where you disagree, add a `note`), then `python3 -m apprentice.dev_review apply`. ≈ 1–2 h
 - [x] Resolve the 3 gold label conflicts (D32): `splits/label_resolutions_v1.json`
-- [ ] Settle the open items at the bottom of this file (they change the split)
-- [ ] **Freeze:** commit `splits/split_v1.jsonl` and tag `split-v1-frozen`. **No teacher call before this tag.**
+- [x] Settle the open items at the bottom of this file (they change the split)
+- [x] **Freeze:** commit `splits/split_v1.jsonl` and tag `split-v1-frozen`. **No teacher call before this tag.**
 - [x] `apprentice/eval.py`: macro-F1, per-class F1, IN_SCOPE recall, flagged recall, κ, bootstrap CIs, McNemar + Holm, per-suite output, appends to `results/results.csv` (columns per D28). Test: feeding in the gold labels as predictions gives 1.0. ≈ 1 day
 - [x] `prompts/legal_block.md`: verbatim Art. 2 definitions o–s and Annex I 2 bis, 4 bis–4 quater, 10 bis (≈ 1.3k tokens)
 - [x] Draft the prompt files (they can still change in CP2):
