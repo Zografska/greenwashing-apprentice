@@ -94,6 +94,7 @@ All four are thesis items (§11).
 | D30 | **Teacher consistency:** the teacher also states its own label; the training label is always the POST label computed from its triggers. The share of disagreements between the two is reported. If it is above 5% on dev, fix the prompt before the full run. Disagreeing examples are kept so that T and T+R stay matched, and are flagged in the data. |
 | D32 | **Gold label conflicts:** a text with different labels in two gold sets takes, in a test suite, the label of that suite's own gold (Carrefour gold stays frozen). Conflicts are listed in the split report and resolved by the author before the freeze. |
 | D33 | **Dev review:** `python3 -m apprentice.dev_review export` writes `splits/dev_review_v1.csv` with `reviewed_label` pre-filled with the light label (change only disagreements, to fit the time budget); `apply` writes it back as `dev_reviewed_label`, which `eval.py` uses as dev gold. The number of changes is reported. |
+| D34 | **Slogan rule** (settled during the dev review, 2026-11-01): a slogan, brand or line name is a claim when its words present nature or the environment as a merit without defining it («Vivi Verde», «Più natura, più qualità», «Solo il meglio della natura» → IN_SCOPE); framing (lifestyle, "più") is irrelevant; a vague green part beats a specific one («Planet lovers – 100% Carta riciclabile» → IN_SCOPE); out_of_scope only when the word means something else in the claim itself («Rispetta la tua natura»); truth is never judged; the words alone decide. This matches the expert-reviewed test labels. Added to `P_teacher` conventions and the review read-me. Dev review result: 0 net label changes; the author's 5 initial disagreements (all slogan cases) are kept as notes in the manifest. |
 | D31 | **Cost units:** everything is reported in € (USD converted at the run date's rate). Local inference is reported as 0 € marginal cost (electricity and hardware ignored, stated explicitly) plus ms/claim and peak RAM. |
 
 ---
@@ -122,7 +123,7 @@ Draft split v1, built 2026-11-01 (`python3 -m apprentice.split`; seed 0, lexical
 | `test_naturasi` | 47 | 21 | 23 | 3 |
 | **all test** | **1,062** | 677 | 168 | 217 |
 | **Train** (70% of Coop/Eurospin gold clusters) | **551** | 396 | 75 | 80 |
-| **Dev** (reserve-only clusters, 50 per class; full review pending) | 150 | 50 | 50 | 50 |
+| **Dev** (reserve-only clusters, 50 per class; fully reviewed, D33/D34) | 150 | 50 | 50 | 50 |
 | **T-large extra** (remaining reserve-only texts) | 574 | 491 | 14 | 69 |
 | Excluded (reserve texts in a cluster that already holds gold texts) | 54 | 26 | 9 | 19 |
 | **total unique texts** | **2,391** | | | |

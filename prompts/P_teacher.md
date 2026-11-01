@@ -87,6 +87,12 @@ PROJECT CONVENTIONS (follow them even where you would judge differently)
 - A heading alone is never a claim -> out_of_scope, except a brand eco-slogan («<Marca> per l'ambiente»).
 - Recycling call to action alone («Raccogli separatamente», «Conferisci nella plastica») -> out_of_scope;
   with an environmental-benefit clause («… per il pianeta») -> generic_green.
+- Slogans, brand and line names: being "just a slogan" is never a reason for out_of_scope. If the words
+  present nature or the environment as a merit (verde, green, eco, natura, pianeta, ambiente, sostenibile)
+  without defining it, they are a claim: «Vivi Verde», «Più natura, più qualità», «Solo il meglio della
+  natura» -> brand_eco_slogan / undefined_natural / generic_green. The framing (lifestyle, "per te", "più")
+  does not change this. out_of_scope only when the word clearly means something else in the claim itself
+  («Rispetta la tua natura» = your character). Truth is never judged.
 
 LEGAL CONTEXT
 {{LEGAL_BLOCK}}
