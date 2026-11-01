@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSONL Product Viewer</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-alt: #f4f5f7;
+        --border: #dcdfe4;
+        --text: #1b1f23;
+        --text-muted: #6a737d;
+        --accent: #0969da;
+        --accent-bg: #ddf0ff;
+        --mark: #fff2a8;
+        --danger: #cf222e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1e1f22;
+          --bg-alt: #2b2d31;
+          --border: #3c3f44;
+          --text: #e3e5e8;
+          --text-muted: #9aa0a6;
+          --accent: #6cb6ff;
+          --accent-bg: #113a5c;
+          --mark: #665c1e;
+          --danger: #ff7b72;
+        }
+      }
+      :root[data-theme="light"] {
+        --bg: #ffffff;
+        --bg-alt: #f4f5f7;
+        --border: #dcdfe4;
+        --text: #1b1f23;
+        --text-muted: #6a737d;
+        --accent: #0969da;
+        --accent-bg: #ddf0ff;
+        --mark: #fff2a8;
+        --danger: #cf222e;
+      }
+      :root[data-theme="dark"] {
+        --bg: #1e1f22;
+        --bg-alt: #2b2d31;
+        --border: #3c3f44;
+        --text: #e3e5e8;
+        --text-muted: #9aa0a6;
+        --accent: #6cb6ff;
+        --accent-bg: #113a5c;
+        --mark: #665c1e;
+        --danger: #ff7b72;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+      }
+      #app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      /* Top bar */
+      #topbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--border);
+        background: var(--bg-alt);
+        flex-wrap: wrap;
+      }
+      #topbar .spacer {
+        flex: 1;
+      }
+      button,
+      .btn {
+        font: inherit;
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      button:hover,
+      .btn:hover {
+        background: var(--accent-bg);
+      }
+      button:disabled {
+        opacity: 0.4;
+        cursor: default;
+      }
+      button:disabled:hover {
+        background: var(--bg);
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="search"] {
+        font: inherit;
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 5px 8px;
+      }
+      #searchBox {
+        width: 260px;
+      }
+      #fileLabel {
+        position: relative;
+        overflow: hidden;
+      }
+      #fileInput {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+      }
+      #meta {
+        color: var(--text-muted);
+        white-space: nowrap;
+      }
+      #errBadge {
+        color: var(--danger);
+        white-space: nowrap;
+        cursor: pointer;
+        border-bottom: 1px dotted var(--danger);
+        display: none;
+      }
+
+      /* Body: sidebar + detail */
+      #body {
+        flex: 1;
+        display: flex;
+        min-height: 0;
+      }
+      #sidebar {
+        width: 320px;
+        min-width: 200px;
+        max-width: 50vw;
+        border-right: 1px solid var(--border);
+        overflow-y: auto;
+        background: var(--bg-alt);
+        resize: horizontal;
+      }
+      #sidebar .item {
+        padding: 8px 10px;
+        border-bottom: 1px solid var(--border);
+        cursor: pointer;
+        user-select: none;
+      }
+      #sidebar .item:hover {
+        background: var(--accent-bg);
+      }
+      #sidebar .item.selected {
+        background: var(--accent);
+        color: #fff;
+      }
+      #sidebar .item .idx {
+        color: var(--text-muted);
+        font-size: 12px;
+        margin-right: 6px;
+      }
+      #sidebar .item.selected .idx {
+        color: #eaf4ff;
+      }
+      #sidebar .item .label {
+        font-weight: 600;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #sidebar .item .sub {
+        display: block;
+        font-size: 12px;
+        color: var(--text-muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #sidebar .item.selected .sub {
+        color: #dcefff;
+      }
+      #sidebar .empty {
+        padding: 16px;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      #detail {
+        flex: 1;
+        overflow-y: auto;
+        padding: 16px 20px;
+      }
+      #detail .placeholder {
+        color: var(--text-muted);
+        padding: 40px;
+        text-align: center;
+      }
+
+      #detailHeader {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+        flex-wrap: wrap;
+      }
+      #detailHeader .pos {
+        font-weight: 600;
+      }
+      #detailHeader .spacer {
+        flex: 1;
+      }
+
+      table.kv {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table.kv td {
+        vertical-align: top;
+        padding: 5px 8px;
+        border-bottom: 1px solid var(--border);
+      }
+      table.kv td.key {
+        width: 220px;
+        color: var(--text-muted);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      table.kv td.val {
+        user-select: text;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      table.kv td.copy {
+        width: 28px;
+        text-align: center;
+      }
+      table.kv td.copy button {
+        padding: 2px 6px;
+        font-size: 12px;
+      }
+      table.kv.nested {
+        margin: 4px 0;
+        background: var(--bg-alt);
+        border-radius: 6px;
+      }
+      .array-badge {
+        display: inline-block;
+        font-size: 11px;
+        color: var(--text-muted);
+        background: var(--bg-alt);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0 6px;
+        margin-right: 6px;
+      }
+      a.link {
+        color: var(--accent);
+        text-decoration: none;
+        word-break: break-all;
+      }
+      a.link:hover {
+        text-decoration: underline;
+      }
+      mark {
+        background: var(--mark);
+        color: inherit;
+      }
+      .null-val {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+      .parse-error {
+        color: var(--danger);
+        font-weight: 600;
+      }
+      #dropHint {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        z-index: 50;
+        pointer-events: none;
+      }
+      body.dragging #dropHint {
+        display: flex;
+      }
+      kbd {
+        border: 1px solid var(--border);
+        border-bottom-width: 2px;
+        border-radius: 4px;
+        padding: 0 5px;
+        font-size: 11px;
+        background: var(--bg-alt);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="topbar">
+        <label class="btn" id="fileLabel"
+          >Open JSONL file…
+          <input
+            type="file"
+            id="fileInput"
+            accept=".jsonl,.ndjson,.jsonlines,text/plain"
+          />
+        </label>
+        <span id="meta">No file loaded</span>
+        <span id="errBadge"></span>
+        <div class="spacer"></div>
+        <input
+          type="search"
+          id="searchBox"
+          placeholder="Search all fields  (/)"
+        />
+        <span
+          id="matchCount"
+          style="color: var(--text-muted); white-space: nowrap"
+        ></span>
+        <button id="themeToggle" title="Toggle light/dark theme">
+          ☀︎ Light
+        </button>
+      </div>
+
+      <div id="body">
+        <div id="sidebar">
+          <div class="empty">Load a JSONL file to see the record list.</div>
+        </div>
+        <div id="detail">
+          <div class="placeholder">
+            Drag &amp; drop a .jsonl file anywhere, or use "Open JSONL file…"
+            above.<br /><br />
+            Once loaded: <kbd>&larr;</kbd>/<kbd>&rarr;</kbd> to page,
+            <kbd>/</kbd> to search, click a value to select/copy it.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dropHint">Drop JSONL file to load</div>
+
+    <script>
+      (function () {
+        "use strict";
+
+        let allRecords = []; // full list of {index, data, raw, error}
+        let filtered = []; // subset matching current search, same shape
+        let currentPos = -1; // position within `filtered`
+        let searchTerm = "";
+        let parseErrors = []; // {line, message}
+
+        const el = {
+          fileInput: document.getElementById("fileInput"),
+          meta: document.getElementById("meta"),
+          errBadge: document.getElementById("errBadge"),
+          searchBox: document.getElementById("searchBox"),
+          matchCount: document.getElementById("matchCount"),
+          sidebar: document.getElementById("sidebar"),
+          detail: document.getElementById("detail"),
+          themeToggle: document.getElementById("themeToggle"),
+        };
+
+        // --- theme ---
+        const THEME_KEY = "jsonl_viewer_theme";
+        function systemPrefersDark() {
+          return (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          );
+        }
+        function applyTheme(theme) {
+          if (theme) {
+            document.documentElement.setAttribute("data-theme", theme);
+          } else {
+            document.documentElement.removeAttribute("data-theme");
+          }
+          const active = theme || (systemPrefersDark() ? "dark" : "light");
+          el.themeToggle.textContent = active === "dark" ? "☾ Dark" : "☀︎ Light";
+        }
+        function initTheme() {
+          const saved = localStorage.getItem(THEME_KEY);
+          applyTheme(saved || null);
+        }
+        el.themeToggle.addEventListener("click", () => {
+          const current =
+            document.documentElement.getAttribute("data-theme") ||
+            (systemPrefersDark() ? "dark" : "light");
+          const next = current === "dark" ? "light" : "dark";
+          localStorage.setItem(THEME_KEY, next);
+          applyTheme(next);
+        });
+        initTheme();
+
+        const LABEL_KEYS = [
+          "name",
+          "title",
+          "product_name",
+          "productName",
+          "denomination",
+          "brand",
+        ];
+        const URL_RE = /^https?:\/\//i;
+
+        function pickLabel(rec) {
+          if (!rec || typeof rec !== "object") return null;
+          for (const k of LABEL_KEYS) {
+            if (typeof rec[k] === "string" && rec[k].trim())
+              return rec[k].split("\n")[0];
+          }
+          return null;
+        }
+
+        function pickSub(rec) {
+          if (!rec || typeof rec !== "object") return "";
+          const bits = [];
+          if (typeof rec.brand === "string" && rec.brand) bits.push(rec.brand);
+          if (typeof rec.ean === "string" || typeof rec.ean === "number")
+            bits.push("EAN " + rec.ean);
+          if (typeof rec.product_id !== "undefined")
+            bits.push("#" + rec.product_id);
+          return bits.join(" · ");
+        }
+
+        // --- JSONL parsing ---
+        function parseJSONL(text) {
+          // Strip a UTF-8 BOM if present.
+          if (text.charCodeAt(0) === 0xfeff) text = text.slice(1);
+          const lines = text.split(/\r\n|\r|\n/);
+          const records = [];
+          const errors = [];
+          lines.forEach((line, i) => {
+            const trimmed = line.trim();
+            if (!trimmed) return; // skip blank lines
+            try {
+              const data = JSON.parse(trimmed);
+              records.push({ index: records.length, data, line: i + 1 });
+            } catch (e) {
+              errors.push({ line: i + 1, message: e.message, raw: trimmed });
+              records.push({
+                index: records.length,
+                data: null,
+                line: i + 1,
+                error: e.message,
+                raw: trimmed,
+              });
+            }
+          });
+          return { records, errors };
+        }
+
+        function loadJSONL(text, filename) {
+          const { records, errors } = parseJSONL(text);
+          allRecords = records;
+          parseErrors = errors;
+          el.meta.textContent =
+            (filename ? filename + " — " : "") +
+            allRecords.length +
+            " record" +
+            (allRecords.length === 1 ? "" : "s");
+          if (errors.length) {
+            el.errBadge.style.display = "inline";
+            el.errBadge.textContent =
+              errors.length + " parse error" + (errors.length === 1 ? "" : "s");
+            el.errBadge.title =
+              "Lines that failed to parse:\n" +
+              errors
+                .slice(0, 20)
+                .map((e) => "line " + e.line + ": " + e.message)
+                .join("\n") +
+              (errors.length > 20 ? "\n…" : "");
+          } else {
+            el.errBadge.style.display = "none";
+            el.errBadge.textContent = "";
+            el.errBadge.title = "";
+          }
+          searchTerm = "";
+          el.searchBox.value = "";
+          applyFilter();
+        }
+
+        function recordMatches(rec, term) {
+          if (!term) return true;
+          try {
+            if (rec.error) return rec.raw.toLowerCase().includes(term);
+            return JSON.stringify(rec.data).toLowerCase().includes(term);
+          } catch (e) {
+            return false;
+          }
+        }
+
+        function applyFilter() {
+          const term = searchTerm.trim().toLowerCase();
+          filtered = term
+            ? allRecords.filter((r) => recordMatches(r, term))
+            : allRecords.slice();
+          el.matchCount.textContent = term
+            ? filtered.length + " match" + (filtered.length === 1 ? "" : "es")
+            : "";
+          renderSidebar();
+          if (filtered.length === 0) {
+            currentPos = -1;
+            renderDetail();
+          } else {
+            currentPos = 0;
+            selectPos(0);
+          }
+        }
+
+        function highlight(text) {
+          const term = searchTerm.trim();
+          if (!term) return escapeHtml(text);
+          const idx = text.toLowerCase().indexOf(term.toLowerCase());
+          if (idx === -1) return escapeHtml(text);
+          return (
+            escapeHtml(text.slice(0, idx)) +
+            "<mark>" +
+            escapeHtml(text.slice(idx, idx + term.length)) +
+            "</mark>" +
+            escapeHtml(text.slice(idx + term.length))
+          );
+        }
+
+        function escapeHtml(s) {
+          return String(s).replace(
+            /[&<>"']/g,
+            (c) =>
+              ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              })[c],
+          );
+        }
+
+        function renderSidebar() {
+          el.sidebar.innerHTML = "";
+          if (!filtered.length) {
+            const d = document.createElement("div");
+            d.className = "empty";
+            d.textContent = allRecords.length
+              ? "No records match your search."
+              : "Load a JSONL file to see the record list.";
+            el.sidebar.appendChild(d);
+            return;
+          }
+          const frag = document.createDocumentFragment();
+          filtered.forEach((rec, pos) => {
+            const item = document.createElement("div");
+            item.className = "item" + (pos === currentPos ? " selected" : "");
+            item.dataset.pos = pos;
+            if (rec.error) {
+              item.innerHTML =
+                '<span class="idx">' +
+                rec.index +
+                "</span>" +
+                '<span class="label parse-error">⚠ line ' +
+                rec.line +
+                ": parse error</span>";
+            } else {
+              const label = pickLabel(rec.data) || "Record #" + rec.index;
+              const sub = pickSub(rec.data);
+              item.innerHTML =
+                '<span class="idx">' +
+                rec.index +
+                "</span>" +
+                '<span class="label">' +
+                highlight(label) +
+                "</span>" +
+                (sub ? '<span class="sub">' + highlight(sub) + "</span>" : "");
+            }
+            item.addEventListener("click", () => selectPos(pos));
+            frag.appendChild(item);
+          });
+          el.sidebar.appendChild(frag);
+        }
+
+        function selectPos(pos) {
+          if (pos < 0 || pos >= filtered.length) return;
+          currentPos = pos;
+          renderSidebar();
+          renderDetail();
+          const activeItem = el.sidebar.querySelector(
+            '.item[data-pos="' + pos + '"]',
+          );
+          if (activeItem) activeItem.scrollIntoView({ block: "nearest" });
+        }
+
+        function copyText(text) {
+          const done = () => {};
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard
+              .writeText(text)
+              .then(done)
+              .catch(() => fallbackCopy(text));
+          } else {
+            fallbackCopy(text);
+          }
+        }
+
+        function fallbackCopy(text) {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand("copy");
+          } catch (e) {
+            /* ignore */
+          }
+          document.body.removeChild(ta);
+        }
+
+        function isUrlField(key, value) {
+          return (
+            typeof value === "string" &&
+            (URL_RE.test(value.trim()) || /url$/i.test(key))
+          );
+        }
+
+        function renderValueNode(key, value) {
+          if (value === null || value === undefined || value === "") {
+            const span = document.createElement("span");
+            span.className = "null-val";
+            span.textContent = "—";
+            return span;
+          }
+          if (Array.isArray(value)) {
+            if (value.length === 0) {
+              const span = document.createElement("span");
+              span.className = "null-val";
+              span.textContent = "[]";
+              return span;
+            }
+            const isObjArray =
+              typeof value[0] === "object" && value[0] !== null;
+            if (!isObjArray) {
+              const wrap = document.createElement("div");
+              value.forEach((v, i) => {
+                const row = document.createElement("div");
+                const badge = document.createElement("span");
+                badge.className = "array-badge";
+                badge.textContent = i;
+                row.appendChild(badge);
+                row.appendChild(renderValueNode(key, v));
+                wrap.appendChild(row);
+              });
+              return wrap;
+            }
+            const wrap = document.createElement("div");
+            value.forEach((v, i) => {
+              const badge = document.createElement("div");
+              badge.className = "array-badge";
+              badge.textContent = key + "[" + i + "]";
+              wrap.appendChild(badge);
+              wrap.appendChild(renderObjectTable(v));
+            });
+            return wrap;
+          }
+          if (typeof value === "object") {
+            return renderObjectTable(value);
+          }
+          if (isUrlField(key, value)) {
+            const a = document.createElement("a");
+            a.className = "link";
+            a.href = value;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = value;
+            return a;
+          }
+          const span = document.createElement("span");
+          span.innerHTML = highlight(String(value));
+          return span;
+        }
+
+        function renderObjectTable(obj) {
+          const table = document.createElement("table");
+          table.className = "kv nested";
+          Object.keys(obj).forEach((k) => {
+            const tr = document.createElement("tr");
+            const tdKey = document.createElement("td");
+            tdKey.className = "key";
+            tdKey.textContent = k;
+            const tdVal = document.createElement("td");
+            tdVal.className = "val";
+            tdVal.appendChild(renderValueNode(k, obj[k]));
+            const tdCopy = document.createElement("td");
+            tdCopy.className = "copy";
+            const btn = document.createElement("button");
+            btn.textContent = "⧉";
+            btn.title = "Copy value";
+            btn.addEventListener("click", () =>
+              copyText(
+                typeof obj[k] === "string"
+                  ? obj[k]
+                  : JSON.stringify(obj[k], null, 2),
+              ),
+            );
+            tdCopy.appendChild(btn);
+            tr.appendChild(tdKey);
+            tr.appendChild(tdVal);
+            tr.appendChild(tdCopy);
+            table.appendChild(tr);
+          });
+          return table;
+        }
+
+        function renderDetail() {
+          el.detail.innerHTML = "";
+          if (currentPos < 0 || currentPos >= filtered.length) {
+            const ph = document.createElement("div");
+            ph.className = "placeholder";
+            ph.textContent = allRecords.length
+              ? "No record selected."
+              : 'Drag & drop a .jsonl file anywhere, or use "Open JSONL file…" above.';
+            el.detail.appendChild(ph);
+            return;
+          }
+          const rec = filtered[currentPos];
+
+          const header = document.createElement("div");
+          header.id = "detailHeader";
+
+          const prevBtn = document.createElement("button");
+          prevBtn.textContent = "← Prev";
+          prevBtn.disabled = currentPos === 0;
+          prevBtn.addEventListener("click", () => selectPos(currentPos - 1));
+
+          const nextBtn = document.createElement("button");
+          nextBtn.textContent = "Next →";
+          nextBtn.disabled = currentPos === filtered.length - 1;
+          nextBtn.addEventListener("click", () => selectPos(currentPos + 1));
+
+          const pos = document.createElement("span");
+          pos.className = "pos";
+          pos.textContent =
+            currentPos +
+            1 +
+            " / " +
+            filtered.length +
+            "  (record #" +
+            rec.index +
+            ", line " +
+            rec.line +
+            ")";
+
+          const jump = document.createElement("input");
+          jump.type = "number";
+          jump.min = 1;
+          jump.max = filtered.length;
+          jump.value = currentPos + 1;
+          jump.style.width = "70px";
+          jump.title = "Jump to position";
+          jump.addEventListener("change", () => {
+            const n = parseInt(jump.value, 10);
+            if (!isNaN(n))
+              selectPos(Math.min(Math.max(n - 1, 0), filtered.length - 1));
+          });
+
+          const spacer = document.createElement("div");
+          spacer.className = "spacer";
+
+          const copyBtn = document.createElement("button");
+          copyBtn.textContent = "Copy JSON";
+          copyBtn.addEventListener("click", () =>
+            copyText(
+              rec.error ? rec.raw : JSON.stringify(rec.data, null, 2),
+            ),
+          );
+
+          header.appendChild(prevBtn);
+          header.appendChild(pos);
+          header.appendChild(nextBtn);
+          header.appendChild(jump);
+          header.appendChild(spacer);
+          header.appendChild(copyBtn);
+
+          el.detail.appendChild(header);
+
+          if (rec.error) {
+            const errBox = document.createElement("div");
+            errBox.className = "parse-error";
+            errBox.style.marginBottom = "10px";
+            errBox.textContent =
+              "Failed to parse line " + rec.line + ": " + rec.error;
+            el.detail.appendChild(errBox);
+            const pre = document.createElement("pre");
+            pre.style.whiteSpace = "pre-wrap";
+            pre.style.wordBreak = "break-word";
+            pre.style.background = "var(--bg-alt)";
+            pre.style.padding = "10px";
+            pre.style.borderRadius = "6px";
+            pre.textContent = rec.raw;
+            el.detail.appendChild(pre);
+            return;
+          }
+
+          el.detail.appendChild(renderObjectTable(rec.data));
+        }
+
+        // --- file loading ---
+        el.fileInput.addEventListener("change", (e) => {
+          const file = e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = () => loadJSONL(reader.result, file.name);
+          reader.readAsText(file);
+        });
+
+        ["dragenter", "dragover"].forEach((evt) =>
+          document.addEventListener(evt, (e) => {
+            e.preventDefault();
+            document.body.classList.add("dragging");
+          }),
+        );
+        ["dragleave", "drop"].forEach((evt) =>
+          document.addEventListener(evt, (e) => {
+            e.preventDefault();
+            document.body.classList.remove("dragging");
+          }),
+        );
+        document.addEventListener("drop", (e) => {
+          const file = e.dataTransfer.files && e.dataTransfer.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = () => loadJSONL(reader.result, file.name);
+          reader.readAsText(file);
+        });
+
+        // --- search ---
+        let searchDebounce = null;
+        el.searchBox.addEventListener("input", () => {
+          clearTimeout(searchDebounce);
+          searchDebounce = setTimeout(() => {
+            searchTerm = el.searchBox.value;
+            applyFilter();
+          }, 120);
+        });
+
+        // --- keyboard shortcuts ---
+        document.addEventListener("keydown", (e) => {
+          const tag = (e.target.tagName || "").toLowerCase();
+          const typing = tag === "input" || tag === "textarea";
+          if (e.key === "/" && !typing) {
+            e.preventDefault();
+            el.searchBox.focus();
+            return;
+          }
+          if (e.key === "Escape" && typing) {
+            e.target.blur();
+            return;
+          }
+          if (typing) return;
+          if (e.key === "ArrowLeft") selectPos(currentPos - 1);
+          if (e.key === "ArrowRight") selectPos(currentPos + 1);
+        });
+      })();
+    </script>
+  </body>
+</html>

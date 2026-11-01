@@ -1,0 +1,2843 @@
+[
+  {
+    "product_id": "1072122",
+    "ean": "8051407411328",
+    "source_file": "clean/eurospin.json",
+    "source_index": 1,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "La Brassicola",
+    "name": "Birra artigianale italiana \"La Rossa\"",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Le migliori materie prime, una sapiente lavorazione artigianale, e il tempo necessario ad affinare il tutto.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I birrai de \"La Brassicola\" non scendono a compromessi per farvi scoprire il meglio dell'arte birraia, unita al gusto italiano.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1107460",
+    "ean": "8017596138965",
+    "source_file": "clean/eurospin.json",
+    "source_index": 10,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Salviette struccanti 25 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Dermatologicamente e oftalmologicamente testate - 98,6% di ingredienti di origin».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "Le salviette struccanti Fior di Magnolia rimuovono ogni residuo d trucco da viso, occhi, labbra in tutta dolcezza.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La speciale formula rispetta il pH anche delle pelli più delicate.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testate su pelli sensibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Oftalmologicamente testate.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% puro cotone",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente e oftalmologicamente testate - 98,6% di ingredienti di origine naturale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1024768",
+    "ean": "8017596075512",
+    "source_file": "clean/eurospin.json",
+    "source_index": 12,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Proteggi slip ripiegato 40 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Questo prodotto è realizzato con materia prima da foreste gestite in maniera sos».",
+    "gray_zone": null,
+    "triggers": [
+      "generic_green",
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "Grazie alla presenza dei polimeri superassorbenti, l'umido penetra velocemente all'interno e non ritorna in superficie.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Freschezza per tutti i giorni e una morbidezza mai provata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato - Tessuto traspirante - Ipoallergenico - Anatomico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questo prodotto è realizzato con materia prima da foreste gestite in maniera sostenibile e da fonti controllate",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "FSC-style wording with no certifier named: generic 'sostenibile' plus unverified 'fonti controllate'."
+      },
+      {
+        "claim_text": "Traspirante ipoallergenico - Delicato per tutti i giorni - Bustina singola",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1012885",
+    "ean": "8017596075482",
+    "source_file": "clean/eurospin.json",
+    "source_index": 18,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Assorbente sottile notte senza ali",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (6).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Gli assorbenti Fior di Magnolia ti offrono un asciutto ed una morbidezza mai provata grazie al particolare filtrante.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La sua struttura interna ti dona la massima protezione, un'elevata morbidezza e il comfort ideale anche nei giorni di flusso intenso.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Grazie alla presenza dei polimeri superassorbenti e al sistema \"Odour Defence\", ti sentirai più asciutta e libera.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Gli speciali canalini convogliano il flusso al centro, offrendo tutta la protezione di cui hai bisogno.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato - Morbido filtrante forato - Ipoallergenico - Speciale canalini assorbenti - *extralungo 317 cm (*valore medio riscontrato)",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Extralungo ipoallergenico - Odour defence",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1103652",
+    "ean": "8017596138330",
+    "source_file": "clean/eurospin.json",
+    "source_index": 20,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Scrub thalasso corpo",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il Thalasso Scrub corpo Fior di Magnolia abbina le proprietà esfolianti e purificanti del sale marino alle proprietà rivitalizzanti delle alghe, rendendo la pelle morbida e pronta a ricevere i trattamenti specifici.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La pelle è più liscia, levigata: una piacevole sensazione di rivitalizzazione.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato - Pelle morbida e levigata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Con sale marino: esfoliante e purificante - Con estratto di alga marina: proprietà rivitalizzanti",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1092366",
+    "ean": "8017596137340",
+    "source_file": "clean/eurospin.json",
+    "source_index": 23,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Near",
+    "name": "Crema doposole idratante",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Idratante e rigenerante.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "L'applicazione regolare dopo l'esposizione a sole rigenera la pelle donandole sollievo e idratazione immediata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Rigenerante",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1010676",
+    "ean": "8017596073761",
+    "source_file": "clean/eurospin.json",
+    "source_index": 28,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Pannolini XL per bambini 16 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (8).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Hello Baby è una linea completa per il benessere del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I pannolini Hello Baby nei cinque diversi formati garantiscono un asciutto sicuro per il comfort del tuo bambino",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO - Il test è stato effettuato dalla Clinica Dermatologica dell'Università degli Studi di Modena e Reggio Emilia sotto il controllo di un medico dermatologo.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "TESSUTO AD ASSORBIMENTO RAPIDO CON EFFETTO \"ASCIUTTO PIU' A LUNGO\" - Il nuovo pannolino Hello Baby, grazie ai nuovi materiali super assorbenti, garantisce un miglior risultato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "FASCE LATERALI AVVOLGENTI - Le nuove fasce laterali super elastiche, realizzate in morbido tessuto non tessuto, garantiscono una maggiore vestibilità, per dare al tuo bambino la massima libertà di movimento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO ESTERNO TRASPIRANTE - Traspirante ed ancora più delicato, lascia traspirare la pelle del tuo bambino per mantenerla asciutta e protetta!",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO INTERNO ULTRA MORBIDO - Grazie all'utilizzo di nuovi materiali, il tessuto al contatto con la pelle risulta estremamente morbido, mantenendo, allo stesso tempo, una alta velocità di penetrazioni dei liquidi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "XL 15-30 Kg - Taglia 6 - Maggiore vestibilità",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1106851",
+    "ean": "8017596073747",
+    "source_file": "clean/eurospin.json",
+    "source_index": 29,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Pannolini maxi per bambini 20 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (9).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Hello Baby è una linea completa per il benessere del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I pannolini Hello Baby nei cinque diversi formati garantiscono un asciutto sicuro per il comfort del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO - Il test è stato effettuato presso Laboratori specializzati, sotto il controllo di un medico dermatologo.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "CANALINI CATTURA BAGNATO - Permettono la distribuzione uniforme dei liquidi dando una conseguente sensazione di asciutto, per un maggior comfort del bambino",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "FASCE LATERALI AVVOLGENTI - Le nuove fasce laterali super elastiche, realizzate in morbido tessuto non tessuto, garantiscono una maggiore vestibilità, per dare al tuo bambino la massima libertà di movimento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO INTERNO ULTRA MORBIDO - Grazie all'utilizzo di nuovi materiali, il tessuto al contatto con la pelle risulta estremamente morbido, mantenendo, allo stesso tempo, una alta velocità di penetrazioni dei liquidi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO ESTERNO TRASPIRANTE - Traspirante ed ancora più delicato, lascia traspirare la pelle del tuo bambino per mantenerla asciutta e protetta!",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "TESSUTO AD ASSORBIMENTO RAPIDO CON EFFETTO \"ASCIUTTO PIU' A LUNGO\" - Il nuovo pannolino Hello Baby, grazie ai nuovi materiali super assorbenti, garantisce un miglior risultato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Maggiore vestibilità",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "998823",
+    "ean": "8017596074102",
+    "source_file": "clean/eurospin.json",
+    "source_index": 30,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Pannolini mini per bambini 24 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (10).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Hello Baby è una linea completa per il benessere del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I pannolini Hello Baby nei cinque diversi formati garantiscono un asciutto sicuro per il comfort del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO - Il test è stato effettuato presso Laboratori specializzati, sotto il controllo di un medico dermatologo.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "CANALINI CATTURA BAGNATO - Permettono la distribuzione uniforme dei liquidi dando una conseguente sensazione di asciutto, per un maggior comfort del bambino",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "TESSUTO AD ASSORBIMENTO RAPIDO CON EFFETTO \"ASCIUTTO PIU' A LUNGO\" - Il nuovo pannolino Hello Baby, grazie ai nuovi materiali super assorbenti, garantisce un miglior risultato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "FASCE LATERALI AVVOLGENTI - Le nuove fasce laterali super elastiche, realizzate in morbido tessuto non tessuto, garantiscono una maggiore vestibilità, per dare al tuo bambino la massima libertà di movimento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO ESTERNO TRASPIRANTE - Traspirante ed ancora più delicato, lascia traspirare la pelle del tuo bambino per mantenerla asciutta e protetta!",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO INTERNO ULTRA MORBIDO - Grazie all'utilizzo di nuovi materiali, il tessuto al contatto con la pelle risulta estremamente morbido, mantenendo, allo stesso tempo, una alta velocità di penetrazioni dei liquidi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "INDICATORE DI UMIDITA'",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Maggiore vestibilità",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1010754",
+    "ean": "8017596073785",
+    "source_file": "clean/eurospin.json",
+    "source_index": 31,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Pannolini pacco doppio junior 36 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (10).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Hello Baby è una linea completa per il benessere del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I pannolini Hello Baby nei cinque diversi formati garantiscono un asciutto sicuro per il comfort del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO - Il test è stato effettuato presso Laboratori specializzati, sotto il controllo di un medico dermatologo.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "TESSUTO AD ASSORBIMENTO RAPIDO CON EFFETTO \"ASCIUTTO PIU' A LUNGO\" - Il nuovo pannolino Hello Baby, grazie ai nuovi materiali super assorbenti, garantisce un miglior risultato.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "FASCE LATERALI AVVOLGENTI - Le nuove fasce laterali super elastiche, realizzate in morbido tessuto non tessuto, garantiscono una maggiore vestibilità, per dare al tuo bambino la massima libertà di movimento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO ESTERNO TRASPIRANTE - Traspirante ed ancora più delicato, lascia traspirare la pelle del tuo bambino per mantenerla asciutta e protetta!",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "STRATO INTERNO ULTRA MORBIDO - Grazie all'utilizzo di nuovi materiali, il tessuto al contatto con la pelle risulta estremamente morbido, mantenendo, allo stesso tempo, una alta velocità di penetrazioni dei liquidi.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "CANALINI CATTURA BAGNATO - Permettono la distribuzione uniforme dei liquidi dando una conseguente sensazione di asciutto, per un maggior comfort del bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Maggiore vestibilità",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Taglia 5 - 11-25 kg - Confezione risparmio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Only 'Confezione risparmio' (value pack) is a selling point; line kept whole since cuts are only at bullets/lines."
+      }
+    ]
+  },
+  {
+    "product_id": "1013819",
+    "ean": "8017596108036",
+    "source_file": "clean/eurospin.json",
+    "source_index": 34,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Amo Essere Bio",
+    "name": "Bevanda alla soia senza zuccheri bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 3 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "100% soia Italiana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ad alto contenuto di proteine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090840",
+    "ean": "8017596133250",
+    "source_file": "clean/eurospin.json",
+    "source_index": 35,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Amo Essere Bio",
+    "name": "Bevanda alle mandorle senza zuccheri bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1067500",
+    "ean": "8017596079879",
+    "source_file": "clean/eurospin.json",
+    "source_index": 42,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Infuso di finocchio Bio 20 filtri",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 3 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "HR-EKO-07 Agricoltura non UE",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090632",
+    "ean": "8017596112675",
+    "source_file": "clean/eurospin.json",
+    "source_index": 43,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Snack mini gallette di mais Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Non fritte",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090633",
+    "ean": "8017596112682",
+    "source_file": "clean/eurospin.json",
+    "source_index": 44,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Snack mini gallette mais e legumi Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Non fritte",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Fonte di fibre e proteine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1026228",
+    "ean": "8017596112170",
+    "source_file": "clean/eurospin.json",
+    "source_index": 45,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Spaghetti integrali bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «AMO ESSERE Bio è la linea di prodotti da Agricoltura biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "AMO ESSERE Bio è la linea di prodotti da Agricoltura biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "100% grano italiano",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Fonte di fibre",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1024619",
+    "ean": "8017596079725",
+    "source_file": "clean/eurospin.json",
+    "source_index": 46,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Gallette di riso bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è la linea di prodotti da Agricoltura Biologica dedicata ai».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Senza glutine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "A basso contenuto di grassi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1011851",
+    "ean": "8017596100160",
+    "source_file": "clean/eurospin.json",
+    "source_index": 47,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Farina tipo 00 di grano tenero Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1011829",
+    "ean": "8017596079398",
+    "source_file": "clean/eurospin.json",
+    "source_index": 48,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Olio extra vergine di oliva biologico",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "100% italiano",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1024580",
+    "ean": "8017596105837",
+    "source_file": "clean/eurospin.json",
+    "source_index": 49,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Caramelle zenzero e limone Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Senza glutine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1011963",
+    "ean": "8017596079817",
+    "source_file": "clean/eurospin.json",
+    "source_index": 50,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Amo Essere Bio",
+    "name": "Biscotti frollini integrali ai 5 cereali bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «AMO ESSERE Bio è la linea di prodotti da Agricoltura biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "AMO ESSERE Bio è la linea di prodotti da Agricoltura biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Ricchi di fibre",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090665",
+    "ean": "8017596102669",
+    "source_file": "clean/eurospin.json",
+    "source_index": 56,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Mix vitality Bio - Misto di frutta secca",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Fonte di Ferro, Ricco di Manganese.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Il Ferro e il Manganese contribuiscono al normale metabolismo energetico.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1055272",
+    "ean": "8017596102010",
+    "source_file": "clean/eurospin.json",
+    "source_index": 57,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Zenzero bio a cubetti",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1052215",
+    "ean": "8017596031082",
+    "source_file": "clean/eurospin.json",
+    "source_index": 58,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Semi di lino bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1012043",
+    "ean": "8017596102645",
+    "source_file": "clean/eurospin.json",
+    "source_index": 59,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Mandorle sgusciate Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «AMO ESSERE Biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "AMO ESSERE Biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1050951",
+    "ean": "8020204324292",
+    "source_file": "clean/eurospin.json",
+    "source_index": 60,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Mix di semi per insalate Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «AMO ESSERE Biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "AMO ESSERE Biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1054509",
+    "ean": "8058269583859",
+    "source_file": "clean/eurospin.json",
+    "source_index": 61,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Insalata lattughino Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Coltivato in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1012045",
+    "ean": "8017596102652",
+    "source_file": "clean/eurospin.json",
+    "source_index": 63,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Noci sgusciate Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1053393",
+    "ean": "8020204324452",
+    "source_file": "clean/eurospin.json",
+    "source_index": 64,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Semi di chia bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo Essere Bio è una linea di prodotti da Agricoltura Biologica dedicata ai cons».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo Essere Bio è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1090688",
+    "ean": "8017596102676",
+    "source_file": "clean/eurospin.json",
+    "source_index": 65,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "Amo Essere Bio",
+    "name": "Mix activity Bio - Misto di frutta secca",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Fonte di Magnesio, Ricco di Potassio.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Il Magnesio ed il Potassio contribuiscono alla normale funzione muscolare.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1023979",
+    "ean": "8017596128225",
+    "source_file": "clean/eurospin.json",
+    "source_index": 67,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "Amo Essere Bio",
+    "name": "Tofu al naturale Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere Biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere Biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di Specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Ricco di proteine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "A basso contenuto di sale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1022076",
+    "ean": "8017596071095",
+    "source_file": "clean/eurospin.json",
+    "source_index": 71,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Near",
+    "name": "Crema solare viso e corpo protezione 10",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Protezione bassa 10 - VItamina E - Filtri UVA e UVB - Resiste all'acqua",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1020973",
+    "ean": "8003295014921",
+    "source_file": "clean/eurospin.json",
+    "source_index": 80,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Le Bricole",
+    "name": "Vino rosso",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1038739",
+    "ean": "2080705000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 81,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Pollo a pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1072188",
+    "ean": "8017596104397",
+    "source_file": "clean/eurospin.json",
+    "source_index": 85,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Profumo donna eau de parfum \"Secret Moon\"",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1073024",
+    "ean": "8017596108067",
+    "source_file": "clean/eurospin.json",
+    "source_index": 87,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Bocconcini in salsa per gatti multibox mix",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1091225",
+    "ean": "2021699000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 89,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Muffin al lampone e limone",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1030711",
+    "ean": "8017596041364",
+    "source_file": "clean/eurospin.json",
+    "source_index": 90,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Pizza margherita 2 pezzi surgelate",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1000643",
+    "ean": "8017596103796",
+    "source_file": "clean/eurospin.json",
+    "source_index": 92,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Best Bräu",
+    "name": "Birra Best Bräu scura Premium",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1068003",
+    "ean": "8017596032776",
+    "source_file": "clean/eurospin.json",
+    "source_index": 95,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Ciliegie",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1110187",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 96,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Salsa tzatziki",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1084682",
+    "ean": "8017596056825",
+    "source_file": "clean/eurospin.json",
+    "source_index": 97,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Lima doppia per calli e duroni",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1070499",
+    "ean": "8017596123398",
+    "source_file": "clean/eurospin.json",
+    "source_index": 99,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Sacchetti igienici per cane 3 rotoli",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1019264",
+    "ean": "8017596041043",
+    "source_file": "clean/eurospin.json",
+    "source_index": 102,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Focacce tradizionali surgelate 3 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1026945",
+    "ean": "8436550351750",
+    "source_file": "clean/eurospin.json",
+    "source_index": 106,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Limoni",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1031974",
+    "ean": "8017596007124",
+    "source_file": "clean/eurospin.json",
+    "source_index": 107,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Salame ungherese a fette",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1072282",
+    "ean": "8017596071811",
+    "source_file": "clean/eurospin.json",
+    "source_index": 108,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Dentifricio whitening/complete action",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1111065",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 109,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Kefir bianco",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1058595",
+    "ean": "8017596108050",
+    "source_file": "clean/eurospin.json",
+    "source_index": 110,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Bocconcini in gelatina per gatti multibox pesce",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1109724",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 115,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Cozze",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1061467",
+    "ean": "0000024101387",
+    "source_file": "clean/eurospin.json",
+    "source_index": 120,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Bevanda latte espresso",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1014001",
+    "ean": "8017596109996",
+    "source_file": "clean/eurospin.json",
+    "source_index": 121,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Paté per cani al pollo/manzo",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1003628",
+    "ean": "8017596057266",
+    "source_file": "clean/eurospin.json",
+    "source_index": 122,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini bombe d'acqua 80 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1003911",
+    "ean": "8017596004666",
+    "source_file": "clean/eurospin.json",
+    "source_index": 127,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Alloro in foglie",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1104801",
+    "ean": "8017596138743",
+    "source_file": "clean/eurospin.json",
+    "source_index": 130,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Shampoo idratante/nutriente",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1012402",
+    "ean": "8017596102614",
+    "source_file": "clean/eurospin.json",
+    "source_index": 131,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Crema alla vaniglia",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1106742",
+    "ean": "8017596137142",
+    "source_file": "clean/eurospin.json",
+    "source_index": 141,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Crema viso",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1055545",
+    "ean": "0000080761167",
+    "source_file": "clean/eurospin.json",
+    "source_index": 142,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Yogurt intero bianco",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1052533",
+    "ean": "8013912403984",
+    "source_file": "clean/eurospin.json",
+    "source_index": 150,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Avocado",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1107445",
+    "ean": "8017596102331",
+    "source_file": "clean/eurospin.json",
+    "source_index": 151,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Lasagne fresche all'uovo",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1072678",
+    "ean": "8017596104410",
+    "source_file": "clean/eurospin.json",
+    "source_index": 152,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Profumo uomo eau de parfum \"Silver Waterfall\"",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1089068",
+    "ean": "8017596077592",
+    "source_file": "clean/eurospin.json",
+    "source_index": 154,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Dental stick per cani",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1027708",
+    "ean": "8017596057310",
+    "source_file": "clean/eurospin.json",
+    "source_index": 155,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini Punch Ball 3 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1014498",
+    "ean": "2080760000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 159,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Coniglio intero",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1105347",
+    "ean": "8017596138668",
+    "source_file": "clean/eurospin.json",
+    "source_index": 163,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Shampoo illuminante/purificante",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1057467",
+    "ean": "2021186000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 167,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Panino soffice 10 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1027970",
+    "ean": "8007466030710",
+    "source_file": "clean/eurospin.json",
+    "source_index": 168,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Zuppa di pesce surgelata",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1038837",
+    "ean": "2080049000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 170,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Salamella suino",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1036833",
+    "ean": "8017596102706",
+    "source_file": "clean/eurospin.json",
+    "source_index": 171,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Caramelle marshmallow",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1068073",
+    "ean": "8017596075024",
+    "source_file": "clean/eurospin.json",
+    "source_index": 173,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Formaggio Brie de France",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1055543",
+    "ean": "0000080761181",
+    "source_file": "clean/eurospin.json",
+    "source_index": 175,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Yogurt intero alla banana",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1027706",
+    "ean": "8017596057273",
+    "source_file": "clean/eurospin.json",
+    "source_index": 177,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini assortiti 14 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1002655",
+    "ean": "2080248000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 181,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Pancetta fina",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1026821",
+    "ean": "8010292016698",
+    "source_file": "clean/eurospin.json",
+    "source_index": 183,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Lamponi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "996977",
+    "ean": "8017596066459",
+    "source_file": "clean/eurospin.json",
+    "source_index": 184,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Stinco di maiale",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1108021",
+    "ean": "4019201200948",
+    "source_file": "clean/eurospin.json",
+    "source_index": 185,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Salviettine detergenti per occhiali",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "999656",
+    "ean": "8017596074799",
+    "source_file": "clean/eurospin.json",
+    "source_index": 187,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Patè multibox mix per gatti",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1003631",
+    "ean": "8017596057372",
+    "source_file": "clean/eurospin.json",
+    "source_index": 188,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini decorazione 30 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1014419",
+    "ean": "2080018000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 192,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Filetto di suino",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1010863",
+    "ean": "8017596073433",
+    "source_file": "clean/eurospin.json",
+    "source_index": 193,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Tè verde",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1031362",
+    "ean": "8017596007117",
+    "source_file": "clean/eurospin.json",
+    "source_index": 195,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Mortadella a fette",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1072186",
+    "ean": "8017596104373",
+    "source_file": "clean/eurospin.json",
+    "source_index": 196,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Profumo donna eau de parfum \"Fabulous Flower\"",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1030682",
+    "ean": "8017596052704",
+    "source_file": "clean/eurospin.json",
+    "source_index": 198,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Crocchette per cani adulti",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  }
+]

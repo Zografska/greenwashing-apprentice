@@ -1,0 +1,5228 @@
+[
+  {
+    "product_id": "909691",
+    "ean": "8018848016949",
+    "source_file": "clean/naturasi.json",
+    "source_index": 0,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Baule Volante",
+    "name": "Fette biscottate con grani antichi Le Spesse",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lievito di birra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "946506",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 2,
+    "retailer": "NaturaSì",
+    "category": "gastronomia",
+    "brand": "Aries",
+    "name": "Schiacciata di Timilìa",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "942814",
+    "ean": "8032891761397",
+    "source_file": "clean/naturasi.json",
+    "source_index": 5,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Girolomoni",
+    "name": "Penne di grano semintegrale Graziella Ra",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "942812",
+    "ean": "8032891761380",
+    "source_file": "clean/naturasi.json",
+    "source_index": 6,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Girolomoni",
+    "name": "Farfalle di grano semintegrale Graziella Ra",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "935810",
+    "ean": "8051511233717",
+    "source_file": "clean/naturasi.json",
+    "source_index": 12,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Il Cerreto",
+    "name": "Crocc-antiche Gentil Rosso Monococco",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "935799",
+    "ean": "8051511233700",
+    "source_file": "clean/naturasi.json",
+    "source_index": 13,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Il Cerreto",
+    "name": "Crocc-antiche Gentil Rosso con sale",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "944204",
+    "ean": "8056734467062",
+    "source_file": "clean/naturasi.json",
+    "source_index": 14,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Terre e Tradizioni",
+    "name": "Piadina di grano Timilìa",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "949688",
+    "ean": "8019010418219",
+    "source_file": "clean/naturasi.json",
+    "source_index": 20,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "NaturaSì",
+    "name": "Pane bauletto di farro con semi misti",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vague_supply_chain",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "prodotto da nostra filiera",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Supply-chain goodness asserted with no verifiable detail."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "937667",
+    "ean": "8013266652007",
+    "source_file": "clean/naturasi.json",
+    "source_index": 23,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Prometeo",
+    "name": "Crostini di farro",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "935708",
+    "ean": "3760192494847",
+    "source_file": "clean/naturasi.json",
+    "source_index": 24,
+    "retailer": "NaturaSì",
+    "category": "bevande",
+    "brand": "Karma",
+    "name": "Kombucha agli agrumi senza zucchero",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 3 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "senza zuccheri",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "935812",
+    "ean": "4260183213529",
+    "source_file": "clean/naturasi.json",
+    "source_index": 25,
+    "retailer": "NaturaSì",
+    "category": "bevande-vegetali",
+    "brand": "Dr. Antonio Martins",
+    "name": "Latte di cocco 3,8% di grassi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "931487",
+    "ean": "8003950002690",
+    "source_file": "clean/naturasi.json",
+    "source_index": 26,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Iasa",
+    "name": "Tonno all'olio extravergine di oliva - Linea benessere",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «prodotto da nostra filiera».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "prodotto da nostra filiera",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Supply-chain goodness asserted with no verifiable detail."
+      },
+      {
+        "claim_text": "ricco di acidi grassi omega 3",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "947170",
+    "ean": "8016225339971",
+    "source_file": "clean/naturasi.json",
+    "source_index": 27,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Altromercato",
+    "name": "Borsa di juta pattern nero 40x12x40 h",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Equosolidale».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "948053",
+    "ean": "8034094014553",
+    "source_file": "clean/naturasi.json",
+    "source_index": 30,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Bio Happy",
+    "name": "Shampoo e balsamo Jungle Infusion al mango",
+    "golden_bucket": "in_between",
+    "bucket_reason": "8 of its 17 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific, natural_footnote), e.g. «BioAgriCert – Cosmetici Biologici».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "vague_supply_chain",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "BDIH",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "BioAgriCert – Cosmetici Biologici",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "BioCeq",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "BIOS - BioClean",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "BIOS - EcoClean",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "coltivazione sostenibile",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Cosmetique Charte Cosmebio",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "ICEA Eco Bio Cosmesi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "Icea Incensi Naturali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "NaTrue",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "Natural Cosmetics Standard",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "Nature Care Product",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "nichel tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Nickel Tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Slow Cosmetique",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Slow Cosmétique is an association label rather than a third-party certification; closest trigger is certification."
+      },
+      {
+        "claim_text": "Vegan OK",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vegan society",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "839976",
+    "ean": "4101530001812",
+    "source_file": "clean/naturasi.json",
+    "source_index": 33,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Berchtesgadener Land",
+    "name": "Burro Alpenbutter",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "938483",
+    "ean": "3273227083225",
+    "source_file": "clean/naturasi.json",
+    "source_index": 36,
+    "retailer": "NaturaSì",
+    "category": "proteine-vegetali",
+    "brand": "Sojade",
+    "name": "Sojade mango pesca ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 4 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "ad alto contenuto di proteine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vegan society",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "949155",
+    "ean": "5021991942402",
+    "source_file": "clean/naturasi.json",
+    "source_index": 38,
+    "retailer": "NaturaSì",
+    "category": "tisane-e-infusi",
+    "brand": "Cupper",
+    "name": "Tè nero English Breakfast",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 3 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "931486",
+    "ean": "8003950002195",
+    "source_file": "clean/naturasi.json",
+    "source_index": 41,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Iasa",
+    "name": "Filetti di tonno in olio extravergine di oliva - Linea benessere",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «prodotto da nostra filiera».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "prodotto da nostra filiera",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Supply-chain goodness asserted with no verifiable detail."
+      },
+      {
+        "claim_text": "ricco di acidi grassi omega 3",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "944550",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 46,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Antico Caseificio Pompeano",
+    "name": "Parmigiano Reggiano DOP",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "931377",
+    "ean": "3273220184967",
+    "source_file": "clean/naturasi.json",
+    "source_index": 49,
+    "retailer": "NaturaSì",
+    "category": "proteine-vegetali",
+    "brand": "Sojade",
+    "name": "Dessert vaniglia",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "fonte di proteine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1071859",
+    "ean": "8019010316829",
+    "source_file": "clean/naturasi.json",
+    "source_index": 53,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "We Are",
+    "name": "Pain au chocolat",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "946471",
+    "ean": "8022390600044",
+    "source_file": "clean/naturasi.json",
+    "source_index": 55,
+    "retailer": "NaturaSì",
+    "category": "gastronomia",
+    "brand": "Aries",
+    "name": "Pizzetta con verdure senza formaggio",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "945119",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 56,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Bio Busti",
+    "name": "Pecorino stagionato da latte crudo",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937666",
+    "ean": "8013266801207",
+    "source_file": "clean/naturasi.json",
+    "source_index": 57,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Prometeo",
+    "name": "ABC del farro integrale",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "farina macinata a pietra",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938499",
+    "ean": "8002480004181",
+    "source_file": "clean/naturasi.json",
+    "source_index": 58,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "I Genuini",
+    "name": "Pangrattato integrale",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "937630",
+    "ean": "4006040122401",
+    "source_file": "clean/naturasi.json",
+    "source_index": 64,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Rapunzel",
+    "name": "Vaniglia Bourbon in bacche",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "941595",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 66,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Fattoria di Vaira",
+    "name": "Scamorza lavorata a mano biodinamica",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "944143",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 74,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Formaggi Debbene",
+    "name": "Formaggio Fiore Sardo DOP slow food",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937326",
+    "ean": "8019010121256",
+    "source_file": "clean/naturasi.json",
+    "source_index": 76,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "We Are",
+    "name": "Bagel bio con semi di sesamo ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1072657",
+    "ean": "8019010442771",
+    "source_file": "clean/naturasi.json",
+    "source_index": 79,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Bio Fattorie d'Italia",
+    "name": "Fette biscottate Senatore varietà Cappelli ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "943922",
+    "ean": "4006040301158",
+    "source_file": "clean/naturasi.json",
+    "source_index": 80,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Rapunzel",
+    "name": "Dolcificante di datteri macinati",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      }
+    ]
+  },
+  {
+    "product_id": "944142",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 82,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Formaggi Debbene",
+    "name": "Pecorino sardo Formano da latte crudo",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "953778",
+    "ean": "8032454040020",
+    "source_file": "clean/naturasi.json",
+    "source_index": 84,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Sottolestelle",
+    "name": "Pansemi Senatore Cappelli ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza zuccheri aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938508",
+    "ean": "8002480004174",
+    "source_file": "clean/naturasi.json",
+    "source_index": 87,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "I Genuini",
+    "name": "Fette biscottate integrali con uvetta",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con dolcificanti naturali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Undefined 'natural' attribute of the sweeteners; not a regulated term like 'aromi naturali'."
+      },
+      {
+        "claim_text": "con pasta madre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "934332",
+    "ean": "2152120",
+    "source_file": "clean/naturasi.json",
+    "source_index": 90,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Ca Verde",
+    "name": "Caciotta nera - affinata nella cenere",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "933133",
+    "ean": "8056734461459",
+    "source_file": "clean/naturasi.json",
+    "source_index": 91,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Terre e Tradizioni",
+    "name": "Rigatoni ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "cereali antichi",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "932054",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 98,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Albacara",
+    "name": "Caciotta a latte crudo di capra con pistacchi di Bronte",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "947580",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 104,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Albacara",
+    "name": "Toma di capra da latte crudo",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "da latte crudo",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "935709",
+    "ean": "3760192494861",
+    "source_file": "clean/naturasi.json",
+    "source_index": 106,
+    "retailer": "NaturaSì",
+    "category": "bevande",
+    "brand": "Karma",
+    "name": "Kombucha ai frutti rossi senza zucchero",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 3 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Equosolidale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Fair-trade badge with no named scheme; treated as an unnamed fair-trade certification."
+      },
+      {
+        "claim_text": "senza zuccheri",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "933983",
+    "ean": "8019428004165",
+    "source_file": "clean/naturasi.json",
+    "source_index": 115,
+    "retailer": "NaturaSì",
+    "category": "bevande-vegetali",
+    "brand": "The Bridge",
+    "name": "Bevanda di avena banana e cacao",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941678",
+    "ean": "8008481795356",
+    "source_file": "clean/naturasi.json",
+    "source_index": 116,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Le Biodelizie",
+    "name": "Mortadella senza nitriti aggiunti in rotolino",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Spiga barrata",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. AIC licensed gluten-free mark: a health/composition certification, not a sustainability one."
+      }
+    ]
+  },
+  {
+    "product_id": "950878",
+    "ean": "4007547305052",
+    "source_file": "clean/naturasi.json",
+    "source_index": 117,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Sonett",
+    "name": "Detersivo liquido per lana e seta all'olio di oliva",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (natural_footnote), e.g. «Nature Care Product».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Nature Care Product",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "Vegan society",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1072946",
+    "ean": "8019010445376",
+    "source_file": "clean/naturasi.json",
+    "source_index": 119,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "NaturaSì",
+    "name": "Gran Petit - Biscotti semintegrali di farro",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "946581",
+    "ean": "8034094013853",
+    "source_file": "clean/naturasi.json",
+    "source_index": 120,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Enolea",
+    "name": "Acqua micellare Complex struccante occhi",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (natural_footnote), e.g. «NaTrue».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "NaTrue",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "nichel tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Nickel Tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza profumi oli essenziali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937774",
+    "ean": "7610405080731",
+    "source_file": "clean/naturasi.json",
+    "source_index": 121,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Gautschi",
+    "name": "Salsa tonnata",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "945577",
+    "ean": "7640166796787",
+    "source_file": "clean/naturasi.json",
+    "source_index": 123,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Zuger",
+    "name": "Formaggio fresco spalmabile senza lattosio",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      },
+      {
+        "claim_text": "senza lattosio",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938108",
+    "ean": "8000454001266",
+    "source_file": "clean/naturasi.json",
+    "source_index": 124,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Biovitagral",
+    "name": "Farina per polenta taragna istantanea",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Spiga barrata",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. AIC licensed gluten-free mark: a health/composition certification, not a sustainability one."
+      }
+    ]
+  },
+  {
+    "product_id": "944419",
+    "ean": "8019010334557",
+    "source_file": "clean/naturasi.json",
+    "source_index": 125,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "Piu Bene",
+    "name": "Crackers biologici semintegrali di farro - Senza lievito",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      }
+    ]
+  },
+  {
+    "product_id": "942460",
+    "ean": "8023678426103",
+    "source_file": "clean/naturasi.json",
+    "source_index": 126,
+    "retailer": "NaturaSì",
+    "category": "proteine-vegetali",
+    "brand": "Isola Bio",
+    "name": "Crema di soia da cucina",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941256",
+    "ean": "8027701100428",
+    "source_file": "clean/naturasi.json",
+    "source_index": 129,
+    "retailer": "NaturaSì",
+    "category": "vino-e-birra",
+    "brand": "Castello Di Arcano",
+    "name": "Triccus nonso IGT senza solfiti aggiunti",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza solfiti aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937648",
+    "ean": "8028330000035",
+    "source_file": "clean/naturasi.json",
+    "source_index": 130,
+    "retailer": "NaturaSì",
+    "category": "yogurt-e-kefir",
+    "brand": "Antico Podere Bernardi",
+    "name": "Yogurt alla banana",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "956597",
+    "ean": "8002516939333",
+    "source_file": "clean/naturasi.json",
+    "source_index": 131,
+    "retailer": "NaturaSì",
+    "category": "bevande",
+    "brand": "Tomarchio",
+    "name": "Chinotto",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "947423",
+    "ean": "8027265009878",
+    "source_file": "clean/naturasi.json",
+    "source_index": 133,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Bioalleva",
+    "name": "Cotoletta di pollo con spinaci",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938207",
+    "ean": "4007547501553",
+    "source_file": "clean/naturasi.json",
+    "source_index": 134,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Sonett",
+    "name": "Detersivo liquido neutro per lavatrice",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (natural_footnote), e.g. «Nature Care Product».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Nature Care Product",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "senza profumi oli essenziali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "934355",
+    "ean": "8019010086661",
+    "source_file": "clean/naturasi.json",
+    "source_index": 136,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Piu Bene",
+    "name": "Crema cacao e nocciole - Senza latte",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza latte",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "947862",
+    "ean": "8019010394766",
+    "source_file": "clean/naturasi.json",
+    "source_index": 137,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Ecor Bodycare",
+    "name": "Shampoo Brezza per tutti i tipi di capelli",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific, natural_footnote), e.g. «BIOS - NaturCosmetics».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "BIOS - NaturCosmetics",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "EcoBioControl - Cosmetics",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "nichel tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Nickel Tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "933114",
+    "ean": "8016323046948",
+    "source_file": "clean/naturasi.json",
+    "source_index": 138,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Fior Di Loto",
+    "name": "Lievito alimentare in fiocchi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "ad alto contenuto di proteine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941254",
+    "ean": "3392590202641",
+    "source_file": "clean/naturasi.json",
+    "source_index": 139,
+    "retailer": "NaturaSì",
+    "category": "gastronomia",
+    "brand": "Amicucina",
+    "name": "Pasta sfoglia fresca",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937974",
+    "ean": "2693144",
+    "source_file": "clean/naturasi.json",
+    "source_index": 140,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Capre Felici",
+    "name": "Caciottina di latte di capra con caglio microbico",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "935728",
+    "ean": "8019010103368",
+    "source_file": "clean/naturasi.json",
+    "source_index": 141,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Molinum",
+    "name": "Farina di grano tenero tipo 0 - Manitoba",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938033",
+    "ean": "8000781007115",
+    "source_file": "clean/naturasi.json",
+    "source_index": 142,
+    "retailer": "NaturaSì",
+    "category": "prodotti-da-forno",
+    "brand": "La Buona Terra",
+    "name": "Bongrì",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "olio extravergine oliva",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941882",
+    "ean": "8023678423409",
+    "source_file": "clean/naturasi.json",
+    "source_index": 143,
+    "retailer": "NaturaSì",
+    "category": "proteine-vegetali",
+    "brand": "Isola Bio",
+    "name": "Crema di cocco da cucina",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Kosher",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "944171",
+    "ean": "8012235007084",
+    "source_file": "clean/naturasi.json",
+    "source_index": 145,
+    "retailer": "NaturaSì",
+    "category": "tisane-e-infusi",
+    "brand": "Berici Infusi",
+    "name": "Infuso di tè verde",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "942890",
+    "ean": "8033986180512",
+    "source_file": "clean/naturasi.json",
+    "source_index": 146,
+    "retailer": "NaturaSì",
+    "category": "vino-e-birra",
+    "brand": "Molinet",
+    "name": "Pinot nero frizzante vinificato in bianco Provincia di Pavia IGT",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "949946",
+    "ean": "8028330004255",
+    "source_file": "clean/naturasi.json",
+    "source_index": 147,
+    "retailer": "NaturaSì",
+    "category": "yogurt-e-kefir",
+    "brand": "La Decima",
+    "name": "Yogurt intero alla vaniglia",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941403",
+    "ean": "8019428007081",
+    "source_file": "clean/naturasi.json",
+    "source_index": 149,
+    "retailer": "NaturaSì",
+    "category": "bevande-vegetali",
+    "brand": "The Bridge",
+    "name": "Bevanda vegetale Bio Quinoa e riso Drink",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza zuccheri aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "945312",
+    "ean": "8020819008518",
+    "source_file": "clean/naturasi.json",
+    "source_index": 150,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Primavera",
+    "name": "Bresaola preaffettata",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "935915",
+    "ean": "8017116605519",
+    "source_file": "clean/naturasi.json",
+    "source_index": 151,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Lab Nat",
+    "name": "Detersivo in polvere per piatti a mano",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Detergenza Pulita AIAB».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Detergenza Pulita AIAB",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "953354",
+    "ean": "8032454050135",
+    "source_file": "clean/naturasi.json",
+    "source_index": 153,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Sottolestelle",
+    "name": "Mattutini di farro con quinoa soffiata",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 3 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "undefined_natural",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con dolcificanti naturali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Undefined 'natural' attribute of the sweeteners; not a regulated term like 'aromi naturali'."
+      },
+      {
+        "claim_text": "di farro",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza latte",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza olio di palma",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Composition claim; no environmental wording (project convention)."
+      },
+      {
+        "claim_text": "senza uova",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vegan society",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "931653",
+    "ean": "8024848441629",
+    "source_file": "clean/naturasi.json",
+    "source_index": 154,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Victor Collection",
+    "name": "Bagnodoccia micio dolce inverno",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (natural_footnote), e.g. «BIOS - NaturCosmetics».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "BIOS - NaturCosmetics",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "nichel tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Nickel Tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "951563",
+    "ean": "8012638006387",
+    "source_file": "clean/naturasi.json",
+    "source_index": 155,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Natural Food",
+    "name": "Gomasio",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937795",
+    "ean": "2110411",
+    "source_file": "clean/naturasi.json",
+    "source_index": 157,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Cascine Orsine",
+    "name": "Caciotta pavese di mucca",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza caglio animale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Vegetarian-type composition claim; not a vegan claim (milk is still used)."
+      }
+    ]
+  },
+  {
+    "product_id": "948511",
+    "ean": "8017247922424",
+    "source_file": "clean/naturasi.json",
+    "source_index": 158,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Antico Molino Rosso",
+    "name": "Farina Manitoba",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1070516",
+    "ean": "4012824723481",
+    "source_file": "clean/naturasi.json",
+    "source_index": 162,
+    "retailer": "NaturaSì",
+    "category": "tisane-e-infusi",
+    "brand": "Yogi Tea",
+    "name": "SELEZIONE YOGA",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "945539",
+    "ean": "8027308001029",
+    "source_file": "clean/naturasi.json",
+    "source_index": 163,
+    "retailer": "NaturaSì",
+    "category": "vino-e-birra",
+    "brand": "Le Carline",
+    "name": "Pinot grigio Venezia DOC senza solfiti aggiunti",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza solfiti aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1071708",
+    "ean": "8023678732587",
+    "source_file": "clean/naturasi.json",
+    "source_index": 166,
+    "retailer": "NaturaSì",
+    "category": "bevande-vegetali",
+    "brand": "Isola Plus",
+    "name": "Avena Plus con calcio e vitamine ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «ricetta vegana».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "a basso contenuto sodio sale",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza zuccheri aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941049",
+    "ean": "2110320",
+    "source_file": "clean/naturasi.json",
+    "source_index": 167,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Biovida",
+    "name": "Prosciutto cotto alle erbe",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1071088",
+    "ean": "8050247800613",
+    "source_file": "clean/naturasi.json",
+    "source_index": 168,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Lab Nat",
+    "name": "Sapone di Marsiglia liquido",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «BIOS - EcoClean».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "BIOS - EcoClean",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      }
+    ]
+  },
+  {
+    "product_id": "945717",
+    "ean": "8016323045354",
+    "source_file": "clean/naturasi.json",
+    "source_index": 170,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Fior di Loto",
+    "name": "Fior di Biscotti Cuoricini di grano saraceno",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "undefined_natural",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "con dolcificanti naturali",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Undefined 'natural' attribute of the sweeteners; not a regulated term like 'aromi naturali'."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza latte",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza uova",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "958065",
+    "ean": "8019359013038",
+    "source_file": "clean/naturasi.json",
+    "source_index": 171,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Flora",
+    "name": "Shampoo extra dolce con aloe vera",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «BDIH».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "BDIH",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "866154",
+    "ean": "8018848000054",
+    "source_file": "clean/naturasi.json",
+    "source_index": 172,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "Baule Volante",
+    "name": "Lievito alimentare in fiocchi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "ad alto contenuto di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ad alto contenuto di proteine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "950450",
+    "ean": "8018511010687",
+    "source_file": "clean/naturasi.json",
+    "source_index": 173,
+    "retailer": "NaturaSì",
+    "category": "gastronomia",
+    "brand": "L'Antica Cucina",
+    "name": "Cassoni con spinaci e Parmigiano Reggiano",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza lieviti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941114",
+    "ean": null,
+    "source_file": "clean/naturasi.json",
+    "source_index": 174,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Capre Felici",
+    "name": "Caciottona di latte di capra affinata nel fieno",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "949781",
+    "ean": "8019010419230",
+    "source_file": "clean/naturasi.json",
+    "source_index": 175,
+    "retailer": "NaturaSì",
+    "category": "pasta-riso-e-farine",
+    "brand": "Le Terre di Ecor",
+    "name": "Farina biodinamica di grano tenero tipo 1",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Demeter",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "949156",
+    "ean": "5021991942495",
+    "source_file": "clean/naturasi.json",
+    "source_index": 178,
+    "retailer": "NaturaSì",
+    "category": "tisane-e-infusi",
+    "brand": "Cupper",
+    "name": "Infuso biologico Rooibos",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "951158",
+    "ean": "8032891000106",
+    "source_file": "clean/naturasi.json",
+    "source_index": 179,
+    "retailer": "NaturaSì",
+    "category": "vino-e-birra",
+    "brand": "Pievalta",
+    "name": "Vino perlugo metodo classico ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938291",
+    "ean": "8033247770100",
+    "source_file": "clean/naturasi.json",
+    "source_index": 180,
+    "retailer": "NaturaSì",
+    "category": "yogurt-e-kefir",
+    "brand": "Bionova",
+    "name": "Kefir",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di proteine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "936763",
+    "ean": "4015533045608",
+    "source_file": "clean/naturasi.json",
+    "source_index": 181,
+    "retailer": "NaturaSì",
+    "category": "bevande",
+    "brand": "Voelkel",
+    "name": "Kombucha al lime e zenzero",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "a basso contenuto calorico",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "938451",
+    "ean": "8023678162216",
+    "source_file": "clean/naturasi.json",
+    "source_index": 182,
+    "retailer": "NaturaSì",
+    "category": "bevande-vegetali",
+    "brand": "Isola Bio",
+    "name": "Bevanda vegetale Miglio Original",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "942883",
+    "ean": "8032649452485",
+    "source_file": "clean/naturasi.json",
+    "source_index": 184,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Eco Blu",
+    "name": "Detersivo lavastoviglie liquido profumo lime",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «BIOS - EcoClean».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "BIOS - EcoClean",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      }
+    ]
+  },
+  {
+    "product_id": "1072142",
+    "ean": "8019010319301",
+    "source_file": "clean/naturasi.json",
+    "source_index": 186,
+    "retailer": "NaturaSì",
+    "category": "colazione-e-merende",
+    "brand": "Si Essenziali",
+    "name": "Frollini ai 3 cereali e fiocchi di avena ",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "fonte di fibre",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "950387",
+    "ean": "8029182009702",
+    "source_file": "clean/naturasi.json",
+    "source_index": 187,
+    "retailer": "NaturaSì",
+    "category": "cura-della-persona",
+    "brand": "Bioearth",
+    "name": "Shampoo anticrespo niaouli e tè verde",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Bio Eco Cosmesi AIAB».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Bio Eco Cosmesi AIAB",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Eco/bio wording inside the name of a named certification scheme; the scheme makes it specific, so certification only (not generic_green)."
+      },
+      {
+        "claim_text": "nichel tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Nickel Tested",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "952251",
+    "ean": "7610313390229",
+    "source_file": "clean/naturasi.json",
+    "source_index": 188,
+    "retailer": "NaturaSì",
+    "category": "dispensa-e-condimenti",
+    "brand": "A. Vogel",
+    "name": "Sale alle erbe bio Herbamare® Original",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "945182",
+    "ean": "4101530001171",
+    "source_file": "clean/naturasi.json",
+    "source_index": 190,
+    "retailer": "NaturaSì",
+    "category": "latte-formaggi-e-uova",
+    "brand": "Berchtesgadener Land",
+    "name": "Quark magro",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "951442",
+    "ean": "8012235000610",
+    "source_file": "clean/naturasi.json",
+    "source_index": 193,
+    "retailer": "NaturaSì",
+    "category": "tisane-e-infusi",
+    "brand": "Berici Infusi",
+    "name": "Infuso di ortica",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "941324",
+    "ean": "8020220001047",
+    "source_file": "clean/naturasi.json",
+    "source_index": 194,
+    "retailer": "NaturaSì",
+    "category": "vino-e-birra",
+    "brand": "Castello Di Tassarolo",
+    "name": "Gavi DOCG senza solfiti aggiunti",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "senza solfiti aggiunti",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "944327",
+    "ean": "8033247773507",
+    "source_file": "clean/naturasi.json",
+    "source_index": 195,
+    "retailer": "NaturaSì",
+    "category": "yogurt-e-kefir",
+    "brand": "Bionova",
+    "name": "Integratore di fermenti lattici vivi Probioflora kefir BioNova",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "951571",
+    "ean": "8016791003016",
+    "source_file": "clean/naturasi.json",
+    "source_index": 196,
+    "retailer": "NaturaSì",
+    "category": "bevande",
+    "brand": "Mas Del Gnac",
+    "name": "Sciroppo di menta",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Agricoltura biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "937603",
+    "ean": "8020819006286",
+    "source_file": "clean/naturasi.json",
+    "source_index": 198,
+    "retailer": "NaturaSì",
+    "category": "carne-pesce-e-salumi",
+    "brand": "Primavera",
+    "name": "Cotechino precotto",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (endorsement_named_vs_generic), e.g. «Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25».",
+    "gray_zone": "endorsement_named_vs_generic",
+    "triggers": [
+      "certification",
+      "named_endorsement",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Agricoltura biologica",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto inserito nel Prontuario AIC degli Alimenti, ed. 2024/25",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "named_endorsement"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: endorsement_named_vs_generic. Listing by a named body (Associazione Italiana Celiachia) in a health context; handled like the A.I.Nut. example."
+      },
+      {
+        "claim_text": "senza glutine",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "950923",
+    "ean": "4007547202115",
+    "source_file": "clean/naturasi.json",
+    "source_index": 199,
+    "retailer": "NaturaSì",
+    "category": "casa-e-giardino",
+    "brand": "Sonett",
+    "name": "Sapone di Marsiglia in barre",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (natural_footnote), e.g. «Natural Cosmetics Standard».",
+    "gray_zone": "natural_footnote",
+    "triggers": [
+      "certification",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Natural Cosmetics Standard",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: natural_footnote. Natural-cosmetics claim whose definition lives in the named external standard."
+      },
+      {
+        "claim_text": "ricetta vegana",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vegan society",
+        "source_field": "certifications",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  }
+]

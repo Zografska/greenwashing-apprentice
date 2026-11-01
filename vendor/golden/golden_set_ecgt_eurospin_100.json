@@ -1,0 +1,4861 @@
+[
+  {
+    "product_id": "1072121",
+    "ean": "8051407411304",
+    "source_file": "clean/eurospin.json",
+    "source_index": 0,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "La Brassicola",
+    "name": "Birra artigianale italiana \"La Bionda\"",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Le migliori materie prime, una sapiente lavorazione artigianale, e il tempo necessario ad affinare il tutto.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I birrai de \"La Brassicola\" non scendono a compromessi per farvi scoprire il meglio dell'arte birraia, unita al gusto italiano.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Abbiamo selezionato i migliori luppoli nobili europei, delicati ed aromatici, per creare una birra semplice ma raffinata: un aperitivo ideale e una compagna per momenti spensierati",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La Bionda è la nostra \"chiara\" per eccellenza.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1011796",
+    "ean": "8009710100507",
+    "source_file": "clean/eurospin.json",
+    "source_index": 2,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Amaro Fernet",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il Fernet è il sovrano degli amari, raccomandato per le sue virtù si prende puro, con acqua minerale, caffè, vermouth e come correttivo di qualsiasi bibita.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La forza digestiva del Fernet.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Specialità tradizionale - Amaro Fernet classico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1063125",
+    "ean": "8003695000241",
+    "source_file": "clean/eurospin.json",
+    "source_index": 3,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Amaro della tradizione",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (3).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con ghiaccio o liscio dopo i pasti è un tonico digestivo per eccellenza, stimolante come aperitivo con aggiunta di acqua minerale e una scorza di limone, ottimo correttivo nel caffè, caldo come punch, delizioso sul gelato.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Antica ricetta 1952",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Elaborato con erbe aromatiche sapientemente combinate secondo tradizione",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1028178",
+    "ean": "8009710117604",
+    "source_file": "clean/eurospin.json",
+    "source_index": 4,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Liquore limoncello",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Questo limoncello è ottenuto dall'infusione delle scorze dei migliori limoni italiani, nel rispetto della tradizione Mediterranea.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto da limoni italiani",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1105966",
+    "ean": "8017596139351",
+    "source_file": "clean/eurospin.json",
+    "source_index": 5,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Italia Zuccheri",
+    "name": "Zucchero",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «100% italiano - Filiera certificata* ... La filiera di produzione ITALIA ZUCCHER».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "L'unico zucchero 100% italiano che nasce dalla cura dei soci agricoltori di ITALIA ZUCCHERI - CO.PRO.B. sca.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% italiano - Filiera certificata* ... La filiera di produzione ITALIA ZUCCHERI - CO.PRO.B. sca è certificata secondo lo standard ISO22005 (*Certificato n. CERT-221-2004-PC- BOL-SINCERT)",
+        "source_field": "description",
+        "footnote": "La filiera di produzione ITALIA ZUCCHERI - CO.PRO.B. sca è certificata secondo lo standard ISO22005 (*Certificato n. CERT-221-2004-PC- BOL-SINCERT)",
+        "triggers": [
+          "certification",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "ISO 22005 is a named traceability (not sustainability) standard; treated as certification of the supply chain, with origin claim out_of_scope."
+      },
+      {
+        "claim_text": "CO.PRO.B. sca è una cooperativa di agricoltori italiani che costituiscono l'unia VERA filiera corta dello zucchero 100% ITALIANO",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "'VERA filiera corta' asserts supply-chain goodness without verifiable detail; origin part out_of_scope."
+      }
+    ]
+  },
+  {
+    "product_id": "1023438",
+    "ean": "8017596124906",
+    "source_file": "clean/eurospin.json",
+    "source_index": 6,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Croccantini alla farina di segale con cumino e finocchio",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "2 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Ha un gusto forte e naturale.».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "Una nuova specialità in base ad un'antica ricetta della Val Venosta.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ha un gusto forte e naturale.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "'naturale' qualifies the taste rather than the product composition; borderline undefined natural."
+      },
+      {
+        "claim_text": "E' un prodotto genuino della Val Venosta, Alto Adige, fatto con ingredienti naturali",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ricchi di fibre - Senza olio di palma",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1002742",
+    "ean": "8032273032619",
+    "source_file": "clean/eurospin.json",
+    "source_index": 7,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Basilico fresco",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Da filiera controllata nel rispetto della natura.».",
+    "gray_zone": null,
+    "triggers": [
+      "farming_practice",
+      "generic_green",
+      "out_of_scope",
+      "recycled_recyclable",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "Selezioniamo per la vostra tavola solo le migliori erbe aromatiche fresche.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Da filiera controllata nel rispetto della natura.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% agricoltura integrata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "farming_practice"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Integrated farming is a concrete practice (and a regional scheme) but no scheme or certifier is named."
+      },
+      {
+        "claim_text": "Confezione 100% riciclabile",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1000177",
+    "ean": "8001230004143",
+    "source_file": "clean/eurospin.json",
+    "source_index": 8,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "Emmentaler Switzerland",
+    "name": "Formaggio Emmentaler svizzero DOP",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "L'Emmentaler Switzerland viene prodotto esclusivamente nei piccoli caseifici artigianali della valle dell'Emme in Svizzera ed è apprezzato per il suo gusto delicato e la sua versatilità in cucina anche a caldo",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "L'originale svizzero",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1069980",
+    "ean": "8017596067425",
+    "source_file": "clean/eurospin.json",
+    "source_index": 9,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Assorbenti ultra ali notte 20 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Questo prodotto è realizzato con materia prima da foreste gestite in maniera sos».",
+    "gray_zone": null,
+    "triggers": [
+      "generic_green",
+      "out_of_scope",
+      "recycled_recyclable",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il nuovo assorbente Fior di Magnolia ti offre un asciutto e una morbidezza mai provata grazie all'esclusivo filtrante.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Particolarmente delicato e soffice sulla superficie della pelle.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Grazie alla presenza dei polimeri superassorbenti e al sistema \"Odour Defence\", ti sentirai più asciutta e libera.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Le ali sono state studiate per una perfetta aderenza a tutti i tipi di slip e assicurarti una maggiore libertà di movimento.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ipoallergenico - Anatomico - Morbido filtrante forato - Ali per una perfetta aderenza allo slip",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questo prodotto è realizzato con materia prima da foreste gestite in maniera sostenibile e da fonti controllate",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "FSC-style wording with no certifier named: generic 'sostenibile' plus unverified 'fonti controllate'."
+      },
+      {
+        "claim_text": "Busta 40% di plastica riciclata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Anatomico - Ipoallergenico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Odour defence",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Particolarmente indicato per i flussi intensi della notte",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1092508",
+    "ean": "8017596135285",
+    "source_file": "clean/eurospin.json",
+    "source_index": 11,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Near",
+    "name": "Ricarica sapone liquido",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (comparator_vague_vs_named), e.g. «Ricarica 75% di plastica in meno* ... *75% di plastica in meno rispetto ad un fl».",
+    "gray_zone": "comparator_vague_vs_named",
+    "triggers": [
+      "generic_green",
+      "out_of_scope",
+      "vague_comparison"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il sapone liquido Near con ORCHIDEA e BURRO DI KARITE'/VERBENA E TE' VERDE, grazie alla sua formulazione attentamente studiata è ottimo per la detergenza quotidiana.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ha una profumazione ricca ed avvolgente ed è adatto all'uso di tutta la famiglia.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questa ricarica corrisponde a 2 confezioni da 500 ml: acquistandola, non solo risparmi i costi dei flaconi, ma contribuisci anche a ridurre l'impiego della plastica ed il volume dei rifiuti.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vague_comparison",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Reduction in plastic/waste with only an implicit comparator (buying two bottles); cost saving part out_of_scope."
+      },
+      {
+        "claim_text": "Ci guadagni tu e di guadagna l'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ricarica 75% di plastica in meno* ... *75% di plastica in meno rispetto ad un flacone di capacità equivalente",
+        "source_field": "description",
+        "footnote": "*75% di plastica in meno rispetto ad un flacone di capacità equivalente",
+        "triggers": [
+          "vague_comparison"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Gray zone: comparator_vague_vs_named. Comparator is a generic 'flacone di capacità equivalente', not a named product; treated as vague."
+      },
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "pH fisiologico 5.00",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1070481",
+    "ean": "8017596102003",
+    "source_file": "clean/eurospin.json",
+    "source_index": 13,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Assorbenti ultra giorno senza ali 32 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Busta 40% di plastica riciclata.».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "recycled_recyclable"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il nuovo assorbente Fior di Magnolia ti offre un asciutto e una morbidezza mai provata grazie al particolare filtrante.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Particolarmente delicato sulla superficie della pelle.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Grazie alla presenza dei polimeri superassorbenti e al sistema \"Odour Defence\", ti sentirai più asciutta e libera.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Le ali sono state studiate per adattarsi a tutti i tipi di slip e assicurarti una maggiore libertà di movimento.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato - Anatomico - Morbido filtrante traforato - Ipoallergenico - Barriere laterali anti-fuoriuscita",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Busta 40% di plastica riciclata.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Anatomico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ipoallergenico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Odour defence",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "In bustina singola - Barriere laterali - Filtrante traforato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1062651",
+    "ean": "8017596120915",
+    "source_file": "clean/eurospin.json",
+    "source_index": 14,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Amo Essere Eco",
+    "name": "Assorbenti notte con ali 100% cotone biologico",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 3 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Gli assorbenti Amo essere Eco, in puro cotone, sono certificati ICEA e prodotti ».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "brand_eco_slogan",
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "recycled_recyclable"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere Eco per la cura della persona è una linea di prodotti dedicata ai consumatori sensibili a logiche sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "brand_eco_slogan"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Gli assorbenti Amo essere Eco, in puro cotone, sono certificati ICEA e prodotti nel rispetto dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "brand_eco_slogan",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Le fibre naturali li rendono ipoallergenici a contatto con la pelle.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "'fibre naturali' is a material description (cotton), like 'lattice di gomma naturale'; hypoallergenic claim is out_of_scope."
+      },
+      {
+        "claim_text": "Dermatologicamente testati - Confezionati singolarmente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Assorbenti compostabili - 10 pezzi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1107018",
+    "ean": "0000024104005",
+    "source_file": "clean/eurospin.json",
+    "source_index": 15,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Gel arnica extra forte",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «95,3% DI INGREDIENTI DI ORIGINE NATURALE».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "Gel all'Arnica Montana con 50% di estratto glicerico, attivo noto per le spiccate proprietà lenitive e decongestionanti.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Formula gel per un rapido assorbimento senza ungere.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "95,3% DI INGREDIENTI DI ORIGINE NATURALE",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "pH FISIOLOGICO",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato su pelli sensibili",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "50% estratto glicerico di arnica montana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Made in Italy",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1111676",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 16,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Natura Bella",
+    "name": "Bagnoschiuma bio fresca natura",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 7 in-scope/needs-verification claims sit on a gray zone (eco_in_health_heritage), e.g. «Il Bagnodoccia Fresca Natura di Natura Bella deterge dolcemente la pelle grazie ».",
+    "gray_zone": "eco_in_health_heritage",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "undefined_natural",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il Bagnodoccia Fresca Natura di Natura Bella deterge dolcemente la pelle grazie alla presenza di tensioattivi delicati e Succo biologico di Aloe Vera che aiuta a mantenere il giusto grado di idratazione.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: eco_in_health_heritage."
+      },
+      {
+        "claim_text": "L'Estratto biologico di Betulla dona una sensazione di benessere grazie alle sue note proprietà emollienti e astringenti.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: eco_in_health_heritage."
+      },
+      {
+        "claim_text": "Dermatologicamente testato su pelli sensibili",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Valori di nichel, cromo e cobalto <0,0001%",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ingredienti selezionati per una maggiore attenzione alla persona e all'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "96% di origine naturale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "10% biologico esclusa acqua",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Bio Eco Cosmesi AIAB - Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Con estratto biologico di betulla",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1036862",
+    "ean": "8017596075505",
+    "source_file": "clean/eurospin.json",
+    "source_index": 17,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Fior di Magnolia",
+    "name": "Proteggi slip disteso 40 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Questo prodotto è realizzato con materia prima da foreste gestite in maniera sos».",
+    "gray_zone": null,
+    "triggers": [
+      "generic_green",
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "Grazie alla presenza dei polimeri superassorbenti, l'umido penetra velocemente all'interno e non ritorna in superficie.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Freschezza per tutti i giorni e una morbidezza mai provata grazie al particolare filtrante",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato - Tessuto traspirante - Ipoallergenico - Anatomico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questo prodotto è realizzato con materia prima da foreste gestite in maniera sostenibile e da fonti controllate",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "vague_supply_chain"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "FSC-style wording with no certifier named: generic 'sostenibile' plus unverified 'fonti controllate'."
+      },
+      {
+        "claim_text": "Traspirante ipoallergenico - Odour defence",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Il Proteggi slip Fiori di Magnolia è ideale per avere ogni giorno la sensazione di uno slip pulito, per i giorni di flusso leggero, per le piccole perdite intermestruali e per una maggiore protezione con i tamponi.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1063969",
+    "ean": "8017596073372",
+    "source_file": "clean/eurospin.json",
+    "source_index": 19,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Cerotti autoriscaldanti 2 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (5).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Per affaticamenti, tensioni muscolari, artriti e dolori mestruali",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Mantiene calore fino a 12 h",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Sanza farmaci - Monouso",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testati - Ipoallergenici",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Terapia del calore - Genera sollievo rilassando i muscoli tesi - Anatomico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1033038",
+    "ean": "8032836265171",
+    "source_file": "clean/eurospin.json",
+    "source_index": 21,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "BB Cream medio chiara/ medio scura",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (13), including a gray-zone decoy (risk_vs_performance).",
+    "gray_zone": "risk_vs_performance",
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Un solo prodotto multifunzionale, per essere belle e impeccabili in pochi minuti.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Emulsione protettiva ed emolliente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Riduce la visibilità dei difetti cutanei (macchie, rughe, arrossamenti) illuminando il viso.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Minimizza la visibilità di rughe e increspature.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Protegge la pelle dalle aggressioni esterne.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": "Gray zone: risk_vs_performance."
+      },
+      {
+        "claim_text": "Uniforma l'incarnato.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Risultati: pelle subito levigata, luminosa e fresca: un vero e proprio \"cinderella effect\"",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Acido ialuronico riduce le microrugosità e leviga la pelle",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Burro di cacao e cera d'api emollienti e protettivi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Olio di ciliegia migliora l'elasticità cutanea",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Vitamina E antiossidante e protettivo",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto clinicamente e dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Pelle luminosa e idratata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1041320",
+    "ean": "8017596104816",
+    "source_file": "clean/eurospin.json",
+    "source_index": 22,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Cerotti aquastop XL 5 pezzi",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (senza_pollutant_vs_additive), e.g. «Non contengono pvc».",
+    "gray_zone": "senza_pollutant_vs_additive",
+    "triggers": [
+      "out_of_scope",
+      "pollutant_free"
+    ],
+    "claims": [
+      {
+        "claim_text": "La compressa di garza antisettica con clorexidina digluconato, previene e combatte le infezioni, controllando il microambiente della ferita.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": "Gray zone: risk_vs_performance."
+      },
+      {
+        "claim_text": "Adesivo brevettato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Strato antiaderente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Garza assorbente alto spessore con disinfettante",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ipoallergenico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Privo di solventi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Gray zone: senza_pollutant_vs_additive. Solvent-free refers to the adhesive formulation; read as a product-safety/additive claim rather than a pollutant claim."
+      },
+      {
+        "claim_text": "Performance ottimali in tutte le condizioni ambientali",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Non contengono pvc",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "pollutant_free"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Gray zone: senza_pollutant_vs_additive. PVC-free is an environmentally-motivated material exclusion; closest trigger pollutant_free."
+      },
+      {
+        "claim_text": "Molto resistenti all'acqua - Dermatologicamente testato - Made in Italy",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Garza con disinfettante alto spessore - Invisibili - Ultrasottili- Adesivo di nuova tecnologia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1064051",
+    "ean": "8051160832712",
+    "source_file": "clean/eurospin.json",
+    "source_index": 24,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "Total Family",
+    "name": "Olio di 31 erbe officinali",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «100% naturale».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "L'olio di Erbe Officinali Total Family contiene una miscela di oli essenziali ed estratti provenienti da piante selezionate per le proprietà rinfrescanti, tonificanti, rivitalizzanti e balsamiche.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% naturale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Puro distillato di erbe benefiche per la cura del corpo",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1104517",
+    "ean": "8024291172705",
+    "source_file": "clean/eurospin.json",
+    "source_index": 25,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Salviette per bambini delicate umidificate 80 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 3 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «La lozione è arricchita con Acqua di Camomilla ed Estratto di Calendula Bio.».",
+    "gray_zone": null,
+    "triggers": [
+      "biodegradable",
+      "certification",
+      "out_of_scope",
+      "recycled_recyclable",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "LE SALVIETTINE HELLO BABY sono delicate e ideali per proteggere la pelle di neonati e bambini ad ogni cambio pannolino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La lozione è arricchita con Acqua di Camomilla ed Estratto di Calendula Bio.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Le salviette sono realizzate in 100% viscosa di origine vegetale, compostabile e biodegradabile.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable",
+          "biodegradable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Testate dermatologicamente su pelli sensibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testate su pelli sensibili",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "pH fisiologico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Delicate sulla pelle",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "98,8% di ingredienti di origine naturale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Con acqua di camomilla ed estratto di calendula bio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1111125",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 26,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Crema all'ossido di zinco Eco-Bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 4 in-scope/needs-verification claims sit on a gray zone (eco_in_health_heritage, risk_vs_performance), e.g. «Formula a testata per ridurre al minimo il rischio di allergie».",
+    "gray_zone": "risk_vs_performance",
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "risk_reduction",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con estratti da Agricoltura Biologica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Senza ingredienti di origine animale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Valori di Nichel, Cromo e Cobalto <1 ppm",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testata su pelli sensibili",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Formula a testata per ridurre al minimo il rischio di allergie",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "risk_reduction"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: risk_vs_performance."
+      },
+      {
+        "claim_text": "Crema con ossido di zinco che aiuta a proteggere la pelle del bambino dallo sviluppo di batteri mettendo così la cute al riparo dall'aggressione di urine e feci.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Gray zone: risk_vs_performance. Protective/preventive performance phrasing close to risk reduction but no explicit 'riduce il rischio'."
+      },
+      {
+        "claim_text": "Il Burro di Karitè e gli estratti di Calendula, Camomilla e Malva da Agricoltura Biologca leniscono e ammorbidiscono l'epidermide",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": "Gray zone: eco_in_health_heritage."
+      }
+    ]
+  },
+  {
+    "product_id": "1069734",
+    "ean": "8017596129215",
+    "source_file": "clean/eurospin.json",
+    "source_index": 27,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Hello Baby",
+    "name": "Pannolini mutandina taglia 6 - XL 18 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (10), including a gray-zone decoy (risk_vs_performance).",
+    "gray_zone": "risk_vs_performance",
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Hello Baby è una linea completa per il benessere del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "I pannolini Hello Baby garantiscono un asciutto sicuro del tuo bambino.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "DERMATOLOGICAMENTE TESTATO- Il test è stato effettuato presso Laboratori specializzati, sotto il controllo di un medico dermatologo.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "LIBERTA' DI MOVIMENTO - Comodi come mutandine, seguono i movimenti del tuo bambino",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "FACILI DA TOGLIERE - Ideati per essere sfilati o strappati lungo le cuciture",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ASCIUTTO GIORNO E NOTTE - Lascia traspirare la pelle del tuo bambino per mantenerla asciutta e protetta",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "ASCIUTTO IMMEDIATO E LUNGA DURATA - Il nucleo a canali permette una maggiore distribuzione del liquido riducendo il rischio di fuoriuscite ed evitando l'effetto rigonfiamento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Gray zone: risk_vs_performance. 'riducendo il rischio di fuoriuscite' is risk wording but about leaks (product performance), not health/environment."
+      },
+      {
+        "claim_text": "PRATICI E COMODI DA INDOSSARE - Le fasce laterali super elastiche, garantiscono una maggiore vestibilità, per dare al tuo bambino la massima libertà di movimento",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Fino a 12 ore di protezione - Comfort e sicurezza - Extra large 15-30 kg",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Elevata vestibilità - Protezioni contro le fuoriuscite",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090813",
+    "ean": "8017596079664",
+    "source_file": "clean/eurospin.json",
+    "source_index": 32,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Amo Essere Bio",
+    "name": "Bevanda all'avena bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 3 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "A basso contenuto di grassi",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Naturalmente senza lattosio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1033339",
+    "ean": "8017596100122",
+    "source_file": "clean/eurospin.json",
+    "source_index": 33,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Amo Essere Bio",
+    "name": "Bevanda al riso bio",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 3 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata a».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo essere biologico è una linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Naturalmente senza lattosio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Senza glutine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Senza zuccheri aggiunti - Contiene naturalmente zuccheri",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1067260",
+    "ean": "8007531009047",
+    "source_file": "clean/eurospin.json",
+    "source_index": 36,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Fortepasso",
+    "name": "Vino Piemonte Barbera DOC",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «CANTINA SOSTENIBILE EQUALITAS».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "CANTINA SOSTENIBILE EQUALITAS",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Sostenibilità Ecologica-Etica-Economica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dalla grande tradizione vinicola Italiana nascono vini che esprimono emozioni uniche",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Prodotto in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Denominazione di Origine Controllata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1104027",
+    "ean": "8001305331594",
+    "source_file": "clean/eurospin.json",
+    "source_index": 37,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Liquore al carciofo",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Il Liquore Carciofo nasce dalla sapiente infusione delle foglie di Carciofo in soluzione alcolica.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Ricetta tradizionale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1063166",
+    "ean": "8017596052803",
+    "source_file": "clean/eurospin.json",
+    "source_index": 38,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vino Sangiovese Rubicone IGT Brick",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Sostenibilità ecologica, etica, economica».",
+    "gray_zone": null,
+    "triggers": [
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Sostenibilità ecologica, etica, economica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Indicazione geografica tipica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "999803",
+    "ean": "8009885010328",
+    "source_file": "clean/eurospin.json",
+    "source_index": 39,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Metropolitan",
+    "name": "Liquore bitter",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Questo bitter italiano è ottenuto con metodi tradizionali.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "992882",
+    "ean": "8008530004217",
+    "source_file": "clean/eurospin.json",
+    "source_index": 40,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Ostro",
+    "name": "Vino Sangiovese Romagna DOC",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Consorzio vini di Romagna - Cantina sostenibile».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Consorzio vini di Romagna - Cantina sostenibile",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Gray zone: generic_plus_specific. 'Cantina sostenibile' with the Consorzio named but no scheme (e.g. Equalitas) stated; applied the project convention certification + generic_green."
+      },
+      {
+        "claim_text": "Denominazione di origine controllata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1000706",
+    "ean": "3859891792351",
+    "source_file": "clean/eurospin.json",
+    "source_index": 41,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Baccalà mantecato classico",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «100% naturale».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "undefined_natural"
+    ],
+    "claims": [
+      {
+        "claim_text": "Senza conservanti aggiunti",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% naturale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "undefined_natural"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1035423",
+    "ean": "8017596105882",
+    "source_file": "clean/eurospin.json",
+    "source_index": 51,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Don Jerez",
+    "name": "Capsule caffè decaffeinato compatibili con Lavazza \"A MODO MIO\" 16 pezzi",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Capsula compostabile».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "recycled_recyclable"
+    ],
+    "claims": [
+      {
+        "claim_text": "La linea Don Jerez è una selezione di caffè dal gusto tipicamente italiano.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "La tostatura e la miscelazione sono effettuate con un ciclo di produzione che, pur avvalendosi di tecnologie d'avanguardia, rispetta i tempi di lavorazione, a salvaguardia del prodotto finito.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Si ottiene così un caffè pregiato che fa risaltare fragranza e aroma della tradizione italiana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Capsula compostabile",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1067030",
+    "ean": "8027099000034",
+    "source_file": "clean/eurospin.json",
+    "source_index": 52,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Biscotti Baci di dama alla mandorla",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Farina e burro 100% Italia - Prodotto artigianale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1072018",
+    "ean": "8017596131089",
+    "source_file": "clean/eurospin.json",
+    "source_index": 53,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Orecchiette di grano duro",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Lavorazione artigianale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1072838",
+    "ean": "8017596131096",
+    "source_file": "clean/eurospin.json",
+    "source_index": 54,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Trofie",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Lavorazione artigianale - 100% grano italiano",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1090425",
+    "ean": "2020000000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 55,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Biscotti cuoricini con crema alla nocciola",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Farina e burro 100% Italia - Prodotto artigianale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1049460",
+    "ean": "8032055000027",
+    "source_file": "clean/eurospin.json",
+    "source_index": 62,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "McGarlet",
+    "name": "Mango",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Sono BioPack, il packaging McGarlet ecosostenibile al 100% per il massimo rispet».",
+    "gray_zone": null,
+    "triggers": [
+      "brand_eco_slogan",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Sono BioPack, il packaging McGarlet ecosostenibile al 100% per il massimo rispetto dell'ambiente a favore della Terra",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "brand_eco_slogan"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1054656",
+    "ean": "8018708941701",
+    "source_file": "clean/eurospin.json",
+    "source_index": 66,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Insalata cuore di scarola",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "1 IN_SCOPE and 0 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Questo prodotto deriva da una filiera corta dove raccolta, selezione e lavaggio ».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "vague_supply_chain"
+    ],
+    "claims": [
+      {
+        "claim_text": "Foglie selezionate provenienti dal cuore del cespo, dal sapore gradevolmente amarognolo",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Noi pensiamo alla qualità, tu mantieni la catena del freddo",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Le nostre insalate sono già state lavate con cura per te.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questo prodotto deriva da una filiera corta dove raccolta, selezione e lavaggio rispettano un rigido disciplinare di controllo a tutela della qualità e della freschezza",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vague_supply_chain",
+          "out_of_scope"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Unnamed 'rigido disciplinare di controllo' on a short supply chain, framed around quality/freshness."
+      }
+    ]
+  },
+  {
+    "product_id": "1107449",
+    "ean": "8017596102454",
+    "source_file": "clean/eurospin.json",
+    "source_index": 68,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Lasagne sfoglia sottile",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (3).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Sfoglia ruvida e porosa.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Fatta con uova fresche.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Il gusto autentico del grano",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1041536",
+    "ean": "8017596056665",
+    "source_file": "clean/eurospin.json",
+    "source_index": 69,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Compresse di garza sterili",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "100% cotone",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Traspiranti - Protettive - Ipoallergeniche",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% cotone - Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Traspiranti - Protettive",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1108443",
+    "ean": "8017596138279",
+    "source_file": "clean/eurospin.json",
+    "source_index": 70,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Deodorante spray donna assortito",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (4).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "0% alcool",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Antitraspirante",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Idratante/Delicato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "48 h - Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1104840",
+    "ean": "8017596137180",
+    "source_file": "clean/eurospin.json",
+    "source_index": 72,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Ricarica sapone liquido Olio di Argan/Aloe vera",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "PH fisiologico 5.5",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1073250",
+    "ean": "8017596133373",
+    "source_file": "clean/eurospin.json",
+    "source_index": 73,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Bagnoschiuma neutro / riequilibrante",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (3).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Una schiuma cremosa e una piacevole fragranza.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Deterge dolcemente la tua pelle per renderla morbida e vellutata.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1088181",
+    "ean": "8017596132277",
+    "source_file": "clean/eurospin.json",
+    "source_index": 74,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Bagnoschiuma olio di cedro e bergamotto/argan e patchouli",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1088180",
+    "ean": "8017596132253",
+    "source_file": "clean/eurospin.json",
+    "source_index": 75,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Bagnoschiuma fiori di ibisco e felce/mora e muschio",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1069163",
+    "ean": "8017596130303",
+    "source_file": "clean/eurospin.json",
+    "source_index": 76,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Crema soft mani e corpo",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Idratazione h48",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1056742",
+    "ean": "8017596118806",
+    "source_file": "clean/eurospin.json",
+    "source_index": 77,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "Amo Essere Bio",
+    "name": "Latte intero biologico",
+    "golden_bucket": "in_between",
+    "bucket_reason": "3 of its 5 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consu».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "recycled_recyclable"
+    ],
+    "claims": [
+      {
+        "claim_text": "Amo Essere Bio è la linea di prodotti da Agricoltura Biologica dedicata ai consumatori sensibili ai temi della salvaguardia delle risorse naturali, della biodiversità e dell'utilizzo di pratiche ambientali sostenibili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Una serie di specialità, dai cereali alla pasta, dalle uova ai prodotti da forno, certificate secondo le norme europee e prodotte nel rispetto dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Il Latte Intero Amo Essere Biologico ha una confezione ottenuta da fonti rinnovabili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Renewable-source (bio-based) packaging with no further detail in this sentence; project convention recycled_recyclable, low."
+      },
+      {
+        "claim_text": "Il contenitore è certificato FSC: la cellulosa proviene da foreste gestite in maniera responsabile e da altre fonti controllate.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Il tappo e gli strati di plastica della confezione sono ottenuti da fonti rinnovabili, ricavate dalla canna da zucchero invece che da fonti fossili.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Bio-based (sugar cane) packaging; project convention maps it to recycled_recyclable, low."
+      }
+    ]
+  },
+  {
+    "product_id": "1058219",
+    "ean": "8017596118981",
+    "source_file": "clean/eurospin.json",
+    "source_index": 78,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "Radames",
+    "name": "Salviette detergenti per cani e gatti 50 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con aloe vera - Odor control - Dermatologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1110819",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 79,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Bagno delicato no lacrime per corpo e capelli eco-bio",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 2 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Con estratto di Avena da Agricoltura Biologica».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con estratto di Avena da Agricoltura Biologica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Senza ingredienti di origine animale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Valori di Nichel, Cromo e Cobalto <0,4 ppm",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Formulato a pH fisiologico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Dermatologicamente testato su pelli sensibili - Oftalmologicamente testato",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1091788",
+    "ean": "8017596133649",
+    "source_file": "clean/eurospin.json",
+    "source_index": 82,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Salsa teriyaki",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Vegan».",
+    "gray_zone": null,
+    "triggers": [
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1026809",
+    "ean": "8425697002236",
+    "source_file": "clean/eurospin.json",
+    "source_index": 83,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Fragole",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1105062",
+    "ean": "4770190163163",
+    "source_file": "clean/eurospin.json",
+    "source_index": 84,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Bastoncini di surimi",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Questo prodotto proviene da attività di pesca certificate da un organismo indipe».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "farming_practice",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Realizzati con filetti di pesce selvaggio!",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "farming_practice"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "'pesce selvaggio' (wild-caught) is a sourcing/fishing-method claim; no rule fits exactly, closest farming_practice."
+      },
+      {
+        "claim_text": "Questo prodotto proviene da attività di pesca certificate da un organismo indipendente secondo lo standard MSC per una pesca ben gestita e sostenibile.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Ad alto contenuto di proteine",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Senza polifosfati aggiunti",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1055540",
+    "ean": "0000080761198",
+    "source_file": "clean/eurospin.json",
+    "source_index": 86,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Yogurt intero al cocco",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1069355",
+    "ean": "8056234640361",
+    "source_file": "clean/eurospin.json",
+    "source_index": 88,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Dentifricio bimbi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Gusto menta delicata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1087965",
+    "ean": "8017596127563",
+    "source_file": "clean/eurospin.json",
+    "source_index": 94,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Salsa di soia",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Vegan».",
+    "gray_zone": null,
+    "triggers": [
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "Vegan",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1055541",
+    "ean": "0000080761235",
+    "source_file": "clean/eurospin.json",
+    "source_index": 98,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Yogurt intero al caffè",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1055239",
+    "ean": "8017596115829",
+    "source_file": "clean/eurospin.json",
+    "source_index": 100,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Snack merenda formaggio e grissini",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "+ Calcio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1026151",
+    "ean": "8026434405299",
+    "source_file": "clean/eurospin.json",
+    "source_index": 101,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Bruschetta di Altamura",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1004717",
+    "ean": "8005479034152",
+    "source_file": "clean/eurospin.json",
+    "source_index": 103,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vino bianco",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Prodotto in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1038675",
+    "ean": "2080017000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 104,
+    "retailer": "Eurospin",
+    "category": "carne-e-pesce",
+    "brand": "unbranded",
+    "name": "Arrosto di suino",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1050486",
+    "ean": "8058774732131",
+    "source_file": "clean/eurospin.json",
+    "source_index": 105,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Bulgur",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "100% prodotto italiano",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1015583",
+    "ean": "8017596057396",
+    "source_file": "clean/eurospin.json",
+    "source_index": 111,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini con Animaletti 10 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1070995",
+    "ean": "2021544000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 112,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Krapfen al cioccolato",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1055269",
+    "ean": "8017596042361",
+    "source_file": "clean/eurospin.json",
+    "source_index": 113,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Cimette di rapa surgelate",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Coltivato in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1035965",
+    "ean": "8004565064127",
+    "source_file": "clean/eurospin.json",
+    "source_index": 114,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vermouth rosso",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Prodotto in italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1111895",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 116,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Filetti di sgombro al naturale grigliati",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «FRIEND OH THE SEA\nCertificato da Pesca Sostenibile».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "FRIEND OH THE SEA\nCertificato da Pesca Sostenibile",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Named certifier (Friend of the Sea, typo kept verbatim) plus 'Pesca Sostenibile'; the two badge lines are kept as one claim."
+      },
+      {
+        "claim_text": "Naturalmente ricchi di acidi grassi omega-3*",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Natural-presence idiom (out_of_scope); the * marker has no note body in text, so footnote is null."
+      }
+    ]
+  },
+  {
+    "product_id": "1050227",
+    "ean": "2070119000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 117,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Anguria",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1110130",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 118,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Margarina vegetale",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Certified Sustainable Palm Oil - MISTO contribuisce alla produzione di olio di p».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Certified Sustainable Palm Oil - MISTO contribuisce alla produzione di olio di palma sostenibile certificato www.rspo.org",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Senza grassi idrogenati",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1004393",
+    "ean": "8017596004970",
+    "source_file": "clean/eurospin.json",
+    "source_index": 123,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pan carrè",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Senza olio di palma",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Palm-oil-free can carry a deforestation connotation but no environmental wording is used; treated as a free-from claim."
+      }
+    ]
+  },
+  {
+    "product_id": "1061591",
+    "ean": "8017596040220",
+    "source_file": "clean/eurospin.json",
+    "source_index": 124,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Filetti di platessa impanati surgelati",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Questo prodotto proviene da attività di pesca certificate da un organismo indipe».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Questo prodotto proviene da attività di pesca certificate da un organismo indipendente secondo lo standard MSC per una pesca ben gestita e sostenibile.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1011848",
+    "ean": "8017596106773",
+    "source_file": "clean/eurospin.json",
+    "source_index": 125,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Bevanda acqua tonica",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1110200",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 129,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Salame strolghino",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Carne italiana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1070778",
+    "ean": "8033717554421",
+    "source_file": "clean/eurospin.json",
+    "source_index": 132,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Lettiera igienica per gatti",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 6 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «Si può smaltire nel WC domestico o nella raccolta dei rifiuti organici.».",
+    "gray_zone": null,
+    "triggers": [
+      "certification",
+      "out_of_scope",
+      "recycled_recyclable",
+      "vegan"
+    ],
+    "claims": [
+      {
+        "claim_text": "A contatto con i liquidi forma un agglomerato che lascia pulita e asciutta la zona circostante.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Questa pallina può comodamente essere raccolta con la paletta senza sbriciolarsi.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Performance/convenience description; borderline between descriptive prose and selling claim."
+      },
+      {
+        "claim_text": "Non fa polvere.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Consente un efficace controllo degli odori.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Si può smaltire nel WC domestico o nella raccolta dei rifiuti organici.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Product (not packaging) disposal in organic waste implies compostability; closest trigger recycled_recyclable."
+      },
+      {
+        "claim_text": "1,5 kg di lettiera 100% vegetale assorbono 3 litri di urina.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "'100% vegetale' on a cat litter is a plant-based material claim; mapped to vegan per the guide's literal list, with absorption performance as out_of_scope."
+      },
+      {
+        "claim_text": "Il logo \"OK compost INDUSTRIAL\" è riferito alla lettiera",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Il logo \"OK compost INDUTRIAL\" garantisce la compostabilità in conformità allo standard UNI EN 13432",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% vegetale",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "vegan"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Plant-based litter material; mapped to vegan per the guide's literal '100% vegetale' example, though it is not a food/vegan-lifestyle claim."
+      },
+      {
+        "claim_text": "Prodotto in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Agglomerante",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Forma la palla",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Efficace controllo degli odori - Smaltibile nell'organico e nel WC",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable",
+          "out_of_scope"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Odour-control performance plus disposal in organic waste (implied compostability); kept whole as the ' - ' joins two badges in one line."
+      }
+    ]
+  },
+  {
+    "product_id": "1003629",
+    "ean": "8017596057303",
+    "source_file": "clean/eurospin.json",
+    "source_index": 133,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Palloncini ghirlanda 10 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Made in Italy",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Line split at the inline ' - ' separator, which Eurospin uses between independent badge lines. '+8 anni' is an age warning and is excluded."
+      }
+    ]
+  },
+  {
+    "product_id": "1001460",
+    "ean": "8017596000910",
+    "source_file": "clean/eurospin.json",
+    "source_index": 134,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pane per tramezzino",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Senza crosta",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1022765",
+    "ean": "8017596042330",
+    "source_file": "clean/eurospin.json",
+    "source_index": 135,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Punte di asparagi surgelate",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Coltivato in Italia",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "991224",
+    "ean": "8057741770022",
+    "source_file": "clean/eurospin.json",
+    "source_index": 136,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vino Montepulciano d'Abruzzo DOC",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Cantina sostenibile equalitas».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Cantina sostenibile equalitas",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Project convention: Equalitas / Cantina sostenibile = certification + generic_green."
+      },
+      {
+        "claim_text": "Denominazione di origine controllata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Un vino, legame tra sapori e saperi di un territorio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1072616",
+    "ean": "8017596002648",
+    "source_file": "clean/eurospin.json",
+    "source_index": 138,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "unbranded",
+    "name": "Orzo perlato",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1050684",
+    "ean": "8026736015554",
+    "source_file": "clean/eurospin.json",
+    "source_index": 139,
+    "retailer": "Eurospin",
+    "category": "frutta-e-verdura",
+    "brand": "unbranded",
+    "name": "Patate",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1072508",
+    "ean": "8017596119438",
+    "source_file": "clean/eurospin.json",
+    "source_index": 143,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Snack per cani premium",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (2).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Senza cereali",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Omega 3",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1007373",
+    "ean": "8017596062246",
+    "source_file": "clean/eurospin.json",
+    "source_index": 145,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pane baguette precotta 2 pezzi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1061396",
+    "ean": "8017596001269",
+    "source_file": "clean/eurospin.json",
+    "source_index": 146,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Bistecchine di mare impanate surgelate",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Pesca sostenibile e certificata MSC.».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Pesca sostenibile e certificata MSC.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1089438",
+    "ean": "8007253111462",
+    "source_file": "clean/eurospin.json",
+    "source_index": 147,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Sciroppo di amarena",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Gluten free",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1088459",
+    "ean": "8017596131522",
+    "source_file": "clean/eurospin.json",
+    "source_index": 153,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Panna per caffè",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1009816",
+    "ean": "8017596122810",
+    "source_file": "clean/eurospin.json",
+    "source_index": 156,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pane Carasau",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Ricetta sarda",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1104157",
+    "ean": "9015180125857",
+    "source_file": "clean/eurospin.json",
+    "source_index": 158,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Erzherzog Leopold",
+    "name": "Birra Märzen",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1091175",
+    "ean": "8011952474186",
+    "source_file": "clean/eurospin.json",
+    "source_index": 160,
+    "retailer": "Eurospin",
+    "category": "dispensa",
+    "brand": "Covim",
+    "name": "Capsule caffè ginseng compatibili con le macchine Lavazza® A Modo Mio®* 16pz",
+    "golden_bucket": "hard_yes",
+    "bucket_reason": "0 IN_SCOPE and 1 NEEDS_VERIFICATION claims, none on a gray zone, e.g. «100% compostabile».",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope",
+      "recycled_recyclable"
+    ],
+    "claims": [
+      {
+        "claim_text": "Scopri il gusto unico della nostra bevanda al Ginseng, un'esplosione di sapori che conquisterà.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Perfetta per ogni momento della giornata.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Cremoso e aromatico",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "100% compostabile",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "recycled_recyclable"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "low",
+        "note": "Line split at the inline ' - ' separator, which Eurospin uses between independent badge lines. The following '*' note is a trademark disclaimer for the name, not a footnote of this claim."
+      }
+    ]
+  },
+  {
+    "product_id": "1037231",
+    "ean": "8017596105509",
+    "source_file": "clean/eurospin.json",
+    "source_index": 162,
+    "retailer": "Eurospin",
+    "category": "gastronomia-salumi-e-formaggi",
+    "brand": "unbranded",
+    "name": "Guanciale a petali",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Carne 100% italiana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1112057",
+    "ean": null,
+    "source_file": "clean/eurospin.json",
+    "source_index": 165,
+    "retailer": "Eurospin",
+    "category": "mondo-animali",
+    "brand": "unbranded",
+    "name": "Croccantini per gatti con tonno e verdure",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con vitamina E e Omega 3",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1068520",
+    "ean": "8017596107688",
+    "source_file": "clean/eurospin.json",
+    "source_index": 166,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "Prime Pappe",
+    "name": "Latte per la crescita",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con vitamine A, D, E, K, B1, B2, Biotina, Acido folico, B12, C - Con Ferro, Zinco",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1012639",
+    "ean": "8020890000357",
+    "source_file": "clean/eurospin.json",
+    "source_index": 169,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vino Passerina IGT",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Cantina sostenibile equalitas».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Cantina sostenibile equalitas",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Project convention: Equalitas / Cantina sostenibile = certification + generic_green."
+      },
+      {
+        "claim_text": "Indicazione geografica tipica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1034076",
+    "ean": "8017596109538",
+    "source_file": "clean/eurospin.json",
+    "source_index": 174,
+    "retailer": "Eurospin",
+    "category": "igiene-e-cura-personale",
+    "brand": "unbranded",
+    "name": "Olio per capelli argan / fiori preziosi",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Gocce di luce",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Could be a line name rather than a claim; read as shine/performance puffery."
+      }
+    ]
+  },
+  {
+    "product_id": "1056977",
+    "ean": "2020103000000",
+    "source_file": "clean/eurospin.json",
+    "source_index": 178,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pane arabo di grano duro",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1035763",
+    "ean": "8017596043900",
+    "source_file": "clean/eurospin.json",
+    "source_index": 179,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "unbranded",
+    "name": "Vaschetta gelato alla panna",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Con panna fresca italiana",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1028187",
+    "ean": "8020890000289",
+    "source_file": "clean/eurospin.json",
+    "source_index": 180,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "unbranded",
+    "name": "Vino Trebbiano d'Abruzzo DOC",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 1 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Cantina sostenibile equalitas».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green",
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Cantina sostenibile equalitas",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific. Project convention: Equalitas / Cantina sostenibile = certification + generic_green."
+      },
+      {
+        "claim_text": "Denominazione di origine controllata",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "claim_text": "Un vino, legame tra sapori e saperi di un territorio",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "995674",
+    "ean": "8017596073471",
+    "source_file": "clean/eurospin.json",
+    "source_index": 186,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "Eurospin",
+    "name": "Dessert profiterole",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Acquistando cacao certificato UTZ, Eurospin supporta la coltivazione sostenibile».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Acquistando cacao certificato UTZ, Eurospin supporta la coltivazione sostenibile del cacao.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Gli agricoltori certificati UTZ utilizzano migliori pratiche agricole rispettose dell'uomo e dell'ambiente.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1007979",
+    "ean": "8017596006585",
+    "source_file": "clean/eurospin.json",
+    "source_index": 189,
+    "retailer": "Eurospin",
+    "category": "pane-e-pasticceria",
+    "brand": "unbranded",
+    "name": "Pane da bruschetta con olio d'oliva",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "Only DISCARDED (out-of-scope) claims (1).",
+    "gray_zone": null,
+    "triggers": [
+      "out_of_scope"
+    ],
+    "claims": [
+      {
+        "claim_text": "Senza olio di palma",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "out_of_scope"
+        ],
+        "label": "DISCARDED",
+        "confidence": "low",
+        "note": "Palm-oil-free can carry a deforestation connotation but no environmental wording is used; treated as a free-from claim."
+      }
+    ]
+  },
+  {
+    "product_id": "1037918",
+    "ean": "8017596043283",
+    "source_file": "clean/eurospin.json",
+    "source_index": 190,
+    "retailer": "Eurospin",
+    "category": "surgelati-e-gelati",
+    "brand": "Eurospin",
+    "name": "Gelato coppe al caffè 4 pezzi",
+    "golden_bucket": "in_between",
+    "bucket_reason": "2 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «Acquistando caffè certificato UTZ, Eurospin supporta la coltivazione sostenibile».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "Acquistando caffè certificato UTZ, Eurospin supporta la coltivazione sostenibile del caffè.",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      },
+      {
+        "claim_text": "Gli agricoltori certificati UTZ utilizzano migliori pratiche agricole rispettose dell'uomo e dell'ambiente",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification",
+          "generic_green"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "high",
+        "note": "Gray zone: generic_plus_specific."
+      }
+    ]
+  },
+  {
+    "product_id": "1036655",
+    "ean": "8007046369100",
+    "source_file": "clean/eurospin.json",
+    "source_index": 191,
+    "retailer": "Eurospin",
+    "category": "bevande",
+    "brand": "Isola del Sole",
+    "name": "Vino Grillo Sicilia DOC",
+    "golden_bucket": "in_between",
+    "bucket_reason": "1 of its 2 in-scope/needs-verification claims sit on a gray zone (generic_plus_specific), e.g. «VIVA LA SOSTENIBILITA' NELLE VITIVINICOLTURA IN ITALIA».",
+    "gray_zone": "generic_plus_specific",
+    "triggers": [
+      "certification",
+      "generic_green"
+    ],
+    "claims": [
+      {
+        "claim_text": "VIVA LA SOSTENIBILITA' NELLE VITIVINICOLTURA IN ITALIA",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "generic_green",
+          "certification"
+        ],
+        "label": "IN_SCOPE",
+        "confidence": "low",
+        "note": "Gray zone: generic_plus_specific. Headline of the VIVA ministerial sustainability programme: the scheme name plus a generic sustainability slogan."
+      },
+      {
+        "claim_text": "\"Cantine Settesoli S.C.A.\" è certificato VIVA programma promosso dal Ministero dell'Ambiente e della Sicurezza Energetica",
+        "source_field": "description",
+        "footnote": null,
+        "triggers": [
+          "certification"
+        ],
+        "label": "NEEDS_VERIFICATION",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  {
+    "product_id": "1000403",
+    "ean": "8017596102607",
+    "source_file": "clean/eurospin.json",
+    "source_index": 197,
+    "retailer": "Eurospin",
+    "category": "latticini-e-uova",
+    "brand": "unbranded",
+    "name": "Crema al cioccolato",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  },
+  {
+    "product_id": "1007167",
+    "ean": "8017596060303",
+    "source_file": "clean/eurospin.json",
+    "source_index": 199,
+    "retailer": "Eurospin",
+    "category": "mondo-bimbi",
+    "brand": "unbranded",
+    "name": "Candela numero 3",
+    "golden_bucket": "hard_no",
+    "bucket_reason": "No purchase-influencing claims beyond the sales name.",
+    "gray_zone": null,
+    "triggers": [],
+    "claims": []
+  }
+]

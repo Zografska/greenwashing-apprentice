@@ -1,0 +1,211 @@
+# ECGT retriever pipeline config.
+# Everything that affects results lives here, so a run is reproducible from (config + anchors + code).
+config_version: 1
+
+anchors:
+  path: retriever/knowledge/anchors_v4.jsonl
+  sha256: 4dfcb5549f8230bd86eae0729f50ca5d5e857feead9540725f694dcdf66bfec4   # score.py refuses to run on a mismatch; update when anchors change
+
+embedding:
+  active: e5              # key into `models`; switch to "mpnet" to run the runner-up
+  models:
+    e5:
+      name: intfloat/multilingual-e5-base
+      revision: d128750597153bb5987e10b1c3493a34e5a4502a   # pinned 2026-10-03 (local HF cache)
+      prefix: "query: "   # e5 needs a prefix; the same one on both sides for symmetric matching
+      normalize: true
+    mpnet:
+      name: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+      revision: 4328cf26390c98c5e3c738b4460a05b95f4911f5   # pinned 2026-10-03
+      prefix: ""
+      normalize: true
+  batch_size: 32
+  device: auto            # auto | cpu | cuda | mps
+  cache_dir: .cache/anchor_embeddings   # cache key: model name + revision + anchors sha256
+
+pre:
+  # Only these fields are segmented; every other record key (annotations, recycling, url, ean, …)
+  # is ignored. The order is also the source_field priority when the same text appears twice.
+  # name/denomination are left out: product and legal names are not claims.
+  text_fields: [certifications, features, producer_info, description]
+  # Whole lines dropped before segmentation. Recall-first: patterns are structural, never topical,
+  # so a line like «Questa confezione è riciclabile» or «La raccolta differenziata aiuta la natura»
+  # survives. Matched case-insensitively against the stripped line.
+  drop_lines:
+    disposal:                           # packaging-disposal block (Carrefour folds it into description)
+      - '^[^.!?]{1,80}?\s(?:-\s*)?(?:largamente riciclabile|non riciclabile)\s*$'
+      - '^[^.!?]{0,80}\b(?:c/)?(?:pap|r?pet|hdpe|ldpe|pe-hd|pe-ld|pp|ps|pvc|other|gl|alu|fe|acc)\s?0?\d{1,2}\b[^.!?]{0,60}$'
+      - '^[^.!?]{0,60}\braccolta\s+(?:differenziata\s+)?(?:carta|plastica|vetro|metall\w*|umido|organico|indifferenziat\w*|alluminio)\b[^.!?]{0,40}$'
+      - '^[^.!?]{0,40}\s-\s\d{1,2}\s-\s[^.!?]{0,40}$'          # «Film - 7 - Raccolta plastica»
+      - '^raccolta differenziata\W*$'
+      - '^(?!.*\b(?:ambiente|pianeta|natura)\b).{0,80}?\b(?:verifica|segui|consulta|controlla|chiedi|contatta)\b.{0,120}?\btuo\s+comune\b'   # instruction only; a benefit clause makes it a claim (CTA rule)
+      - '^(?:-\s*)?(?:come smaltire|smaltimento|per (?:il corretto |lo )?smaltimento[^.!?]*)\W*$'
+      - '^cos''è\b.{0,40}\b(?:dove va|raccolta)\W*$'
+      - '^separa l''imballo correttamente\W*$'
+    origin:                             # retailer origin fields (gold convention: never extracted)
+      - '^(?:origine altro testo|luogo di provenienza|zona di pesca|paese di (?:origine|mungitura|allevamento|macellazione|nascita))\b'
+    section:                            # labelled non-claim sections; drops the labelled line only
+                                        # («Ricetta:» is NaturaSì's ingredient list)
+      - '^(?:ingredienti|ricetta|denominazione legale|allergeni|valori nutrizionali|modalità d''uso|modo d''uso|istruzioni d''uso|consigli d''uso|suggerimenti per l''uso|preparazione|conservazione|avvertenz[ae](?: importante)?|temperatura di servizio)\s*:'
+  # Heading rule (2026-10-03): a short heading directly above a dropped disposal line is dropped
+  # with it («Per l'ambiente», «Rispetta l'ambiente», «La nostra confezione e l'ambiente»), unless
+  # it carries specific wording («Attenti all'ambiente confezione riciclabile») or is a brand
+  # eco-slogan («Fiorentini per l'ambiente»: a name before «per l'ambiente»), 2026-10-03.
+  heading_max_words: 6
+  heading_match: '\b(?:ambiente|pianeta|natura|confezion\w*|imball\w*|packaging)\b'   # only these read as a disposal heading
+  heading_keep: '\b(?:ricicl\w*|compostabil\w*|biodegradabil\w*|certificat\w*)|%|^(?!per\b)\S.{0,40}\bper\s+l[''’]ambiente\W*$'
+
+segmentation:
+  unit_split: [line_break, bullet, sentence_end]   # never on comma
+  strip_leading: ["-", "•"]
+  strip_trailing: [".", ";"]
+  window_size: 2                        # also score merged spans of 2 adjacent units
+  score_comma_subclauses: true          # unit score = max over clauses; the whole unit is emitted
+  footnote_markers: ["**", "*", "^", "°"]   # longest first, so "**" is not read as "*"
+  footnote_join_separator: " ... "
+  drop_joined_footnote_bodies: true
+
+lexical:
+  # ECGT-only keyword list; this is the source of truth (the old extraction.py CLAIM_KEYWORDS
+  # prefilter is gone). Check coverage with `python3 retriever/lexical_coverage.py`.
+  source: config
+  flags: [IGNORECASE]
+  include:
+    - '\bvegan\w*'
+    - '\borigine\s+animale\b'
+    - '\bderivat\w*\s+(?:di\s+origine\s+)?animal\w*'
+    - '\bagricoltor\w*'
+    - '\btracciabil\w*'
+    - '\bmucche\b'
+    - '\balleva\w*'
+    - '\bapprovat[oaie]\b'
+    - '\brischio\b'
+    - '\bricicl\w*'
+    - '\bbiodegradabil\w*'
+    - '\bcompostabil\w*'
+    - '\bpfas\b'
+    - '\bfosfati\b'
+    - '\bmicroplastic\w*'
+    - '\bsiliconi\b'
+    - '\bcarbon\b'
+    - '\bco2\b'
+    - '\bemission\w*'
+    - '\bambiente\b'
+    - '\bpianeta\b'
+    - '\bsostenibil\w*'
+    - '\beco\b'
+    - '\bgreen\b'
+    - '\bbio\b'
+    - '\bbiologic\w*'
+    - '\bnatural\w*'
+    - '\bnatura\b'
+    - '\bverde\b'
+    - '\bplastica\b'
+    - '\bimpatto\b'
+    - '\bclimatic\w*'
+    - '\brinnovabil\w*'
+    - '\bcertificat\w*'
+    - '\bfsc\b'
+    - '\bfairtrade\b'
+    - '\becolabel\b'
+    # added 2026-10-03, tuned on golden_set_ecgt_reserve.json only (never on the gold 100)
+    - '\bfilier\w*'
+    - '\bbenessere\s+animale\b'
+    - '\becolog\w*'
+    - '\bsprec\w*'
+    - '\bresponsabil\w*'
+    - '\bimpegn\w*'
+    - '\bcircolar\w*'
+    - '\benergi\w*\s+(?:pulit|eolic|solar|verd|rinnovabil)\w*'
+    - '\brisparmi\w*'
+    - '\bpesticid\w*'
+    - '\bfertilizzant\w*'
+    - '\bdiserbant\w*'
+    - '\bogm\b'
+    - '\bdi\s+sintesi\b'
+    - '\bsolvent\w*'
+    - '\bpolivinil\w*'
+    - '\bconsigliat\w*\s+da\b'
+    - '\bin\s+collaborazione\s+con\b'
+    - '\bcontrollo\s+diretto\b'
+    - '\bdal\s+campo\b'
+    - '\brispett\w*'        # +5 reserve negatives for +1 positive; cost only
+    - '\bselezionat\w*'     # +16 reserve negatives for +3 positives; cost only
+    # Named certification / label schemes (2026-10-03). A bare scheme name («Demeter», «BDIH») has
+    # no green wording, so embeddings can't flag it; a closed list can. Built from general knowledge
+    # of EU/Italian schemes, not from the held-out misses (overlaps with them are reported in the
+    # checklist). Organic / biodynamic:
+    - '\bdemeter\b'
+    - '\bbiodinamic\w*'
+    - '\bbio\s*suisse\b'
+    - '\bnaturland\b'
+    - '\bbioland\b'
+    - '\baiab\b'
+    - '\bicea\b'
+    - '\bccpb\b'
+    - '\bbioagricert\b'
+    - '\bsuolo\s+e\s+salute\b'
+    - '\bbios\b'
+    - '\becocert\b'
+    - '\bsoil\s+association\b'
+    - '\borganic\b'          # English only; Italian «organico» is the waste bin, not a scheme
+    - '\beuro\s*leaf\b'
+    - '\bproduzione\s+integrata\b'
+    - '\bsqnpi\b'
+    # natural / organic cosmetics, animal testing:
+    - '\bcosmos\b'
+    - '\bbdih\b'
+    - '\bnatrue\b'
+    - '\bnature\s+care\s+product\b'
+    - '\bslow\s+cosm[eé]tique\b'
+    - '\bcruelty[\s-]*free\b'
+    - '\bleaping\s+bunny\b'
+    # environmental labels, forestry, textiles, climate:
+    - '\bpefc\b'
+    - '\b(?:blaue[rn]?\s+engel|blue\s+angel)\b'
+    - '\bnordic\s+swan\b'
+    - '\bcradle\s+to\s+cradle\b'
+    - '\boeko[\s-]*tex\b'
+    - '\bgots\b'
+    - '\bclimate\s*partner\b'
+    - '\bb[\s-]*corp\w*\b'
+    - '\bplastic[\s-]*free\b'
+    # fishing, fair trade, palm oil:
+    - '\bmsc\b'
+    - '\basc\b'
+    - '\bfriend\s+of\s+the\s+sea\b'
+    - '\bdolphin\s+safe\b'
+    - '\brainforest\s+alliance\b'
+    - '\butz\b'
+    - '\bequo\s*solidal\w*'
+    - '\bcommercio\s+equo\b'
+    - '\brspo\b'
+  exclude: []             # enable only if Step 5 shows leakage, e.g. '\baroma\s+natural\w*', '\bgusto\s+natural\w*'
+
+scoring:
+  method: margin          # margin = agg(sim to pos anchors) - agg(sim to neg anchors)
+  aggregation: top3_mean  # max | top3_mean; top3_mean chosen in Step 5 (fewest candidates at ≥ 99% reserve recall)
+  tau:                    # per model (margin scales differ), for top3_mean; calibrated on the reserve set,
+                          # rule: largest τ with recall ≥ 99% (Step 5, 2026-10-03). Gold measured once: 97.6%.
+    e5: 0.0125
+    mpnet: 0.0025
+  candidate_rule: lexical_or_margin
+  fewshot_k: 3            # top-k positive anchors passed to Pass 2
+
+pass2:
+  backend: ollama
+  model: null             # the local 3–8B model tag
+  temperature: 0
+  num_predict: 96
+  num_ctx: 3072
+  static_fewshot: 5
+  dynamic_fewshot: true   # append the retrieved anchors as CLAIM -> triggers examples
+
+eval:
+  gold_spans: eval/gold_spans_v1.jsonl   # frozen 2026-10-03, sha256 776085444c46…; skip needs_review spans
+  dev_spans: golden/labeled/golden_set_ecgt_reserve.json   # tune keywords/anchors here, never on gold
+  target_recall: 0.95
+  tau_sweep: {start: -0.05, stop: 0.10, step: 0.0025}   # fine steps for e5
+
+output:
+  record_run_metadata: true   # write config_version, anchors sha256, model + revision into every output file
