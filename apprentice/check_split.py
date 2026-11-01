@@ -49,14 +49,14 @@ def assert_trainable_path(path: Path | str) -> None:
 
 
 def _read_texts(path: Path | str) -> list[str]:
-    """Normalised texts from a JSONL training file (fields tried: norm, text, claim_text)."""
+    """Normalised texts from a JSONL training file (fields tried: norm, text, claim_text, claim)."""
     out = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             if not line.strip():
                 continue
             r = json.loads(line)
-            t = r.get("norm") or normalise(r.get("text") or r.get("claim_text") or "")
+            t = r.get("norm") or normalise(r.get("text") or r.get("claim_text") or r.get("claim") or "")
             if t:
                 out.append(t)
     return out
