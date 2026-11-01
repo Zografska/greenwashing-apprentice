@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# Caches / models
+.cache/
+*.gguf
+outputs/
+checkpoints/
+lora_*/
+# Secrets
+.env
+# Teacher outputs on TEST must never be mixed into training files (SPEC §4.3 rule 3);
+# they are kept, but in their own folder:
+#   data/teacher/test/   (tracked, read only by eval.py)
+.DS_Store
