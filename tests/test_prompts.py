@@ -51,3 +51,12 @@ def test_teacher_fewshot_labels_follow_post_rule():
 
     for fs in prompts.fewshots("fewshot_teacher.jsonl"):
         assert label(fs["triggers"]) == fs["label"], fs["claim"]
+
+
+def test_no_prompt_example_reveals_a_test_or_dev_claim():
+    """Examples quoted inside prompts must not equal, near-duplicate or (3+ words) be contained in a
+    test or dev claim (teacher prompt iteration 3, 2026-11-07)."""
+    if not DEFAULT_MANIFEST.exists():
+        return
+    from apprentice.check_split import load_manifest
+    assert prompts.prompt_leaks(load_manifest()) == []

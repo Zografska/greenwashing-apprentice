@@ -55,3 +55,41 @@ def student_messages(claim: str, legal: bool = True, examples: list[dict] | None
 
 def ft_messages(claim: str) -> list[dict]:
     return [{"role": "system", "content": load("P_ft.md").strip()}, {"role": "user", "content": user(claim)}]
+
+
+# ---- leak audit (examples quoted inside prompts must not reveal test or dev claims) ----------
+
+PROMPT_FILES = ("P_teacher.md", "P_student.md", "P_ft.md", "legal_block.md")
+
+
+def quoted_examples(names=PROMPT_FILES) -> list[str]:
+    import re
+    out = []
+    for n in names:
+        out += [q.strip() for q in re.findall(r"«([^»]+)»", load(n))]
+    return sorted(set(out))
+
+
+def prompt_leaks(manifest: list[dict], names=PROMPT_FILES, threshold: float = 0.85) -> list[tuple[str, str, str]]:
+    """Quoted examples that equal, near-duplicate (>= threshold), or, if 3+ words long, are contained in a
+    test or dev claim. Short stock phrases inside longer claims («senza parabeni») are allowed."""
+    from apprentice import neardup
+    from apprentice.data import normalise
+    quotes = quoted_examples(names)
+    qn = [normalise(q) for q in quotes]
+    corpus = [r["norm"] for r in manifest] + qn
+    leaks = []
+    for side in ("test", "dev"):
+        norms = [r["norm"] for r in manifest if r["side"] == side]
+        exact = set(norms)
+        near = {i for i, _, _ in neardup.near_dups(qn, norms, threshold, fit_corpus=corpus)}
+        for i, (q, n) in enumerate(zip(quotes, qn)):
+            if not n:
+                continue
+            if n in exact:
+                leaks.append((q, side, "exact"))
+            elif i in near:
+                leaks.append((q, side, "near-duplicate"))
+            elif len(n.split()) >= 3 and any(f" {n} " in f" {x} " for x in norms):
+                leaks.append((q, side, "contained"))
+    return leaks

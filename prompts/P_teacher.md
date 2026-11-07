@@ -22,7 +22,7 @@ generic_green       vague green or impact wording with no definition: eco, green
                     amico dell'ambiente, per il pianeta, ridurre l'impatto, ho a cuore l'ambiente
                     «Con cacao da coltivazione più sostenibile» «il latte amico dell'ambiente»
                     «gestito con ecosostenibilità» «Flacone green 100%» «brik-eco sostenibile»
-                    «Fai la differenziata per il pianeta» «Il nostro impegno per te e per il pianeta»
+                    «Fai la differenziata per il pianeta» «Il nostro impegno quotidiano per un pianeta più pulito»
                     «cannuccia di carta per ridurre l'impatto sull'ambiente»
 undefined_natural   "naturale", "di origine naturale", "% naturale" with no definition in the
                     CLAIM or FOOTNOTE
@@ -30,20 +30,20 @@ undefined_natural   "naturale", "di origine naturale", "% naturale" with no defi
                     «Prodotto con ingredienti di origine naturale»
 climate_neutral     carbon or climate neutral, zero emissions, emissions offset or compensated,
                     EVEN IF the claim explains it
-                    «CO2 100% prodotto a impatto climatico neutralizzato»
+                    «Prodotto a impatto climatico zero grazie alla compensazione della CO2»
                     «Emissioni zero / Questa confezione è Carbon Neutral: ciò significa che neutralizziamo le emissioni di CO2 generate dalla sua produzione»
 vague_comparison    a reduction or "more/less" with no comparator, or only "the previous pack"
-                    «75% In meno di plastica» «-17% Plastica rispetto al pack precedente»
+                    «Con il 40% di plastica in meno» «-17% Plastica rispetto al pack precedente»
 brand_eco_slogan    brand, product line or slogan with environmental content
-                    «Coop per l'ambiente» «Rigoni di Asiago per l'ambiente» «Vivi Verde»
+                    «Coop per l'ambiente» «Rigoni di Asiago per l'ambiente» «Scegli Verde»
                     «Gallo green» «Il Tuo Ciclo. Il Tuo Pianeta. Teniamo A Entrambi.»
                     «Il gusto di amare il pianeta» «Viva la Natura! / Per un futuro migliore»
 vague_supply_chain  vague claim about farmers, farming, sourcing or traceability
-                    «Agricoltori selezionati» «Tracciabilità e sicurezza» «Agricoltura sostenibile»
+                    «Agricoltori selezionati» «Tracciabilità garantita» «Da agricoltura responsabile»
 
 B. SPECIFIC, NEEDS CHECKING
 recycled_recyclable recycled or recyclable content of a named part
-                    «Etichetta in carta riciclata» «Qualità Pampers in cartoni 100% riciclati»
+                    «Etichetta in carta riciclata» «Scatola in cartone 100% riciclato»
 biodegradable       biodegradable or compostable
                     «Formula vegana & biodegradabile^ ... 99,9% formula biodegradabile»
 certification       organic/bio, or a named or unnamed certification or label
@@ -60,22 +60,22 @@ defined_term        a green or natural word that the CLAIM or FOOTNOTE defines
 risk_reduction      "riduce / aiuta a ridurre il rischio di ..."
                     «aiutano a ridurre il rischio di irritazione della pelle»
 named_comparison    compared with a named brand, product or standard
-                    «rispetto alle precedenti confezioni Beretta»
+                    «rispetto alla confezione classica della stessa marca»
 pollutant_free      free from a pollutant  «Senza microplastiche»
 
 C. OUT OF SCOPE
 out_of_scope        none of the above, for example:
-                    health or nutrition: «Speziato e Antiossidante» «fonte di fibre» «Alta digeribilità»
-                      «Contiene curcuma che possiede proprietà antiossidanti»
+                    health or nutrition: «Piccante e digestivo» «con tante proteine vegetali» «Alta digeribilità»
+                      «Con zenzero, noto per le sue proprietà digestive»
                     what the product does or how well: «Pulizia profonda» «Ripristina il PH»
-                      «Protegge dagli agenti esterni» «Massima protezione e comfort»
+                      «Protegge dallo smog e dal freddo» «Massima protezione e comfort»
                       «limita la formazione di cattivi odori» «Brightening & glow boosting eye mask»
                       «protegge i capelli dal crespo e da aggressioni esterne»
-                    tests and skin tolerance: «Clinicamente testate» «ipoallergenico»
+                    tests and skin tolerance: «Testato in laboratorio» «ipoallergenico»
                     history, tradition, recipe, family: «Dal 1820 la famiglia Grondona garantisce»
                       «le inimitabili ricette di famiglia» «il più tipico dei dolci tradizionali genovesi»
-                    patents and trademarks: «Brevetto internazionale»
-                    country of origin, DOP/IGP, «senza conservanti», «senza parabeni», sales rank
+                    patents and trademarks: «Formula brevettata»
+                    country of origin, DOP/IGP, «privo di conservanti», «senza parabeni», sales rank
 
 STEP 2 - Choose the label from the triggers:
 1. Only out_of_scope                          -> OUT
@@ -85,34 +85,32 @@ STEP 2 - Choose the label from the triggers:
    out_of_scope never beats a trigger from group A or B.
 
 PROJECT CONVENTIONS (follow them even where you would judge differently)
-- Country or region of origin, including where ingredients were grown («coltivati nella Valle del Ticino»),
+- Country or region of origin, including where ingredients were grown («coltivati sulle colline toscane»),
   DOP/IGP/STG and other quality schemes -> out_of_scope.
 - «Aroma naturale», «gusto naturale» -> out_of_scope.
 - Packaging function (salvafreschezza, richiudibile, …) -> out_of_scope.
-- «Senza siliconi», «Senza microplastiche» -> pollutant_free. «Senza parabeni», «Senza conservanti» -> out_of_scope.
+- «Senza siliconi», «Senza microplastiche» -> pollutant_free. «Senza parabeni», «Privo di conservanti» -> out_of_scope.
 - A heading alone is never a claim -> out_of_scope, except a brand eco-slogan («<Marca> per l'ambiente»).
 - Recycling call to action alone («Raccogli separatamente», «Conferisci nella plastica») -> out_of_scope;
-  with an environmental-benefit clause («… per il pianeta») -> generic_green.
-- Organic is always certification, wherever it appears: «bio», «biologico», «organic», EU organic codes
-  («IT-BIO-006», «HR-EKO-07», «Agricoltura UE/non UE»), and bare scheme names («FOREST STEWARDSHIP COUNCIL»,
-  «Fairtrade», «Solidal»). «Filiera certificata» -> certification, not vague_supply_chain.
-- Undefined "naturale" wording counts even in a taste, skin or tradition sentence («alimentazione naturale»,
-  «elementi naturali», «la naturalezza», «attivi naturali») -> undefined_natural. Only «aroma/gusto naturale»
-  and a natural source of a nutrient («fonte naturale di calcio») are out_of_scope.
+  with an environmental-benefit clause («… per un mondo più pulito») -> generic_green.
+- Organic is always certification, wherever it appears: «bio», «da coltivazione biologica», «organic», EU organic codes
+  («IT-BIO-006», «DE-ÖKO-001», «Agricoltura UE/non UE»), and bare scheme names («PROGRAMME FOR THE ENDORSEMENT OF FOREST CERTIFICATION»,
+  «Fairtrade», «Solidal»). «filiera certificata dal produttore» -> certification, not vague_supply_chain.
+- Undefined "naturale" wording counts even in a taste, skin or tradition sentence («nutrimento naturale»,
+  «estratti naturali», «la purezza naturale», «principi naturali») -> undefined_natural. Only «aroma/gusto naturale»
+  and a natural source of a nutrient («una fonte naturale di magnesio») are out_of_scope.
 - named_endorsement applies in any domain: approval, testing or collaboration by a NAMED organisation or expert
-  («testata da Toothfriendly International», «in collaborazione con il Policlinico Gemelli», a named nutritionist).
-- A concrete farming, breeding or fishing practice -> farming_practice, not vague_supply_chain: «galline allevate
-  a terra», «mucche al pascolo», «pescati in mare aperto», «senza sostanze chimiche di sintesi».
-  vague_supply_chain is for vague wording only («agricoltori selezionati», «filiera controllata», «sostegno alle
-  comunità», «sviluppo economico e sociale»).
+  («testato dall'Istituto Dermatologico Europeo», «in collaborazione con l'Ospedale San Raffaele», a named nutritionist).
+- A concrete farming, breeding or fishing practice -> farming_practice, not vague_supply_chain: «uova da galline allevate all'aperto», «mucche al pascolo», «pescato con amo e lenza», «coltivato senza pesticidi di sintesi».
+  vague_supply_chain is for vague wording only («agricoltori selezionati», «filiera sotto controllo», «sostegno alle
+  comunità», «a sostegno delle comunità locali»).
 - Packaging material stated with a figure or a named material -> recycled_recyclable or biodegradable (NV), not
-  generic_green: «50% Paper-based sachet», «Brick 86% da materie di origine vegetale», «Cialde compostabili».
+  generic_green: «Busta 60% a base di carta», «Bottiglia 70% da materiali di origine vegetale», «Capsule compostabili».
 - Slogans, brand and line names: being "just a slogan" is never a reason for out_of_scope. If the words
   present nature or the environment as a merit (verde, green, eco, natura, pianeta, ambiente, sostenibile)
-  without defining it, they are a claim: «Vivi Verde», «Più natura, più qualità», «Solo il meglio della
-  natura» -> brand_eco_slogan / undefined_natural / generic_green. The framing (lifestyle, "per te", "più")
+  without defining it, they are a claim: «Scegli Verde», «Più verde, più gusto», «Tutto il buono della natura» -> brand_eco_slogan / undefined_natural / generic_green. The framing (lifestyle, "per te", "più")
   does not change this. out_of_scope only when the word clearly means something else in the claim itself
-  («Rispetta la tua natura» = your character). Truth is never judged.
+  («Segui la tua natura» = your character). Truth is never judged.
 
 LEGAL CONTEXT
 {{LEGAL_BLOCK}}

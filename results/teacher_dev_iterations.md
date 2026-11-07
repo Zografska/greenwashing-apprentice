@@ -24,3 +24,11 @@ prompt. A prompt-vs-split audit also found that the trigger definitions inherite
 classifier prompt quote test claims (e.g. «CO2 100% prodotto a impatto climatico neutralizzato», «Qualità
 Pampers in cartoni 100% riciclati», «rispetto alle precedenti confezioni Beretta»), which would inflate the
 Teacher row on test.
+
+**Iteration 2 → 3 changes (clean-up, no new rules):** every quoted example in `P_teacher` / `P_student` that
+equals, near-duplicates (≥ 0.85) or, if 3+ words, is contained in a test or dev claim was replaced by an
+invented example teaching the same rule (38 examples: 21 matching test, most inherited from the main
+project's classifier prompt, and 17 matching dev, mostly added in iteration 2). Dev-derived 2-word examples
+were replaced too. `tests/test_prompts.py::test_no_prompt_example_reveals_a_test_or_dev_claim` now fails if
+such an example comes back. Iteration 3's dev score is the estimate to report; its prompt is frozen for the
+full run.

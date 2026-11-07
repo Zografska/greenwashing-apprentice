@@ -21,6 +21,6 @@ NEEDS_VERIFICATION  a specific, checkable environmental or ethical claim: a cert
                     a named pollutant.
 OUT                 anything else: health, nutrition, taste, what the product does, tests and skin
                     tolerance, tradition, origin, quality schemes (DOP/IGP), free-from claims that are
-                    not environmental (e.g. «senza conservanti»).
+                    not environmental (e.g. «privo di conservanti»).
 {{LEGAL_SECTION}}{{EXAMPLES_SECTION}}
 Answer with exactly one label: IN_SCOPE, NEEDS_VERIFICATION or OUT.
