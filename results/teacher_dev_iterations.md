@@ -7,6 +7,7 @@ Dev = 150 fully reviewed texts (50 per class), gold = `dev_reviewed_label`. Prov
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | b450d75e7e10a6f0 | gpt-oss-20b | 0.780 | 0.773 | 0.967 | 0.933 | 0.832 / 0.700 / 0.807 | 0.840 | $0.017 |
 | 1 | b450d75e7e10a6f0 | gpt-oss-120b | 0.815 | 0.820 | 1.000 | 0.987 | 0.838 / 0.756 / 0.850 | 0.880 | $0.018 |
+| 2 | 6dadfef7a8188f13 | gpt-oss-120b | 0.946 | 0.947 | 1.000 | 1.000 | 0.962 / 0.925 / 0.951 | 1.000 | $0.020 |
 
 **Teacher choice (D9), after iteration 1:** gpt-oss-120b. 20b fails both conditions (3.5 macro-F1 points
 behind, threshold 3; consistency 93.3% < 95%).
@@ -16,3 +17,10 @@ only. Added a SCOPE note (green and ethical claims; no green word required; any 
 conventions: organic/certification anywhere (incl. EU organic codes, bare scheme names, «filiera certificata»);
 undefined "naturale" in any sentence; named endorsements in any domain; concrete farming/fishing practices vs
 vague supply chain; packaging material with a figure → NV; ingredient-growing region = origin.
+
+**Iteration 2 result:** 21 errors fixed, 2 new, 6 remaining. **Caveat: optimistic.** Several convention
+examples added in iteration 2 are dev claims quoted verbatim, so the dev score partly measures recall of the
+prompt. A prompt-vs-split audit also found that the trigger definitions inherited from the main project's
+classifier prompt quote test claims (e.g. «CO2 100% prodotto a impatto climatico neutralizzato», «Qualità
+Pampers in cartoni 100% riciclati», «rispetto alle precedenti confezioni Beretta»), which would inflate the
+Teacher row on test.
