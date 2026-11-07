@@ -64,8 +64,12 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [x] Teacher on dev with **both gpt-oss-20b and gpt-oss-120b**; ≤ 3 prompt iterations, logging the macro-F1 and consistency of each. ≈ ½–1 day, €0
 - [x] **Choose the teacher (D9):** → **gpt-oss-120b**, prompt frozen at iteration 3 (dev macro-F1 0.912). 20b if within 3 macro-F1 points of 120b and consistency ≥ 95%, otherwise 120b. Record the numbers for the report
 - [x] **Choose the provider for the full run (D9):** → OpenRouter pinned to `coreweave/fp4` (Groq free counted cached tokens in full). Groq free if caching works; otherwise Kaggle proxy (if its terms allow) / OpenRouter pinned (≈ €6) / self-hosted 20b on a Kaggle T4
-- [ ] Freeze `P_teacher` (hash it) → full run on **one provider** over train + `t_large_extra` + test (≈ 2,400 texts). **Start by Wed 4 Nov.** On Groq free, run in daily batches over ≈ 1 week, with the train texts first so CP3 can start on time
-- [ ] Report teacher label noise: teacher vs gold on the 571 train texts
+- [x] Freeze `P_teacher` (hash `2ef529403276b34b`, `prompts/FROZEN`)
+- [ ] Full teacher run on **one provider** (gpt-oss-120b, OpenRouter `coreweave/fp4`, ≈ $0.30), started Sat 7 Nov:
+  - [ ] `train` (551) *(running)*
+  - [ ] `t_large_extra` (574)
+  - [ ] `test` (1,062: test_carrefour 750, test_ce 265, test_naturasi 47; written only to `data/teacher/test/`)
+- [ ] Report teacher label noise: teacher vs gold on the 551 train texts
 - [ ] `apprentice/retrieve.py`: e5 (pinned revision, `query:` prefix) over `vendor/retriever/anchors_v4.jsonl`, `top3(claim)` with the D8 guard, plus a count of skipped anchors. ≈ ½ day
 - [ ] `apprentice/score_lp.py`: log-prob scoring of the 3 label strings for a HF model + prompt. Shared with the Kaggle notebook. ≈ ½ day
 - [ ] Run S0-noLegal, S0 and S1 (Qwen3-4B; on the Mac or Kaggle) on dev, then **once** on test
