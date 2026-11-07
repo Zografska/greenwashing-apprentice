@@ -21,11 +21,21 @@ def test_parse_handles_json_and_noise():
 
 def test_test_suites_go_to_isolated_dir():
     from apprentice.check_split import TEACHER_TEST_DIR
-    p = teacher.out_path("openai/gpt-oss-20b", "test_carrefour", "abc")
+    p = teacher.out_path("openai/gpt-oss-20b", "test_carrefour", "abc", "openrouter-x")
     assert TEACHER_TEST_DIR in p.resolve().parents
-    p = teacher.out_path("openai/gpt-oss-20b", "train", "abc")
+    p = teacher.out_path("openai/gpt-oss-20b", "train", "abc", "openrouter-x")
     assert TEACHER_TEST_DIR not in p.resolve().parents
 
 
 def test_prompt_hash_is_stable():
     assert teacher.teacher_prompt_hash() == teacher.teacher_prompt_hash()
+
+
+def test_openrouter_body_pins_provider():
+    import argparse
+    a = argparse.Namespace(service="openrouter", pin="deepinfra", reasoning_effort="low", max_tokens=512)
+    b = teacher.request_body("openai/gpt-oss-120b", "x", a)
+    assert b["provider"] == {"order": ["deepinfra"], "allow_fallbacks": False, "require_parameters": True}
+    assert b["reasoning"] == {"effort": "low"} and "reasoning_effort" not in b
+    a.service = "groq"
+    assert teacher.request_body("openai/gpt-oss-120b", "x", a)["reasoning_effort"] == "low"
