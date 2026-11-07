@@ -1,10 +1,10 @@
-# Local (Mac) side: data, split, eval, teacher calls, GGUF re-scoring
+# Core (Mac): split, check_split, eval, teacher calls (stdlib HTTP), dev review
 numpy
+scipy
 pandas
 scikit-learn
-pyyaml
-sentence-transformers   # e5-base for anchors (S1), near-dup grouping, B0
-httpx                   # Groq API
-statsmodels             # McNemar, Holm
-llama-cpp-python        # GGUF log-prob re-scoring on the M3 (D29)
+openpyxl
+pytest
+# Optional, install when needed:
+#   pip install -r requirements-extra.txt   (e5 retrieval for S1/B0, GGUF re-scoring)
 # Training runs on Kaggle T4 (pinned there, see notebooks/): unsloth, transformers, trl, peft, bitsandbytes

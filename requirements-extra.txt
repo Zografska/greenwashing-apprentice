@@ -1,0 +1,2 @@
+sentence-transformers   # e5-base for anchors (S1), B0, CP4 semantic robustness subset
+llama-cpp-python        # GGUF log-prob re-scoring on the M3 (D29)
