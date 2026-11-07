@@ -122,7 +122,18 @@ def chat(base_url: str, key: str, body: dict, timeout: int = 120, max_retries: i
 
 def request_body(model: str, claim: str, args) -> dict:
     body = {"model": model, "messages": prompts.teacher_messages(claim), "temperature": 0,
-            "response_format": {"type": "json_object"}, "max_tokens": args.max_tokens}
+            "max_tokens": args.max_tokens}
+    # JSON enforcement is OFF by default: on gpt-oss, grammar-constrained decoding interferes with its
+    # reasoning channel (dev run 2026-11-07: empty or degenerate outputs). The prompt asks for JSON and
+    # parse() extracts it; invalid output counts as wrong and is reported.
+    if args.json_mode == "object":
+        body["response_format"] = {"type": "json_object"}
+    elif args.json_mode == "schema":
+        body["response_format"] = {"type": "json_schema", "json_schema": {"name": "ecgt", "strict": True, "schema": {
+            "type": "object", "additionalProperties": False, "required": ["reasoning", "triggers", "label"],
+            "properties": {"reasoning": {"type": "string"},
+                           "triggers": {"type": "array", "items": {"type": "string", "enum": sorted(TRIGGERS)}},
+                           "label": {"type": "string", "enum": list(LABELS)}}}}}
     if args.service == "openrouter":
         body["reasoning"] = {"effort": args.reasoning_effort}
         body["usage"] = {"include": True}                       # returns cost per call
@@ -168,7 +179,10 @@ def cmd_check_cache(args, key):
               f"served_by={resp.get('provider')} latency={time.time() - t0:.1f}s")
         time.sleep(2)
     print("rate-limit headers:", json.dumps(hdr, indent=1))
-    print("answer:", resp["choices"][0]["message"].get("content"))
+    msg = resp["choices"][0]["message"]
+    print("answer:", msg.get("content"))
+    print("parsed:", parse(msg.get("content") or ""))
+    print("reasoning trace:", (msg.get("reasoning") or "")[:300])
     pt, cached, _ = rows[1]
     if cached and pt and cached / pt > 0.5:
         print(f"\nCACHING WORKS: {cached}/{pt} prompt tokens cached on the repeat call.")
@@ -231,6 +245,7 @@ def cmd_run(args, key):
                 u = resp.get("usage", {})
                 row = {"text_id": r["text_id"], "suite": suite, "text": r["text"],
                        **parse(msg.get("content") or ""), "raw": msg.get("content"),
+                       "reasoning_trace": (msg.get("reasoning") or "")[:4000] or None,   # never used for training
                        "model": args.model, "served_model": resp.get("model"), "service": args.service,
                        "base_url": args.base_url, "pinned": args.pin, "served_by": resp.get("provider"),
                        "prompt_hash": phash, "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -240,7 +255,7 @@ def cmd_run(args, key):
                                  "cost_usd": u.get("cost")},
                        "latency_s": round(time.time() - t0, 2),
                        "settings": {"temperature": 0, "reasoning_effort": args.reasoning_effort,
-                                    "max_tokens": args.max_tokens}}
+                                    "max_tokens": args.max_tokens, "json_mode": args.json_mode}}
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
                 f.flush()
                 spent += u.get("cost") or 0
@@ -299,6 +314,8 @@ def main():
     ap.add_argument("--key-env", help="override the API key variable")
     ap.add_argument("--reasoning-effort", default="low")
     ap.add_argument("--max-tokens", type=int, default=1024)
+    ap.add_argument("--json-mode", choices=["none", "object", "schema"], default="none",
+                    help="provider-side JSON enforcement (default none: it breaks gpt-oss outputs)")
     ap.add_argument("--sleep", type=float, default=0.2, help="pause between calls (s)")
     ap.add_argument("--limit", type=int, default=0, help="max new calls this run (0 = all)")
     ap.add_argument("--prompt-hash", help="score outputs of an earlier prompt version")

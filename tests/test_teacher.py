@@ -33,9 +33,12 @@ def test_prompt_hash_is_stable():
 
 def test_openrouter_body_pins_provider():
     import argparse
-    a = argparse.Namespace(service="openrouter", pin="deepinfra", reasoning_effort="low", max_tokens=512)
+    a = argparse.Namespace(service="openrouter", pin="deepinfra", reasoning_effort="low", max_tokens=512, json_mode="none")
     b = teacher.request_body("openai/gpt-oss-120b", "x", a)
     assert b["provider"] == {"order": ["deepinfra"], "allow_fallbacks": False, "require_parameters": True}
-    assert b["reasoning"] == {"effort": "low"} and "reasoning_effort" not in b
+    assert b["reasoning"] == {"effort": "low"} and "reasoning_effort" not in b and "response_format" not in b
+    a.json_mode = "schema"
+    assert teacher.request_body("openai/gpt-oss-120b", "x", a)["response_format"]["type"] == "json_schema"
+    a.json_mode = "none"
     a.service = "groq"
     assert teacher.request_body("openai/gpt-oss-120b", "x", a)["reasoning_effort"] == "low"
