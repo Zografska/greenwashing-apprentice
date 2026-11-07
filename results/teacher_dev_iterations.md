@@ -1,13 +1,14 @@
 # Teacher prompt iterations on dev (SPEC D9, CP2)
 
 Dev = 150 fully reviewed texts (50 per class), gold = `dev_reviewed_label`. Provider: OpenRouter pinned to
-`coreweave/fp4`, temperature 0, reasoning effort low, no provider JSON mode. At most 3 iterations.
+`coreweave/fp4`, temperature 0, reasoning effort low, no provider JSON mode. At most 3 iterations. \* = optimistic (dev claims quoted in the prompt), see below.
 
 | Iter | Prompt hash | Model | Macro-F1 | Acc | Valid | Consistency | F1 IS / NV / OUT | IS recall | Cost |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | b450d75e7e10a6f0 | gpt-oss-20b | 0.780 | 0.773 | 0.967 | 0.933 | 0.832 / 0.700 / 0.807 | 0.840 | $0.017 |
 | 1 | b450d75e7e10a6f0 | gpt-oss-120b | 0.815 | 0.820 | 1.000 | 0.987 | 0.838 / 0.756 / 0.850 | 0.880 | $0.018 |
-| 2 | 6dadfef7a8188f13 | gpt-oss-120b | 0.946 | 0.947 | 1.000 | 1.000 | 0.962 / 0.925 / 0.951 | 1.000 | $0.020 |
+| 2 | 6dadfef7a8188f13 | gpt-oss-120b | 0.946* | 0.947 | 1.000 | 1.000 | 0.962 / 0.925 / 0.951 | 1.000 | $0.020 |
+| **3** | **2ef529403276b34b** | **gpt-oss-120b** | **0.912** | 0.913 | 1.000 | 0.993 | 0.925 / 0.879 / 0.932 | 0.980 | $0.020 |
 
 **Teacher choice (D9), after iteration 1:** gpt-oss-120b. 20b fails both conditions (3.5 macro-F1 points
 behind, threshold 3; consistency 93.3% < 95%).
@@ -32,3 +33,11 @@ project's classifier prompt, and 17 matching dev, mostly added in iteration 2). 
 were replaced too. `tests/test_prompts.py::test_no_prompt_example_reveals_a_test_or_dev_claim` now fails if
 such an example comes back. Iteration 3's dev score is the estimate to report; its prompt is frozen for the
 full run.
+
+**Iteration 3 result (final, frozen):** macro-F1 **0.912**, IN_SCOPE recall 0.98, consistency 99.3%, valid 100%.
+The 3.4-point drop from iteration 2 estimates how much the verbatim dev examples inflated that score. Remaining
+13 errors are mostly NV claims read as IN_SCOPE or OUT (fair-trade sentence, indirectly defined "natural",
+packaging materials, endorsements outside the environmental domain), plus «0% Petrolati, PEG» (gold OUT, teacher
+pollutant_free) and «selezione delle materie prime» (gold OUT, teacher vague_supply_chain).
+**CP2 sanity check passed** (≥ 0.80 macro-F1, ≥ 95% consistency). `P_teacher` frozen at 2ef529403276b34b
+(`prompts/FROZEN`); the full run uses it unchanged.

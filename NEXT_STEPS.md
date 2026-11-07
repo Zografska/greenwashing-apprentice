@@ -59,11 +59,11 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 ## CP2: teacher + baselines (Mon 2 – Mon 9 Nov)
 
-- [ ] **Day 1 (Mon 2 Nov):** check the Groq limits on console.groq.com/settings/limits for gpt-oss-20b and -120b; send the same `P_teacher` twice and check `usage.prompt_tokens_details.cached_tokens` on the second call (≈ 3k means caching works). ≈ 30 min
-- [ ] `apprentice/teacher.py`: OpenAI-compatible client (base URL switchable: Groq / Kaggle proxy / OpenRouter / llama.cpp), rate-limit aware (RPM/TPM/TPD backoff), resumable, saves raw JSONL (model string, date, prompt hash, raw output, reasoning tokens, cost), computes the POST label and the stated-vs-POST consistency. Writes test outputs **only** to `data/teacher/test/`. ≈ 1 day
-- [ ] Teacher on dev with **both gpt-oss-20b and gpt-oss-120b**; ≤ 3 prompt iterations, logging the macro-F1 and consistency of each. ≈ ½–1 day, €0
-- [ ] **Choose the teacher (D9):** 20b if within 3 macro-F1 points of 120b and consistency ≥ 95%, otherwise 120b. Record the numbers for the report
-- [ ] **Choose the provider for the full run (D9):** Groq free if caching works; otherwise Kaggle proxy (if its terms allow) / OpenRouter pinned (≈ €6) / self-hosted 20b on a Kaggle T4
+- [x] **Day 1:** check the Groq limits on console.groq.com/settings/limits for gpt-oss-20b and -120b; send the same `P_teacher` twice and check `usage.prompt_tokens_details.cached_tokens` on the second call (≈ 3k means caching works). ≈ 30 min
+- [x] `apprentice/teacher.py`: OpenAI-compatible client (base URL switchable: Groq / Kaggle proxy / OpenRouter / llama.cpp), rate-limit aware (RPM/TPM/TPD backoff), resumable, saves raw JSONL (model string, date, prompt hash, raw output, reasoning tokens, cost), computes the POST label and the stated-vs-POST consistency. Writes test outputs **only** to `data/teacher/test/`. ≈ 1 day
+- [x] Teacher on dev with **both gpt-oss-20b and gpt-oss-120b**; ≤ 3 prompt iterations, logging the macro-F1 and consistency of each. ≈ ½–1 day, €0
+- [x] **Choose the teacher (D9):** → **gpt-oss-120b**, prompt frozen at iteration 3 (dev macro-F1 0.912). 20b if within 3 macro-F1 points of 120b and consistency ≥ 95%, otherwise 120b. Record the numbers for the report
+- [x] **Choose the provider for the full run (D9):** → OpenRouter pinned to `coreweave/fp4` (Groq free counted cached tokens in full). Groq free if caching works; otherwise Kaggle proxy (if its terms allow) / OpenRouter pinned (≈ €6) / self-hosted 20b on a Kaggle T4
 - [ ] Freeze `P_teacher` (hash it) → full run on **one provider** over train + `t_large_extra` + test (≈ 2,400 texts). **Start by Wed 4 Nov.** On Groq free, run in daily batches over ≈ 1 week, with the train texts first so CP3 can start on time
 - [ ] Report teacher label noise: teacher vs gold on the 571 train texts
 - [ ] `apprentice/retrieve.py`: e5 (pinned revision, `query:` prefix) over `vendor/retriever/anchors_v4.jsonl`, `top3(claim)` with the D8 guard, plus a count of skipped anchors. ≈ ½ day

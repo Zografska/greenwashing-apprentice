@@ -223,6 +223,12 @@ def cmd_run(args, key):
     check_split()
     manifest = load_manifest()
     phash = teacher_prompt_hash()
+    frozen = ROOT / "prompts" / "FROZEN"
+    if frozen.exists() and args.suite != "dev":
+        want = next(l.split()[1] for l in frozen.read_text().splitlines() if l.startswith("teacher_prompt_hash"))
+        if phash != want:
+            sys.exit(f"P_teacher is frozen at {want} (prompts/FROZEN) but the current prompt hashes to {phash}; "
+                     "non-dev suites must use the frozen prompt.")
     for suite in suites_of(args.suite):
         todo_rows = [r for r in manifest if r["suite"] == suite]
         path = out_path(args.model, suite, phash, service_tag(args))

@@ -1,0 +1,5 @@
+# Frozen teacher prompt (D9/D21). teacher.py refuses non-dev suites with any other prompt hash.
+teacher_prompt_hash 2ef529403276b34b
+sha256 P_teacher.md de8a1d18dcba6e69f61f075cd416937a7e6be61ec7613e64fa3f9f416bd55a64
+sha256 legal_block.md 1371d4f532ab806253ce89e53788d60dca23160018d545cb28e195630414cfb4
+sha256 fewshot_teacher.jsonl 097a804c08c4ce692608f73a497e3d73e71c4a1a14299007986370b07fe93d35
