@@ -10,6 +10,11 @@ on green and ethical claims (ECGT, Directive 2024/825).
 Judge only the words of the claim. A footnote, when present, is already joined to the claim after
 " ... ". Do not guess whether the claim is true. The legal text below is the reference.
 
+SCOPE: the triggers cover green AND ethical claims: environment, "natural", organic and other certifications,
+endorsements, farming and fishing practices, social sourcing. Do not require an explicitly environmental word.
+List a trigger whenever ANY part of the claim matches it, even if the rest of the sentence is about health,
+nutrition, taste, skin care or tradition.
+
 STEP 1 - List EVERY trigger below that applies to the claim.
 
 A. PROBLEM AS WRITTEN
@@ -80,13 +85,28 @@ STEP 2 - Choose the label from the triggers:
    out_of_scope never beats a trigger from group A or B.
 
 PROJECT CONVENTIONS (follow them even where you would judge differently)
-- Country or region of origin, DOP/IGP/STG and other quality schemes -> out_of_scope.
+- Country or region of origin, including where ingredients were grown («coltivati nella Valle del Ticino»),
+  DOP/IGP/STG and other quality schemes -> out_of_scope.
 - «Aroma naturale», «gusto naturale» -> out_of_scope.
 - Packaging function (salvafreschezza, richiudibile, …) -> out_of_scope.
 - «Senza siliconi», «Senza microplastiche» -> pollutant_free. «Senza parabeni», «Senza conservanti» -> out_of_scope.
 - A heading alone is never a claim -> out_of_scope, except a brand eco-slogan («<Marca> per l'ambiente»).
 - Recycling call to action alone («Raccogli separatamente», «Conferisci nella plastica») -> out_of_scope;
   with an environmental-benefit clause («… per il pianeta») -> generic_green.
+- Organic is always certification, wherever it appears: «bio», «biologico», «organic», EU organic codes
+  («IT-BIO-006», «HR-EKO-07», «Agricoltura UE/non UE»), and bare scheme names («FOREST STEWARDSHIP COUNCIL»,
+  «Fairtrade», «Solidal»). «Filiera certificata» -> certification, not vague_supply_chain.
+- Undefined "naturale" wording counts even in a taste, skin or tradition sentence («alimentazione naturale»,
+  «elementi naturali», «la naturalezza», «attivi naturali») -> undefined_natural. Only «aroma/gusto naturale»
+  and a natural source of a nutrient («fonte naturale di calcio») are out_of_scope.
+- named_endorsement applies in any domain: approval, testing or collaboration by a NAMED organisation or expert
+  («testata da Toothfriendly International», «in collaborazione con il Policlinico Gemelli», a named nutritionist).
+- A concrete farming, breeding or fishing practice -> farming_practice, not vague_supply_chain: «galline allevate
+  a terra», «mucche al pascolo», «pescati in mare aperto», «senza sostanze chimiche di sintesi».
+  vague_supply_chain is for vague wording only («agricoltori selezionati», «filiera controllata», «sostegno alle
+  comunità», «sviluppo economico e sociale»).
+- Packaging material stated with a figure or a named material -> recycled_recyclable or biodegradable (NV), not
+  generic_green: «50% Paper-based sachet», «Brick 86% da materie di origine vegetale», «Cialde compostabili».
 - Slogans, brand and line names: being "just a slogan" is never a reason for out_of_scope. If the words
   present nature or the environment as a merit (verde, green, eco, natura, pianeta, ambiente, sostenibile)
   without defining it, they are a claim: «Vivi Verde», «Più natura, più qualità», «Solo il meglio della
