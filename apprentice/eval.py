@@ -10,6 +10,10 @@ Predictions: JSONL, one row per text: {"text_id": ..., "pred": "IN_SCOPE"|"NEEDS
 Gold for dev is `dev_reviewed_label` when present (D24); for test suites it is `gold_label`.
 Headline = macro-F1 on the pooled test_ce + test_carrefour suites (D18); every suite is also
 reported on its own.
+
+Dev is balanced by construction (50 per class) while the test suites are about 65% OUT, so dev rewards models
+that over-flag. `dev_w` re-weights dev to the headline test class mix (each claim weighted by
+p_test(class) / p_dev(class), using gold labels only); use it for every decision taken on dev (D35).
 """
 from __future__ import annotations
 
@@ -63,34 +67,50 @@ def _present(g, p) -> list[str]:
     return [l for l in LABELS if l in set(g) | set(p)]
 
 
-def macro_f1(g, p) -> float:
-    return float(f1_score(g, p, labels=_present(g, p), average="macro", zero_division=0))
+def macro_f1(g, p, w=None) -> float:
+    return float(f1_score(g, p, labels=_present(g, p), average="macro", zero_division=0, sample_weight=w))
 
 
-def metrics(gold: list[str], pred: list[str]) -> dict:
-    """Core metrics for aligned gold/pred lists (pred may contain invalid values)."""
+def metrics(gold: list[str], pred: list[str], weights=None) -> dict:
+    """Core metrics for aligned gold/pred lists (pred may contain invalid values). Optional per-item weights."""
     pred = [_clean(p) for p in pred]
     g, p = np.array(gold), np.array(pred)
-    prec, rec, f1, sup = precision_recall_fscore_support(g, p, labels=list(LABELS), zero_division=0)
+    w = np.ones(len(g)) if weights is None else np.asarray(weights, dtype=float)
+    prec, rec, f1, sup = precision_recall_fscore_support(g, p, labels=list(LABELS), zero_division=0,
+                                                         sample_weight=w)
     flagged_g, flagged_p = g != "OUT", np.isin(p, ["IN_SCOPE", "NEEDS_VERIFICATION"])
-    out = {"n": len(g), "macro_f1": macro_f1(g, p), "accuracy": float(np.mean(g == p)),
-           "valid_rate": float(np.mean(p != INVALID)),
+    out = {"n": len(g), "macro_f1": macro_f1(g, p, w), "accuracy": float(np.average(g == p, weights=w)),
+           "valid_rate": float(np.average(p != INVALID, weights=w)),
            "in_scope_recall": float(rec[0]),
-           "flagged_recall": float(flagged_p[flagged_g].mean()) if flagged_g.any() else float("nan")}
+           "flagged_recall": float(np.average(flagged_p[flagged_g], weights=w[flagged_g])) if flagged_g.any()
+           else float("nan")}
     for lab, pr, rc, f, s in zip(LABELS, prec, rec, f1, sup):
         k = {"IN_SCOPE": "is", "NEEDS_VERIFICATION": "nv", "OUT": "out"}[lab]
-        out |= {f"{k}_precision": float(pr), f"{k}_recall": float(rc), f"{k}_f1": float(f), f"{k}_n": int(s)}
+        out |= {f"{k}_precision": float(pr), f"{k}_recall": float(rc), f"{k}_f1": float(f),
+                f"{k}_n": int(np.sum(g == lab))}
     return out
 
 
 def bootstrap_ci(gold: list[str], pred: list[str], stat=None, n_boot: int = 1000, seed: int = 0,
-                 alpha: float = 0.05) -> tuple[float, float]:
-    """Percentile bootstrap CI over texts (default statistic: macro-F1)."""
-    stat = stat or macro_f1
+                 alpha: float = 0.05, weights=None) -> tuple[float, float]:
+    """Percentile bootstrap CI over texts (default statistic: macro-F1, weighted if weights are given)."""
     g, p = np.array(gold), np.array([_clean(x) for x in pred])
+    w = np.ones(len(g)) if weights is None else np.asarray(weights, dtype=float)
+    stat = stat or macro_f1
     rng = np.random.default_rng(seed)
-    vals = [stat(g[idx], p[idx]) for idx in (rng.integers(0, len(g), len(g)) for _ in range(n_boot))]
+    if weights is None:
+        vals = [stat(g[idx], p[idx]) for idx in (rng.integers(0, len(g), len(g)) for _ in range(n_boot))]
+    else:
+        vals = [macro_f1(g[idx], p[idx], w[idx]) for idx in (rng.integers(0, len(g), len(g)) for _ in range(n_boot))]
     return float(np.quantile(vals, alpha / 2)), float(np.quantile(vals, 1 - alpha / 2))
+
+
+def test_prior_weights(golds: dict[str, dict[str, str]], dev_gold: list[str]) -> list[float]:
+    """Per-item weights that give dev the class mix of the headline test suites (gold labels only)."""
+    test = [l for s in HEADLINE for l in golds[s].values()]
+    pt = {l: test.count(l) / len(test) for l in LABELS}
+    pd = {l: dev_gold.count(l) / len(dev_gold) for l in LABELS}
+    return [pt[l] / pd[l] if pd[l] else 0.0 for l in dev_gold]
 
 
 def evaluate(preds: dict[str, str], manifest: list[dict] | None = None, n_boot: int = 1000) -> dict:
@@ -104,6 +124,9 @@ def evaluate(preds: dict[str, str], manifest: list[dict] | None = None, n_boot: 
         g, p = [gm[i] for i in ids], [preds.get(i) for i in ids]
         res[suite] = metrics(g, p)
         res[suite]["macro_f1_ci"] = bootstrap_ci(g, p, n_boot=n_boot)
+        if suite == "dev":
+            w = test_prior_weights(golds, g)
+            res["dev_w"] = metrics(g, p, w) | {"macro_f1_ci": bootstrap_ci(g, p, n_boot=n_boot, weights=w)}
     hl = [i for s in HEADLINE for i in sorted(golds[s])]
     if any(i in preds for i in hl):
         gm = golds["test_ce"] | golds["test_carrefour"]

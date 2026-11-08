@@ -15,7 +15,7 @@ Predictions: `results/preds/<condition>/{dev,test}.jsonl`; metrics rows: `result
 
 \* NaturaSì: 47 texts, qualitative only (D15/D22).
 
-**Dev and test rank the conditions differently, and the class balance explains it.** Dev is balanced by
+**Dev and test rank the conditions differently; the class balance explains part of it.** Dev is balanced by
 construction (50 per class); the headline test is 65% OUT (656 OUT, 214 IN_SCOPE, 145 NV). The legal text and
 the retrieved examples make the 4B model flag more claims: OUT recall falls 0.86 → 0.77 → 0.74 while IN_SCOPE
 recall rises 0.73 → 0.79 → 0.80 (S0-noLegal → S0 → S1). On balanced dev that trade is rewarded; on OUT-heavy
@@ -36,3 +36,25 @@ Per-class precision/recall on the headline suites (test_ce + test_carrefour, n =
 B0-H vs B0-T on test: expert labels give the better macro-F1 (0.745 vs 0.713), teacher labels the better
 IN_SCOPE recall (0.827 vs 0.785), consistent with the teacher's tendency to over-flag (teacher label noise,
 `results/teacher_dev_iterations.md`). Paired tests (Holm) are left for CP4, together with the students.
+
+## Re-weighting dev to the test class mix (D35, added 2026-11-08)
+
+`dev_w` weights each dev claim by p_test(class) / p_dev(class) (OUT ≈ 1.94, IN_SCOPE ≈ 0.63, NV ≈ 0.43),
+gold labels only.
+
+| Condition | Dev | Dev_w [95% CI] | Test headline |
+|---|---|---|---|
+| S0-noLegal | 0.636 | 0.622 [0.537, 0.694] | 0.741 |
+| S0 | 0.662 | 0.617 [0.530, 0.700] | 0.706 |
+| S1 | 0.767 | 0.729 [0.648, 0.804] | 0.702 |
+| B0-H | 0.711 | 0.698 [0.622, 0.773] | 0.745 |
+| B0-T | 0.733 | 0.710 [0.636, 0.792] | 0.713 |
+
+Re-weighting removes S0's dev advantage over S0-noLegal (as on test) and lowers the over-flagging conditions,
+but S1 stays first on dev_w while it is last-but-one on test. So the class mix is only part of the explanation.
+The rest is ordinary dev/test difference: dev is 150 reserve claims (intervals of about ±8 points, wide
+enough to contain all the test values except S0-noLegal's), test is 1,015 gold claims from other products.
+Checked and ruled out as a main cause: anchor proximity to dev (top-1 retrieved anchor's lexical similarity
+to the claim 0.149 on dev vs 0.132 on test; its label matches gold on 55% vs 49%; 3 of the 59 real anchors are
+dev texts, but the guard skips exact matches). Conclusion for CP3: decisions on dev use `dev_w`, and
+differences on dev smaller than about 8 points are treated as ties.

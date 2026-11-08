@@ -58,3 +58,25 @@ def test_self_test_on_real_manifest():
     res = ev.evaluate(preds, man, n_boot=20)
     assert set(res) >= {"test_ce", "test_carrefour", "test_naturasi", "dev", "headline"}
     assert all(m["macro_f1"] == 1.0 for m in res.values())
+
+
+def test_weighted_metrics():
+    gold = ["IN_SCOPE", "OUT", "NEEDS_VERIFICATION", "OUT", "IN_SCOPE", "OUT"]
+    pred = ["IN_SCOPE", "IN_SCOPE", "NEEDS_VERIFICATION", "OUT", "OUT", "OUT"]
+    assert ev.metrics(gold, pred, [1] * 6)["macro_f1"] == pytest.approx(ev.metrics(gold, pred)["macro_f1"])
+    heavy_out = [1, 5, 1, 5, 1, 5]   # an OUT->IN_SCOPE false alarm now costs IN_SCOPE precision more
+    m = ev.metrics(gold, pred, heavy_out)
+    assert m["is_precision"] < ev.metrics(gold, pred)["is_precision"]
+    assert m["is_recall"] == ev.metrics(gold, pred)["is_recall"]   # recall within a class is unchanged
+
+
+def test_dev_w_present_and_perfect_for_gold():
+    from apprentice.check_split import DEFAULT_MANIFEST, load_manifest
+    if not DEFAULT_MANIFEST.exists():
+        pytest.skip("no manifest")
+    man = load_manifest()
+    golds = ev.gold_map(man)
+    w = ev.test_prior_weights(golds, list(golds["dev"].values()))
+    assert sum(w) == pytest.approx(150, rel=1e-6)          # weights keep the dev mass
+    res = ev.evaluate({t: g for t, g in golds["dev"].items()}, man, n_boot=10)
+    assert res["dev_w"]["macro_f1"] == 1.0

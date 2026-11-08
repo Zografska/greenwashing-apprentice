@@ -101,7 +101,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [ ] T-1.7B × 3 seeds
 - [ ] All 27 rows in `results.csv`; test scored once per final model
 - [ ] *Stretch, only if all 27 runs are done by Thu 19 Nov (D17):* segment ≈ 3k scrape claims on the Mac (main repo segmenter + retriever filter) → `check_split` → teacher labels → T-xl × 3 seeds
-- [ ] ✅ **CP3b gate** (Sun 22 Nov): T@571 beats S0 on dev. If not: check the template and scoring → the learning rate (once) → accept it and report.
+- [ ] ✅ **CP3b gate** (Sun 22 Nov): T@571 beats S0 on `dev_w` (D35). If not: check the template and scoring → the learning rate (once) → accept it and report.
 
 ## CP4: analysis (Mon 23 – Sun 29 Nov)
 
