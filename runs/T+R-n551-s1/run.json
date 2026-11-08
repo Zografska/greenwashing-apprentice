@@ -1,0 +1,55 @@
+{
+ "run_id": "T+R-n551-s1",
+ "condition": "T+R",
+ "seed": 1,
+ "train_size": 551,
+ "model": "unsloth/Qwen3-4B",
+ "backend": "unsloth",
+ "lora": "{\"lora_r\": 16, \"lora_alpha\": 16, \"lora_dropout\": 0.0, \"lr\": 0.0002, \"epochs\": 3, \"micro_batch\": 8, \"grad_accum\": 2, \"warmup_ratio\": 0.05, \"weight_decay\": 0.0, \"max_len\": 384, \"oversample_to\": 0.5, \"oversample_cap\": 4.0}",
+ "libs": "torch 2.11.0+cu130; transformers 5.17.0; peft 0.21.2; unsloth 2026.11.3; bitsandbytes 0.50.2",
+ "prompt_hash": "1304f00bee16cced",
+ "notes": "examples 776 (oversampled); steps 147; train 701.3s; loss 0.1515",
+ "model_revision": "64033659d5caf1b8ed7f929b29de705e93a4d468",
+ "stats": {
+  "steps": 147,
+  "final_loss": 0.15147500336170197,
+  "train_seconds": 701.3
+ },
+ "info": {
+  "texts": 551,
+  "examples_before_oversampling": 551,
+  "label_counts": {
+   "OUT": 388,
+   "IN_SCOPE": 102,
+   "NEEDS_VERIFICATION": 61
+  }
+ },
+ "hparams": {
+  "lora_r": 16,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "lr": 0.0002,
+  "epochs": 3,
+  "micro_batch": 8,
+  "grad_accum": 2,
+  "warmup_ratio": 0.05,
+  "weight_decay": 0.0,
+  "max_len": 384,
+  "oversample_to": 0.5,
+  "oversample_cap": 4.0
+ },
+ "scored": {
+  "dev": 150,
+  "test": 1062
+ },
+ "date": "2026-11-08T17:01:10+00:00"
+}
