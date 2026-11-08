@@ -126,7 +126,12 @@ def check_split(manifest_path: Path | str = DEFAULT_MANIFEST, training_files=(),
             continue
         texts = _read_texts(tf)
         exact = [t for t in texts if t in guarded_set]
-        near = neardup.near_dups(texts, guarded, threshold, fit_corpus=corpus + texts)
+        # Texts that are manifest train/train_extra texts were already checked against test/dev with the
+        # manifest's own IDF (check 3); re-scoring them with an IDF refitted on this file would move borderline
+        # pairs across the threshold depending on the file's contents. Only new texts get the near-dup check.
+        known = {r["norm"] for r in manifest if r["side"] in ("train", "train_extra")}
+        new = [t for t in texts if t not in known]
+        near = neardup.near_dups(new, guarded, threshold, fit_corpus=corpus + new)
         if exact or near:
             errors.append(f"{tf}: {len(exact)} exact and {len(near)} near-dup matches with test/dev texts")
         report.setdefault("training_files", {})[str(tf)] = len(texts)

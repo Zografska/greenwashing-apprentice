@@ -107,3 +107,20 @@ def test_real_manifest_passes():
     if not DEFAULT_MANIFEST.exists():
         pytest.skip("no manifest built yet")
     assert check_split(DEFAULT_MANIFEST)["ok"]
+
+
+def test_manifest_train_texts_are_not_rechecked_with_a_refitted_idf(tmp_path):
+    """A subset of manifest train texts must pass regardless of which subset it is (IDF stability)."""
+    rows = BASE + [row("Dermatologicamente testato su pelli sensibili. Oftalmologicamente testato", "train", 7)]
+    m = write(tmp_path, rows)
+    tf = tmp_path / "train.jsonl"
+    tf.write_text("\n".join(json.dumps({"text": r["text"]}) for r in rows if r["side"] == "train"))
+    assert check_split(m, training_files=[tf])["ok"]
+
+
+def test_new_text_near_dup_still_caught(tmp_path):
+    m = write(tmp_path, BASE)
+    tf = tmp_path / "train.jsonl"
+    tf.write_text(json.dumps({"text": "Confezione 100% riciclabile!!"}) + "\n")
+    with pytest.raises(SplitError):
+        check_split(m, training_files=[tf])
