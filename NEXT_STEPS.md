@@ -9,8 +9,8 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 | ---- | ---------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | 1    | ✅ done Sun 1 Nov       | **CP1** Data, freeze, harness               | `eval.py` scores the gold labels, fed in as predictions, at 1.0; `check_split` passes; suites frozen |
 | 2    | Mon 2 – Mon 9 Nov      | **CP2** Teacher + baselines                 | Teacher dev macro-F1 ≥ 0.80 and consistency ≥ 95% (sanity check, not a blocker)                      |
-| 3    | Tue 10 – Sun 15 Nov    | **CP3a** Kaggle notebook working end to end | One H@571 + one T@571 run, scored, with a row in `results.csv`                                       |
-| 4    | Mon 16 – Sun 22 Nov    | **CP3b** All runs                           | All 27 LoRA runs logged; T@571 beats S0 on dev_w (D35)                                               |
+| 3    | Tue 10 – Sun 15 Nov    | **CP3a** Kaggle notebook working end to end | One H@551 + one T@551 run, scored, with a row in `results.csv`                                       |
+| 4    | Mon 16 – Sun 22 Nov    | **CP3b** All runs                           | All 27 LoRA runs logged; T@551 beats S0 on dev_w (D35)                                               |
 | 5    | Mon 23 – Sun 29 Nov    | **CP4** Analysis                            | Every RQ has a table or figure                                                                       |
 | 6    | Mon 30 Nov – Sun 6 Dec | **CP5** Report                              | Report drafted                                                                                       |
 | 7    | Mon 7 – Tue 15 Dec     | **Buffer**                                  | Revisions; submitted by Tue 15 Dec                                                                   |
@@ -19,7 +19,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 - **Fri 13 Nov:** the Kaggle notebook still can't train and score one run → switch to the Mac `mlx-lm` fallback and drop T-1.7B.
 - **Thu 19 Nov:** fewer than half of the 27 runs done → drop the 150 point and go to 2 seeds. **All 27 done → start the scrape stretch (D17, T-xl).**
-- **Sun 22 Nov:** the minimum viable project (S0-noLegal, S0, S1, H@571, T@571, T+R, Teacher) is not complete → drop T-large and the curve; finish the minimum first.
+- **Sun 22 Nov:** the minimum viable project (S0-noLegal, S0, S1, H@551, T@551, T+R, Teacher) is not complete → drop T-large and the curve; finish the minimum first.
 - **Sun 29 Nov:** analysis not done → skip D13 and cut the slice analysis to the top 5 categories.
 
 ---
@@ -81,15 +81,15 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 **Week 3: get one run working end to end**
 
-- [ ] Kaggle dataset: `splits/split_v1.jsonl` + teacher train/`t_large_extra` labels (**not** `data/teacher/test/`) + prompt files
-- [ ] `notebooks/train_score.ipynb` from Unsloth's Qwen3 template:
-  - [ ] pin the library versions in the first cell; record them in the run log
-  - [ ] one shared chat-template function (thinking off, identical everywhere: D29)
-  - [ ] minority oversampling per label source (D16); fixed LoRA hyperparameters
-  - [ ] `check_split()` call before training
-  - [ ] log-prob scoring on dev + test; T+R generation (reasoning → label), with invalid output counted as wrong
-  - [ ] append to `results.csv`; save the LoRA adapter
-- [ ] Smoke test: H@571 and T@571, seed 0 → ✅ **CP3a** (Sun 15 Nov)
+- [x] ~~Kaggle dataset~~: not needed, the notebook clones the public repo (split, teacher train labels and prompts are in it; `data/teacher/test/` is blocked by `check_split`)
+- [x] `notebooks/cp3_train_kaggle.ipynb` + `apprentice/train.py` (D36), tested end to end on a tiny Qwen3:
+  - [x] pin the library versions in the first cell; record them in the run log
+  - [x] one shared chat-template function (thinking off, identical everywhere: D29)
+  - [x] minority oversampling per label source (D16); fixed LoRA hyperparameters
+  - [x] `check_split()` call before training
+  - [x] log-prob scoring on dev + test; T+R generation (reasoning → label), with invalid output counted as wrong
+  - [x] append to `results.csv`; save the LoRA adapter
+- [ ] Smoke test: H@551 and T@551, seed 0 → ✅ **CP3a** (Sun 15 Nov)
 
 **Week 4: run the grid**
 
@@ -101,7 +101,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 - [ ] T-1.7B × 3 seeds
 - [ ] All 27 rows in `results.csv`; test scored once per final model
 - [ ] *Stretch, only if all 27 runs are done by Thu 19 Nov (D17):* segment ≈ 3k scrape claims on the Mac (main repo segmenter + retriever filter) → `check_split` → teacher labels → T-xl × 3 seeds
-- [ ] ✅ **CP3b gate** (Sun 22 Nov): T@571 beats S0 on `dev_w` (D35). If not: check the template and scoring → the learning rate (once) → accept it and report.
+- [ ] ✅ **CP3b gate** (Sun 22 Nov): T@551 beats S0 on `dev_w` (D35). If not: check the template and scoring → the learning rate (once) → accept it and report.
 
 ## CP4: analysis (Mon 23 – Sun 29 Nov)
 

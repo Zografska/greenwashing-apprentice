@@ -47,7 +47,11 @@ class LabelScorer:
             dtype = torch.float32 if self.device == "cpu" else torch.float16   # T4: no bf16
         self.tok = tokenizer or AutoTokenizer.from_pretrained(model_name, revision=revision)
         self.model = model or AutoModelForCausalLM.from_pretrained(model_name, revision=revision, torch_dtype=dtype)
-        self.model.to(self.device).eval()
+        try:                                   # quantised (bitsandbytes) models refuse .to(); they are placed already
+            self.model.to(self.device)
+        except (ValueError, RuntimeError, TypeError):
+            pass
+        self.model.eval()
         self.labels = tuple(labels)
         end = end_token or self._guess_end_token()
         self.label_ids = {l: self.tok(l + end, add_special_tokens=False)["input_ids"] for l in self.labels}
@@ -103,7 +107,27 @@ class LabelScorer:
         return text.split(self.SENTINEL, 1)[0] if self.SENTINEL in text else None
 
     @torch.no_grad()
-    def score(self, batch_messages: list[list[dict]], progress: bool = False) -> list[dict]:
+    def _score_full(self, ids: list[int]) -> dict[str, float]:
+        """No KV cache: one padded forward over prompt+label for the three labels. Used for short prompts
+        (fine-tuned students) and for model wrappers whose cache objects cannot be cropped."""
+        seqs = [ids + self.label_ids[l] for l in self.labels]
+        L = max(map(len, seqs))
+        pad = self.tok.pad_token_id if self.tok.pad_token_id is not None else 0
+        x = torch.full((len(seqs), L), pad, dtype=torch.long)
+        att = torch.zeros((len(seqs), L), dtype=torch.long)
+        for i, sq in enumerate(seqs):
+            x[i, :len(sq)] = torch.tensor(sq)
+            att[i, :len(sq)] = 1
+        logits = self.model(input_ids=x.to(self.device), attention_mask=att.to(self.device)).logits.float()
+        lps = torch.log_softmax(logits, -1)
+        res = {}
+        for i, l in enumerate(self.labels):
+            lab = self.label_ids[l]
+            res[l] = float(sum(lps[i, len(ids) - 1 + j, t] for j, t in enumerate(lab)))
+        return res
+
+    @torch.no_grad()
+    def score(self, batch_messages: list[list[dict]], progress: bool = False, use_cache: bool = True) -> list[dict]:
         out, pcache, pkey, plen = [], None, None, 0
         it = batch_messages
         if progress:
@@ -117,6 +141,13 @@ class LabelScorer:
             prefix = self._prefix(msgs)
             ids = self._ids(full)
             usable = False
+            if not use_cache:
+                lp = self._score_full(ids)
+                m = max(lp.values())
+                z = sum(math.exp(v - m) for v in lp.values())
+                out.append({"pred": max(lp, key=lp.get), "logp": lp,
+                            "probs": {k: math.exp(v - m) / z for k, v in lp.items()}})
+                continue
             if prefix and full.startswith(prefix):
                 pids = self._ids(prefix)
                 usable = ids[:len(pids)] == pids and len(pids) < len(ids)

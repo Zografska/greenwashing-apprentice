@@ -60,7 +60,7 @@ def write_and_eval(path, rows, condition, meta, manifest, append):
         meta = {"run_id": f"{condition}-{datetime.now(timezone.utc):%Y%m%dT%H%M%S}",
                 "date": datetime.now(timezone.utc).isoformat(timespec="seconds"), "condition": condition,
                 "manifest": "split_v1.jsonl", "manifest_sha256": sha256(ROOT / "splits" / "split_v1.jsonl")[:16],
-                "preds_file": str(path.relative_to(ROOT)), **meta}
+                "preds_file": str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path), **meta}
         append_results(results_row(res, meta))
         print("appended to results/results.csv")
 

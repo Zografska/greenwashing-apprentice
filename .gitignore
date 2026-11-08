@@ -15,3 +15,7 @@ lora_*/
 # they are kept, but in their own folder:
 #   data/teacher/test/   (tracked, read only by eval.py)
 .DS_Store
+
+# Training runs: adapters and derived train files stay out of git (run.json is kept)
+runs/*/adapter/
+runs/*/train.jsonl

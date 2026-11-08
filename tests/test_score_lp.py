@@ -70,3 +70,10 @@ def test_no_prefix_path(scorer):
     o = scorer.score([m])[0]
     n = naive(scorer, m)
     assert max(abs(n[k] - o["logp"][k]) for k in n) < 1e-3
+
+
+def test_full_path_matches_naive(scorer):
+    m = [{"role": "system", "content": "Legal context"}, {"role": "user", "content": "CLAIM: Confezione eco"}]
+    o = scorer.score([m], use_cache=False)[0]
+    n = naive(scorer, m)
+    assert max(abs(n[k] - o["logp"][k]) for k in n) < 1e-3
