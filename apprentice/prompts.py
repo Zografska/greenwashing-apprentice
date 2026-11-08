@@ -42,15 +42,19 @@ def teacher_messages(claim: str) -> list[dict]:
 
 def student_messages(claim: str, legal: bool = True, examples: list[dict] | None = None) -> list[dict]:
     """S0-noLegal (legal=False), S0 (legal=True), S1 (legal=True, examples=top-3 anchors as
-    [{"claim":..., "label":...}]). The assistant turn to score is the bare label string."""
+    [{"claim":..., "label":...}]). The assistant turn to score is the bare label string.
+    Retrieved examples go into the final user turn, so system prompt + few-shots are an identical
+    prefix for every claim (prefix KV-cache reuse in score_lp)."""
     legal_s = ("\nLegal context:\n" + load("legal_block.md").strip() + "\n") if legal else ""
-    ex_s = ("\nSimilar labelled examples:\n" +
-            "\n".join(f"CLAIM: {e['claim']} -> {e['label']}" for e in examples) + "\n") if examples else ""
-    system = load("P_student.md").replace("{{LEGAL_SECTION}}", legal_s).replace("{{EXAMPLES_SECTION}}", ex_s)
+    system = load("P_student.md").replace("{{LEGAL_SECTION}}", legal_s).replace("{{EXAMPLES_SECTION}}", "")
     msgs = [{"role": "system", "content": system}]
     for fs in fewshots("fewshot_student.jsonl"):
         msgs += [{"role": "user", "content": user(fs["claim"])}, {"role": "assistant", "content": fs["label"]}]
-    return msgs + [{"role": "user", "content": user(claim)}]
+    last = user(claim)
+    if examples:
+        last = ("Similar labelled examples:\n" + "\n".join(f"CLAIM: {e['claim']} -> {e['label']}" for e in examples)
+                + "\n\n" + last)
+    return msgs + [{"role": "user", "content": last}]
 
 
 def ft_messages(claim: str) -> list[dict]:

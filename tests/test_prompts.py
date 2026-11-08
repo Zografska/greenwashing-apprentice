@@ -13,7 +13,13 @@ def test_rendered_prompts_have_no_placeholders_or_headers():
                  prompts.student_messages("x", examples=[{"claim": "y", "label": "OUT"}]), prompts.ft_messages("x")):
         t = _all_text(msgs)
         assert "{{" not in t and "<!--" not in t
-        assert msgs[-1] == {"role": "user", "content": "CLAIM: x"}
+        assert msgs[-1]["role"] == "user" and msgs[-1]["content"].endswith("CLAIM: x")
+
+
+def test_student_prefix_is_identical_across_claims_and_s1():
+    a, b = prompts.student_messages("x"), prompts.student_messages("y", examples=[{"claim": "z", "label": "OUT"}])
+    assert a[:-1] == b[:-1]
+    assert b[-1]["content"].startswith("Similar labelled examples:\nCLAIM: z -> OUT")
 
 
 def test_students_never_see_trigger_names():

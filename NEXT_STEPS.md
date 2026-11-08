@@ -70,10 +70,10 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
   - [x] `t_large_extra` (574)
   - [x] `test` (1,062, not scored until CP4: test_carrefour 750, test_ce 265, test_naturasi 47; written only to `data/teacher/test/`)
 - [x] Report teacher label noise: teacher vs gold on the 551 train texts → macro-F1 0.841, accuracy 0.913 (`results/teacher_dev_iterations.md`)
-- [ ] `apprentice/retrieve.py`: e5 (pinned revision, `query:` prefix) over `vendor/retriever/anchors_v4.jsonl`, `top3(claim)` with the D8 guard, plus a count of skipped anchors. ≈ ½ day
-- [ ] `apprentice/score_lp.py`: log-prob scoring of the 3 label strings for a HF model + prompt. Shared with the Kaggle notebook. ≈ ½ day
-- [ ] Run S0-noLegal, S0 and S1 (Qwen3-4B; on the Mac or Kaggle) on dev, then **once** on test
-- [ ] B0-T / B0-H: e5 + logistic regression → dev, then test. ≈ 1 h
+- [x] `apprentice/retrieve.py`: e5 (pinned revision, `query:` prefix) over `vendor/retriever/anchors_v4.jsonl`, `top3(claim)` with the D8 guard, plus a count of skipped anchors. ≈ ½ day
+- [x] `apprentice/score_lp.py` (prefix KV-cache reuse; matches naive scoring to 1e-6 in `tests/test_score_lp.py`): log-prob scoring of the 3 label strings for a HF model + prompt. Shared with the Kaggle notebook. ≈ ½ day
+- [ ] Run S0-noLegal, S0 and S1 (Qwen3-4B) on dev, then **once** on test: Kaggle notebook `notebooks/cp2_baselines_kaggle.ipynb` (`apprentice/baselines.py`)
+- [ ] B0-T / B0-H: e5 + logistic regression → dev, then test (same notebook)
 - [ ] **Draft the report's methods section** (data, split, teacher, conditions, metrics). ≈ 1 day
 - [ ] ✅ **CP2 gate** (Mon 9 Nov)
 
