@@ -41,3 +41,28 @@ packaging materials, endorsements outside the environmental domain), plus «0% P
 pollutant_free) and «selezione delle materie prime» (gold OUT, teacher vague_supply_chain).
 **CP2 sanity check passed** (≥ 0.80 macro-F1, ≥ 95% consistency). `P_teacher` frozen at 2ef529403276b34b
 (`prompts/FROZEN`); the full run uses it unchanged.
+
+## Full run and teacher label noise (2026-11-08)
+
+Frozen prompt 2ef529403276b34b, gpt-oss-120b, OpenRouter coreweave/fp4, all calls served by CoreWeave.
+
+| Suite | n | Valid | Consistency | Cost |
+|---|---|---|---|---|
+| train | 551 | 1.000 | 0.998 | $0.072 |
+| t_large_extra | 574 | 0.998 | 0.997 | $0.074 |
+| test (carrefour 750, ce 265, naturasi 47) | 1,062 | 0.999 | 0.995 | $0.140 |
+
+Test outputs are stored under `data/teacher/test/` and **not scored yet**: the Teacher row is measured once, in CP4.
+
+**Teacher label noise on train** (teacher vs expert-reviewed gold, 551 texts; the key context for RQ1):
+macro-F1 **0.841**, accuracy **0.913** (48 disagreements), F1 IN_SCOPE 0.824 / NV 0.735 / OUT 0.964,
+IN_SCOPE recall 0.938. Main disagreements:
+- plant-based / renewable packaging («tappo da canna da zucchero», «88% da materie prime rinnovabili»): gold NV
+  (recycled_recyclable), teacher adds generic_green → IN_SCOPE (11);
+- OUT claims the teacher flags (10 → IN_SCOPE, 8 → NV), e.g. «Senza ammoniaca», «Nichel … < 1 ppm» read as
+  pollutant_free;
+- NV claims read as OUT: risk reduction, vegan, named endorsements outside the environmental domain.
+
+The train score (0.841) is below the dev score (0.912): dev was used to tune the prompt, so train is the
+unbiased estimate of teacher quality on unseen Coop/Eurospin claims. On `t_large_extra`, against the lighter
+reserve labels: macro-F1 0.803, accuracy 0.925.
