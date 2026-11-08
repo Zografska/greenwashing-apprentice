@@ -93,9 +93,9 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 
 **Week 4: run the grid**
 
-- [ ] Nested subsets 150 / 300 per seed, shared between H and T (D16)
-- [ ] H@{150, 300, 571} × 3 seeds
-- [ ] T@{150, 300, 571} × 3 seeds
+- [x] Nested subsets 150 / 300 per seed, shared between H and T (D16), implemented in `train.ordered_train`
+- [ ] H@{150, 300, 551} × 3 seeds
+- [ ] T@{150, 300, 551} × 3 seeds
 - [ ] T+R × 3 seeds
 - [ ] T-large × 3 seeds
 - [ ] T-1.7B × 3 seeds
