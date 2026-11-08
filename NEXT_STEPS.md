@@ -89,7 +89,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
   - [x] `check_split()` call before training
   - [x] log-prob scoring on dev + test; T+R generation (reasoning → label), with invalid output counted as wrong
   - [x] append to `results.csv`; save the LoRA adapter
-- [ ] Smoke test: H@551 and T@551, seed 0 → ✅ **CP3a** (Sun 15 Nov)
+- [x] Smoke test: H@551 and T@551, seed 0 → ✅ **CP3a passed Sun 8 Nov** (Unsloth backend; dev_w H 0.780, T 0.760 vs S0 0.617; ≈ 8 min training per 551-claim run; training loss → 0.002 by epoch 3)
 
 **Week 4: run the grid**
 
