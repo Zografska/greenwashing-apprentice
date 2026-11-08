@@ -10,7 +10,7 @@ Tick boxes as you go. The decision references (D…) point to the spec's decisio
 | 1    | ✅ done Sun 1 Nov       | **CP1** Data, freeze, harness               | `eval.py` scores the gold labels, fed in as predictions, at 1.0; `check_split` passes; suites frozen |
 | 2    | Mon 2 – Mon 9 Nov      | **CP2** Teacher + baselines                 | Teacher dev macro-F1 ≥ 0.80 and consistency ≥ 95% (sanity check, not a blocker)                      |
 | 3    | Tue 10 – Sun 15 Nov    | **CP3a** Kaggle notebook working end to end | One H@571 + one T@571 run, scored, with a row in `results.csv`                                       |
-| 4    | Mon 16 – Sun 22 Nov    | **CP3b** All runs                           | All 27 LoRA runs logged; T@571 beats S0 on dev                                                       |
+| 4    | Mon 16 – Sun 22 Nov    | **CP3b** All runs                           | All 27 LoRA runs logged; T@571 beats S0 on dev_w (D35)                                               |
 | 5    | Mon 23 – Sun 29 Nov    | **CP4** Analysis                            | Every RQ has a table or figure                                                                       |
 | 6    | Mon 30 Nov – Sun 6 Dec | **CP5** Report                              | Report drafted                                                                                       |
 | 7    | Mon 7 – Tue 15 Dec     | **Buffer**                                  | Revisions; submitted by Tue 15 Dec                                                                   |
