@@ -52,6 +52,12 @@ class LabelScorer:
         end = end_token or self._guess_end_token()
         self.label_ids = {l: self.tok(l + end, add_special_tokens=False)["input_ids"] for l in self.labels}
         self.model_revision = getattr(self.model.config, "_commit_hash", None) or revision
+        if not self.model_revision and model_name:      # transformers 5 no longer sets _commit_hash
+            try:
+                from huggingface_hub import model_info
+                self.model_revision = model_info(model_name, revision=revision).sha
+            except Exception:
+                self.model_revision = None
         self.prefix_hits = self.prefix_misses = 0
 
     def _guess_end_token(self) -> str:
